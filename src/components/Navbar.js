@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-fixed-top is-spaced"
+        className="navbar is-fixed-top is-spaced is-white"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -76,6 +76,9 @@ const Navbar = class extends React.Component {
                 Contact
               </Link>
               <Link className="navbar-item" to="/contact/examples">
+                Form Examples
+              </Link>
+              <Link className="navbar-item" to="/rotor-index/">
                 Form Examples
               </Link>
             </div>
