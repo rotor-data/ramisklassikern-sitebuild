@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-fixed-top is-spaced is-white"
+        className="navbar is-fixed-top is-spaced is-white is-size-5 is-size-1-touch"
         role="navigation"
         aria-label="main-navigation"
       >
