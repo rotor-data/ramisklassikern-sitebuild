@@ -17,6 +17,7 @@ $rotor-offwhite: #f1faee
 $rotor-black: #000
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
+$body-margin: 30px
 
 $primary: $rotor-turq-light
 $primary-invert: $rotor-offwhite
@@ -33,19 +34,45 @@ $text: $rotor-black
 $background: $rotor-turq-light
 $link: $rotor-dark-pink
 $family-primary: $bodytext
+$body-background-color: $rotor-turq-light
+$body-size: 20px !default
 
 
-h2,
-h3,
-h4,
-h5,
-h6
-  font-family: $headline
-  text-transform: lowercase
+body
+  max-width: 1600px
+
+/* purgecss ignore */
+em
+  background-color: $rotor-light-pink
+  font-style: normal
+
+
+.top-spacing
+  height:85px
+
+
 
 h1
   font-family: $headline
   text-transform: uppercase
+  line-height: 1.2
+  letter-spacing: -1px
+
+h2
+  font-family: $headline
+  text-transform: lowercase
+h3,
+h4,
+h5,
+h6
+  font-family: $bodytext
+  
+.has-tight-height
+  line-height: 1
+
+.has-tight-spacing
+    letter-spacing: -1px
+
 
 .navbar
   background-color: $rotor-offwhite
@@ -185,3 +212,71 @@ $menu-label-color: $white-ter
     text-align: center
     max-width: 70%
     margin: 0 0 1em
+
+    //rotor-button
+
+.rotor-button-container 
+    position: relative
+    width: 100%
+    display: contents
+
+.rotor-button::after, .rotor-button::before 
+  position: absolute
+  content: ""
+  transition: all 0.5s
+
+
+.rotor-button 
+  display: inline-block
+  padding: 20px 40px
+  color: black
+  transform: translateY(30px)
+  font-family: $headline
+  text-decoration: none
+  font-size: 30px
+  transition: all 0.5s
+  background-color: #f1faee
+  border: none
+
+.rotor-button::before 
+  top: -10px
+  height: 10px
+  width: 100%
+  left: 5px
+  transform: skewX(-45deg)
+  background-color: #efb9d7
+
+.rotor-button::after 
+  right: -10px
+  height: 100%
+  width: 10px
+  bottom: 5px
+  transform: skewY(-45deg)
+  background-color: #e070be
+
+.rotor-button:active 
+  margin-top: -7px
+  margin-left: 14px
+
+.rotor-button:active::before 
+  top: -5px
+  height: 5px
+  left: 3px
+
+.rotor-button:active::after 
+  right: -5px
+  width: 5px
+  bottom: 3px
+
+
+.rotor-button:hover
+  text-decoration: underline
+  
+.rotor-cta 
+    background: $rotor-turq-med
+    margin: 0 auto
+    text-align: center
+    color: $rotor-offwhite
+.rotor-cta::before
+  background-image: url('/img/rotor-pink-star.svg')
+

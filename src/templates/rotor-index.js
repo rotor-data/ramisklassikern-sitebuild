@@ -1,79 +1,43 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import Layout from "../components/Layout";
+import { IndexPageTemplate } from "./index-page";
+import RotorButton from "../components/RotorButton"
 
-// eslint-disable-next-line
-export const RotorIndexTemplate = ({ title, content, contentComponent, image }) => {
-  const PageContent = contentComponent || Content;
-  const SideImage = getImage(image) || image;
+export const RotorIndexTemplate = ({text, buttonText, buttonLink}) => {
+    return (
+  <div>
+    {text}
+    <RotorButton buttonText={buttonText} buttonLink={buttonLink} />
+    </div>      
+    )
+}
+const RotorIndex = ({data}) => {
+    const { frontmatter } = data.markdownRemark;
 
-  return (
-    
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-              <PreviewCompatibleImage imageInfo={image} />
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-RotorIndexTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string,
-  contentComponent: PropTypes.func,
-};
-
-const RotorIndex = ({ data }) => {
-  const { markdownRemark: post } = data;
-
-  return (
-    <Layout>
-      <RotorIndexTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-        image={post.frontmatter.image}
-      />
-    </Layout>
-  );
-};
-
-RotorIndex.propTypes = {
-  data: PropTypes.shape({
-    title: PropTypes.shape({
-    image: PropTypes.object,
-    }),
-  }),
-};
-
+    return (
+        <Layout>
+            <RotorIndexTemplate 
+            text = {frontmatter.text}
+            buttonText = {frontmatter.rotorButton.buttonText}
+            buttonLink = {frontmatter.rotorButton.link}
+            />
+        </Layout>
+    )
+}
 export default RotorIndex;
 
 export const RotorIndexQuery = graphql`
-  query RotorIndex($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+query RotorIndexTemplate {
+    markdownRemark(frontmatter: {templateKey: {eq: "rotor-index"}}) {
       frontmatter {
-        title
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }}
+        text
+        rotorButton {
+          link
+          buttonText
+        }
       }
     }
   }
-`;
+  `;

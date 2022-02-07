@@ -49,6 +49,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
+      <div className="top-spacing"></div>
       <div>{children}</div>
       <Footer />
     </div>
