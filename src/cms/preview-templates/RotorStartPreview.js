@@ -22,7 +22,7 @@ const RotorStartPreview = ({ entry, getAsset }) => {
   }
 }
 
-IndexPagePreview.propTypes = {
+RotorStartPreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),

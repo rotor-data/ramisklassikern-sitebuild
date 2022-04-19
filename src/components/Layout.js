@@ -11,7 +11,7 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
-        <html lang="en" />
+        <html lang="sv" />
         <title>{title}</title>
         <meta name="description" content={description} />
 
@@ -50,7 +50,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar />
       <div className="top-spacing"></div>
-      <div>{children}</div>
+      <div className="container.is-max-widescreen">{children}</div>
       <Footer />
     </div>
   );
