@@ -49,12 +49,9 @@ export default function LogoGallery() {
             node {
               base
               childImageSharp {
-                gatsbyImageData (
-                    width: 150
-                    placeholder: BLURRED
-                    formats: [AUTO, WEBP, AVIF]
-                  )
+                gatsbyImageData(width: 150, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
               }
+              name
             }
           }
         }
@@ -71,7 +68,7 @@ export default function LogoGallery() {
                         {arr.map((image) =>
                         <div className="column p-3 logo-box" style={{width:'20%'}}>
                             <div style={{transform: `translateY(`+Math.random()*30+`px`}} >
-                            <GatsbyImage image={getImage(image.node)} alt={"test"} />
+                            <GatsbyImage image={getImage(image.node)} alt={'logo logotyp '+image.node.name} />
                             </div>
                         </div>
                     )}

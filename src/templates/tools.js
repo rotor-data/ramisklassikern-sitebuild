@@ -7,13 +7,48 @@ import StarDivider from "../components/Star-divider";
 import Accordion from "../components/accordion";
 import RotorBox from "../components/RotorBox";
 
+
 export const MarketingAutomationTemplate = ({hero, challenge, goal, when, promise, what}) => {
 
     const goalImage = getImage(goal.image)
+    const heroImage = getImage(hero.image)
 
 return (
     <div>
 
+      {/*hero section*/}
+      <div style={{
+        background: 'linear-gradient(45deg, rgba(0,126,132,1) 0%, rgba(239,185,215,1) 100%)',
+      }}>
+        <div className="hero-body container pb-6">
+          <div className="columns is-desktop is-vcentered my-6">
+            <div className="column is-half-desktop is-10-mobile is-offset-1-mobile">
+              <div >
+                <h1 className="has-text-white has-tight-height is-ultralarge is-size-1-mobile has-text-weight-bold mb-4">{hero.headline}</h1>
+              </div>
+              <h2 className="has-text-white is-uppercase has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">{hero.subtext}</h2>
+            </div>
+            <div className="column is-half-desktop is-half-mobile is-offset-one-quarter-mobile has-text-centered level-right">
+              <GatsbyImage image={heroImage} />
+
+            </div>
+          </div>
+          {/* optional CTA */}
+          {hero.cta.option === true && 
+          <div className="mb-6">
+          <RotorCTA buttonText={hero.cta.buttonText} buttonLink="/products/" headline={hero.cta.headline} text={hero.cta.text} />
+          </div>
+          }
+          
+            
+
+          
+          
+
+
+
+        </div>
+      </div>
     
         <div className="hero-body has-background-white">
     {/* challenge section */}
@@ -72,7 +107,8 @@ return (
         </div>  
       <div className="column has-background-white">
       {when.texts.map(({text, explanation}) => (
-       <div>    
+        
+       <div> 
        <Accordion text={text} explanation={explanation}/>
        </div>
        ))}
@@ -134,41 +170,55 @@ const MarketingAutomation = ({ data }) => {
   export default MarketingAutomation
 
   export const MarketingAutomationQuery = graphql`
-  query MarketingAutomationTemplate {
-    markdownRemark(frontmatter: {templateKey: {eq: "marketing-automation"}}) {
+  query MarketingAutomationTemplate($id: String!) {
+    markdownRemark(id: { eq: $id } ) {
       frontmatter {
         path
+        hero {
+          headline
+          subtext
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 50, width: 450)
+            }
+          }
+          cta {
+            option
+            text
+            buttonText
+            headline
+          }
+        }
         challenge {
           headline
-          text  
+          text
         }
         goal {
           headline
           text
           imagealt
-          image {  
+          image {
             childImageSharp {
               gatsbyImageData(quality: 50, width: 250)
             }
           }
-           
         }
         when {
-            texts {
-              explanation
-              text
-            }
-            headline
+          texts {
+            explanation
+            text
           }
+          headline
+        }
         promise {
           headline
-          text 
+          text
         }
         what {
-            headline
-            text 
-          }
-           
+          headline
+          text
+        }
+        title
       }
     }
   }

@@ -13,6 +13,7 @@ $rotor-turq-light: #a4dade
 $rotor-dark-blue: #1b3359
 $rotor-medium-blue: #4079a1
 $rotor-dark-pink: #e070be
+$rotor-medium-pink: #f793cb
 $rotor-light-pink: #efb9d7
 $rotor-offwhite: #f1faee
 $rotor-black: #000
@@ -44,6 +45,7 @@ $navbar-background-color: rgb(164, 218, 222,0.8)
 /* purgecss start ignore */
 
 
+// em tags colours (marker pen). Different when on same colour background. 
 .has-background-warning em
   background-color: $link
 
@@ -54,8 +56,7 @@ em
 
 /* purgecss end ignore */     
 
-.top-spacing
-  height:85px
+
 
 
 
@@ -227,7 +228,6 @@ h6
   box-shadow: none !important
   font-family: $headline2
 
-  text-transform: lowercase
   font-weight: 400
 
 
@@ -241,7 +241,8 @@ a.navbar-link:hover,
 a.navbar-link.is-active
   background-color: transparent!important
   color: $black
-
+.navbar-item img
+  max-height: 2.25rem!important
 .navbar-item .icon
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
@@ -377,7 +378,11 @@ $menu-label-color: $white-ter
     padding: 40px 30px!important
   .no-padding-mobile
     padding:0
-
+  .columns
+    max-width:98%    
++desktop
+  .top-spacing
+    height:105px
 
     //rotor-button
 

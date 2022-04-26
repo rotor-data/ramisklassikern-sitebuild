@@ -1,11 +1,13 @@
 ---
 
-templateKey: marketing-automation
-path: "/marketing-automation"
-title: Marketing Automation
+
+path: "/verktyg/test"
+title: test
+subtitle: Testar en annan
+templateKey: tools
 
 hero:
-  headline: Marketing Automation
+  headline: Nu skriver jag en annan rubrik
   subtext: "Slösa inte bort dem som är närmast att bli dina kunder"
   image: "/img/rotor-customer-racing.png"
   cta: 
@@ -14,7 +16,7 @@ hero:
     headline: Vad gör dina konkurrenter?
 
 challenge:
-  headline: Kastar du kunder i soptunnan?
+  headline: Nu skriver jag en annan rubrik
   text: 'Du har en lista med massor av e-postadresser som du samlat in genom möten eller genom annonsering. Du står där som i en äppelodling, redo att skörda.<br><br>Det är lätt att bli besviken när det bara är några få glansiga, sötstinna frukter som landar framför dina fötter.  När det här händer – att kunderna inte konverterar –  är det en ganska vanlig reaktion att annonsera mer. In med mer leads så löser det sig!<br><br><em>Men om du hade kollat upp i äppelträden hade du sett att de flesta äpplen fortfarande är stenhårda kart som inte mognat än.</em> Försvinnande få äppelodlare ser det här och tänker att "nu planterar jag fler träd!!!". Nä. De gödslar, beskär och ansar.<br><br>För här finns det godsaker att hämta. Du kan också få dina kunder att mogna.'
 
 goal:
