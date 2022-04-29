@@ -42,27 +42,6 @@ $family-secondary: $bodytext
 $navbar-background-color: rgb(164, 218, 222,0.8)
 
 
-/* purgecss start ignore */
-
-
-// em tags colours (marker pen). Different when on same colour background. 
-.has-background-warning em
-  background-color: $link
-
-em
-  background-color: $warning
-  font-style: normal
-  color: $black
-
-/* purgecss end ignore */     
-
-
-
-
-
-
-
-
 //pink-blob for headlines
 .has-pink-blob
   background-image: url(../img/pink-blob.svg)
@@ -252,19 +231,7 @@ a.navbar-link.is-active
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
-footer.footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
-footer .menu-list
-  font-family: $headline2
-  text-transform: uppercase
-  list-style-type: none
-  transition: 100ms ease
 
-.menu-list a:hover
-    background: $rotor-dark-pink!important
-    transition: 100ms ease
-    
 
 .content .taglist
   list-style: none
@@ -344,6 +311,19 @@ $menu-label-color: $white-ter
   list-style: none !important
   text-align: left
 
+footer.footer
+  padding: 3rem 0rem 0rem
+  background-color: transparent
+footer .menu-list
+  font-family: $headline2
+  text-transform: uppercase
+  list-style-type: none
+  transition: 100ms ease
+
+.menu-list a:hover
+    background: $rotor-dark-pink!important
+    transition: 100ms ease
+    
 
 .social
   padding: 2em
@@ -536,6 +516,20 @@ $menu-label-color: $white-ter
   background-color: #e070be  
 
 /* purgecss start ignore */
+
+
+
+
+/* em tags colours (marker pen). Different when on same colour background. */
+.has-background-warning em
+  background-color: $link
+
+em
+  background-color: $warning
+  font-style: normal
+  color: $black
+
+  
 blockquote 
   font-family: 'novecento-sans'
   text-transform: uppercase
