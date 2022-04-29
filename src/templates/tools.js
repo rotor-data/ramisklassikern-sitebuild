@@ -24,9 +24,9 @@ return (
           <div className="columns is-desktop is-vcentered my-6">
             <div className="column is-half-desktop is-10-mobile is-offset-1-mobile">
               <div >
-                <h1 className="has-text-white has-tight-height is-ultralarge is-size-1-mobile has-text-weight-bold mb-4">{hero.headline}</h1>
+                <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.headline}</h1>
               </div>
-              <h2 className="has-text-white is-uppercase has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">{hero.subtext}</h2>
+              <h2 className="has-text-white has-tight-height is-ultralarge is-size-1-mobile has-text-weight-bold is-uppercase ">{hero.subtext}</h2>
             </div>
             <div className="column is-half-desktop is-half-mobile is-offset-one-quarter-mobile has-text-centered level-right">
               <GatsbyImage image={heroImage} />
@@ -99,7 +99,7 @@ return (
       </div>
 
       {/* when section */}
-      <div className="columns hero-body has-background-white">
+      <div className="columns hero-body has-background-white mb-0">
           <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
               <div className="columns">
         <div className="column">
@@ -115,10 +115,14 @@ return (
       </div>
       </div>
       </div>
+     
        </div>
-
+       <div className="has-background-info pt-3" style={{height:'90px'}}>
+       <StarDivider/>
+       </div>
+       
        {/* promise section */}
-      <div className="columns hero-body has-background-white">
+      <div className="columns hero-body has-background-info">
           <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
               <div className="columns">
         <div className="column">
@@ -132,7 +136,7 @@ return (
        </div>
 {/* what section */}
 <div className="columns hero-body has-background-primary mr-1">
-  <div className="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet is-full-mobile no-padding-mobile">
+  <div className="column is-6-fullhd is-offset-3-fullhd is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet is-full-mobile no-padding-mobile">
       <div className="is-relative">
           <div className="rotor-box-large is-family-primary">
             <h2 className="is-size-2 mb-3">{what.headline}</h2>

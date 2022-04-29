@@ -13,7 +13,7 @@ import FooterMenu from "./FooterMenu";
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-text-white-ter" style={{ 
+      <footer className="footer has-text-white-ter pb-6" style={{ 
         backgroundImage: `url(${footerBack})`, 
         backgroundRepeat: 'no-repeat', 
         backgroundSize: 'contain',
@@ -57,9 +57,9 @@ const Footer = class extends React.Component {
           /> */}
         </div>
         <div className="content has-text-centered has-text-white-ter">
-          <div className="container has-background-warning has-text-white-ter">
+          <div className="container has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-4">
+              <div className="column is-4 has-background-warning">
                 <section className="menu">
                   <FooterMenu/>
                  {/*  <ul className="menu-list">

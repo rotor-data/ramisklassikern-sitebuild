@@ -108,9 +108,7 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 
         </div>
       </div>
-     <div className="has-background-white">
-     <LargeCTA/>
-      </div>
+    
       
       {/*solution section2*/}
       <div className="hero-body has-background-white" >
@@ -118,7 +116,7 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 
 
 
-          <div className="column is-half-desktop is-half-tablet has-background-info has-text-white my-6 is-relative ">
+          <div className="column is-half-desktop is-half-tablet has-background-info has-text-white my-6 is-relative" style={{zIndex:'1'}}>
             <div className="p-6 has-whirl-right is-10-mobile is-offset-1-mobile">
               <h2 className="is-size-2 mb-4">{solution.headline1}</h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text2 }}></p>
@@ -126,7 +124,7 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 
 
           </div>
-          <div className="column is-half has-text-centered is-full-tablet">
+          <div className="column is-half has-text-centered is-full-tablet is-half-mobile is-offset-one-quarter-mobile">
             <div className="is-rotated-left mb-3">
               <GatsbyImage image={solutionImage3}  alt={solution.imagealt3}/>
             </div>
@@ -135,6 +133,10 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 
 
         </div>
+      </div>
+     {/* largecta */}
+      <div className="has-background-white">
+     <LargeCTA/>
       </div>
 
       {/*who section
@@ -259,7 +261,7 @@ query RotorStartTemplate {
         imagealt3
         image3 {
           childImageSharp {
-            gatsbyImageData(quality: 50, width: 200)
+            gatsbyImageData(quality: 100, width: 400)
           }
         }
  
@@ -274,7 +276,7 @@ query RotorStartTemplate {
         imagealt1
         image1 {
           childImageSharp {
-            gatsbyImageData(quality: 50, width: 450)
+            gatsbyImageData(quality: 50, width: 650)
           }
         }
       }

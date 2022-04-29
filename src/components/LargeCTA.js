@@ -7,17 +7,12 @@ import { GatsbyImage } from "gatsby-plugin-image";
 const LargeCTA = () => {
 
     return (
-        <div className="columns hero-body" style={{position: 'relative', zIndex: '1'}}>
-            <div style={{
-               objectFit: 'cover',
-               zIndex:'-1',
-               objectPosition: '50% 50%',
-
-           }} >
-            <CtaBackground />
+        <div>
+            <div>
+            
             </div>
              
-            <div className="column is-6 is-offset-3 has-text-white is-vcentered py-6" /* style={{
+            <div className="column is-6-desktop is-offset-3-desktop is-8-tablet is-offset-2-tablet has-text-white is-vcentered py-6" /* style={{
             backgroundImage: `url(${ctaBackground})`, 
             backgroundRepeat: 'no-repeat', 
             backgroundSize: 'cover',
@@ -27,21 +22,32 @@ const LargeCTA = () => {
           }} */>
           
               <div>
-                  <div className="p-6">
+                  <div className="p-6" style={{position: 'relative', zIndex: '1', textAlign: 'center',}}>
+                  <CtaBackground style={{
+               
+               zIndex:'-1',
+               height: '110%',
+               width: '120%',
+               left: '-10%',
+               top: '-5%',
+               position: 'absolute'
+
+           }}  />      
                 <h2 className="is-size-2 mb-3">
                 Därför ska du välja en digitalbyrå som kan mer än ett verktyg
                 </h2>
                 <p className="mb-6">
                 Ja, vi kallar dem verktyg – SEO, annonsering på Google, Facebook, Instagram, Linked In, marketing automation etc.
                 För precis som ett verktyg finns de till för att bygga något större.
-                Och de hänger ihop. Allt handlar om att hitta de verktyg som passar dig just nu.
+                <br/><br/>Och de hänger ihop. Allt handlar om att hitta de verktyg som passar dig just nu.
                 En SEO-byrå kommer att tycka att SEO är det verktyget.
                 En Facebook-byrå kommer att rekommendera – ja gissa – Facebook.
                 Och så vidare.
-                Vi tror inte på den lösningen.
+
+                <br/><br/>Vi tror inte på den lösningen.
                 Därför att rätt verktyg för dig är det som skapar intäkter på kort eller lång sikt, på effektivast möjliga sätt.
                 Oavsett vad verktyget kallas. 
-                Vi kan verktygen. Men framför allt har vi en plattform för att bygga ditt eget säljande system, med de verktyg du behöver för ökad lönsamhet.
+                <br/><br/>Vi kan verktygen. Men framför allt har vi en plattform för att bygga ditt eget säljande system, med de verktyg du behöver för ökad lönsamhet.
                 Vill du veta vad Rotor Uplift kan vara för dig?
                 </p>
                 <RotorButton buttonText="Klicka här" buttonLink="/kontakt"/>
