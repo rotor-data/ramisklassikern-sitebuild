@@ -68,7 +68,7 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
               <StarDivider customClass="column is-full mb-3" />
               <div className="column is-8 is-offset-2 is-10-mobile is-offset-1-mobile">
                 <h2 className="is-size-2 mb-4">{challenge.headline}</h2>
-                <p dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
+                <p className="content" dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
                 <div className="has-text-centered mt-6 is-rotated-right">
                   <GatsbyImage image={challengeImage} alt={challenge.imagealt}/>
                 </div>
