@@ -28,7 +28,7 @@ return (
               </div>
               <h2 className="has-text-white has-tight-height is-ultralarge is-size-1-mobile has-text-weight-bold is-uppercase ">{hero.subtext}</h2>
             </div>
-            <div className="column is-half-desktop is-half-mobile is-offset-one-quarter-mobile has-text-centered level-right">
+            <div className="column is-half is-offset-one-quarter has-text-centered level-right">
               <GatsbyImage image={heroImage} />
 
             </div>

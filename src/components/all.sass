@@ -41,7 +41,55 @@ $body-size: 20px !default
 $family-secondary: $bodytext
 $navbar-background-color: rgb(164, 218, 222,0.8)
 
+/*! purgecss start ignore */
+/* em tags colours (marker pen). Different when on same colour background. */
+.has-background-warning em
+  background-color: $link
 
+em
+  background-color: $warning
+  font-style: normal
+  color: $black
+
+blockquote 
+  font-family: 'novecento-sans'
+  text-transform: uppercase
+  font-weight: 600
+  padding: 20px 0 20px 0
+  color: $rotor-dark-pink
+  position: relative
+  max-width: 300px
+  margin: 0 auto
+  margin-top:20px
+  margin-bottom:20px
+  text-align: justify
+  line-height: 1.8
+
+blockquote:before
+  background-image: url(../img/quotation-marks.svg)
+  content:""
+  position: absolute
+  height: 50px
+  width: 50px
+  background-repeat: no-repeat
+  background-size: contain
+  top: 0
+  left: -54px
+  z-index:1
+
+blockquote:after
+  background-image: url(../img/quotation-marks-2.svg)
+  content:""
+  position: absolute
+  height: 50px
+  width: 50px
+  background-repeat: no-repeat
+  background-size: contain
+  bottom: -20px
+  right: -54px
+  z-index:1
+
+/*! purgecss end ignore */
 //pink-blob for headlines
 .has-pink-blob
   background-image: url(../img/pink-blob.svg)
@@ -515,62 +563,6 @@ footer .menu-list
   transform: skewY(-45deg)
   background-color: #e070be  
 
-/* purgecss start ignore */
-
-
-
-
-/* em tags colours (marker pen). Different when on same colour background. */
-.has-background-warning em
-  background-color: $link
-
-em
-  background-color: $warning
-  font-style: normal
-  color: $black
-
-  
-blockquote 
-  font-family: 'novecento-sans'
-  text-transform: uppercase
-  font-weight: 600
-  padding: 20px 0 20px 0
-  color: $rotor-dark-pink
-  position: relative
-  max-width: 300px
-  margin: 0 auto
-  margin-top:20px
-  margin-bottom:20px
-  text-align: justify
-  line-height: 1.8
-
-blockquote:before
-  background-image: url(../img/quotation-marks.svg)
-  content:""
-  position: absolute
-  height: 50px
-  width: 50px
-  background-repeat: no-repeat
-  background-size: contain
-  top: 0
-  left: -54px
-  z-index:1
-
-blockquote:after
-  background-image: url(../img/quotation-marks-2.svg)
-  content:""
-  position: absolute
-  height: 50px
-  width: 50px
-  background-repeat: no-repeat
-  background-size: contain
-  bottom: -20px
-  right: -54px
-  z-index:1
-
-
-
-/* purgecss end ignore */
 
 @include desktop
     .navbar-hover-line:hover:before 
