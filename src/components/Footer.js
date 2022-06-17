@@ -56,11 +56,11 @@ const Footer = class extends React.Component {
             style={{ width: "14em", height: "10em" }}
           /> */}
         </div>
-        <div className="content has-text-centered has-text-white-ter">
+        <div className="has-text-centered has-text-white-ter">
           <div className="container has-text-white-ter">
-            <div style={{ maxWidth: "100vw" }} className="columns">
-              <div className="column is-4 has-background-warning">
-                <section className="menu">
+            <div style={{ maxWidth: "100vw" }} className="columns mx-1netl">
+              <div className="column is-6 is-offset-1 has-background-warning">
+                <section className="menu content">
                   <FooterMenu/>
                  {/*  <ul className="menu-list">
                     <li>
