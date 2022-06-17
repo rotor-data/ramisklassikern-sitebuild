@@ -21,14 +21,14 @@ return (
         background: 'linear-gradient(45deg, rgba(0,126,132,1) 0%, rgba(239,185,215,1) 100%)',
       }}>
         <div className="hero-body container pb-6">
-          <div className="columns is-desktop is-vcentered my-6">
+          <div className="columns is-desktop is-vcentered my-6 is-variable is-8">
             <div className="column is-half-desktop is-10-mobile is-offset-1-mobile">
               <div >
                 <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.headline}</h1>
               </div>
               <h2 className="has-text-white has-tight-height is-ultralarge is-size-1-mobile has-text-weight-bold is-uppercase ">{hero.subtext}</h2>
             </div>
-            <div className="column is-half is-offset-one-quarter has-text-centered level-right">
+            <div className="column is-half-tablet has-text-centered is-offset-one-quarter-tablet is-offset-0-desktop level-right">
               <GatsbyImage image={heroImage} />
 
             </div>
@@ -99,7 +99,8 @@ return (
       </div>
 
       {/* when section */}
-      <div className="columns hero-body has-background-white mb-0">
+      <div className="hero-body has-background-white">
+      <div className="columns hero-body mb-0">
           <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
               <div className="columns">
         <div className="column">
@@ -117,13 +118,12 @@ return (
       </div>
      
        </div>
-       <div className="has-background-info pt-3" style={{height:'90px'}}>
-       <StarDivider/>
        </div>
        
        {/* promise section */}
       <div className="columns hero-body has-background-info">
-          <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
+      <StarDivider/>
+          <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet mt-3">
               <div className="columns">
         <div className="column">
         <h2 className="is-size-2 has-pink-blob has-text-centered-mobile">{promise.headline}</h2>
@@ -183,7 +183,7 @@ const MarketingAutomation = ({ data }) => {
           subtext
           image {
             childImageSharp {
-              gatsbyImageData(quality: 50, width: 450)
+              gatsbyImageData(quality: 90, height:400)
             }
           }
           cta {
