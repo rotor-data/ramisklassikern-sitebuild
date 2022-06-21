@@ -22,7 +22,7 @@ challenge:
 
 goal:
   headline: Gör webbresan enkel, logisk och attraktiv för kunden, utan förvirring
-  text: När din webbplats fungerar bra i ett CRO-perspektiv innebär det att du kommer att göra en betydligt större andel av dina besökare till kunder. CRO handlar enkelt uttryckt om att locka och leda webb-besökare till konvertering, utan krångel. Att lägga rätt saker under näsan på dem – och inte en massa som stökar till beslutsprocessen för dem. Och att varje del flyter på utan missöden och felmeddelanden. Det är väldigt lätt att beskylla annonsen – "men vi sålde ju inget på den!". Den missbedömningen kan kosta onödiga pengar. För kanske är det CRO du behöver istället för en ny annons som inte levererar bättre än den förra gjorde. En ensam annons gör sällan jobbet helt själv. Många framgångsrika företag med stark verksamhet online jobbar dedikerat med CRO – för att de vet att det kan betyda oerhört mycket. 
+  text: 'När din webbplats fungerar bra i ett CRO-perspektiv innebär det att du kommer att göra en betydligt större andel av dina besökare till kunder. [CRO](/verktyg/seo) handlar enkelt uttryckt om att locka och leda webb-besökare till konvertering, utan krångel. Att lägga rätt saker under näsan på dem – och inte en massa som stökar till beslutsprocessen för dem. Och att varje del flyter på utan missöden och felmeddelanden. Det är väldigt lätt att beskylla annonsen – "men vi sålde ju inget på den!". Den missbedömningen kan kosta onödiga pengar. För kanske är det CRO du behöver istället för en ny annons som inte levererar bättre än den förra gjorde. En ensam annons gör sällan jobbet helt själv. Många framgångsrika företag med stark verksamhet online jobbar dedikerat med CRO – för att de vet att det kan betyda oerhört mycket.' 
   image: "/img/powerfist.png"
   imagealt: En kraftfull näve för marketing automation
 when:
@@ -31,7 +31,7 @@ when:
   - text: Om sajten har bra trafik men få konverteringar
     explanation: 'Många besökare men få konverteringar är ett tydligt tecken på att flödet på sajten inte fungerar som det ska.'
   - text: 'Om du vet med dig att din webbplats är spretig'  
-    explanation: 'Det här är ett vanligt problem med sajter som byggts upp "lite organiskt". Det finns lite gott och blandat men vet vi riktigt vad som händer här? Kanske har syftet med tiden ändrats men gamla strukturer ligger kvar, med den ursprungliga tanken. Det gör lätt att det blir lite rörigt – vilket självklart återspeglas i besökarnas beteende. '
+    explanation: 'Det här är ett vanligt problem med sajter som byggts upp "lite organiskt". Det finns lite gott och blandat men vet vi riktigt vad som händer här?Kanske har syftet med tiden ändrats men gamla strukturer ligger kvar, med den ursprungliga tanken. Det gör lätt att det blir lite rörigt – vilket självklart återspeglas i besökarnas beteende. '
   - text: Om folk faktiskt googlar på saker som rör det du pysslar med
     explanation: 'Det är kanske en självklarhet, men om du till exempel har en helt ny sorts produkt eller tjänstevariant som ingen känner till är det troligen ingen som helt plötsligt börjar söka på det. Man vill ju inte låta trist men så är det. SEO är inget för dig – än så länge.  Det kan det absolut bli. Men troligare är att du först måste få människor att börja undra över din produkt, och då passar tex annonsering på sociala medier bättre. (Brasklapp: För vissa innovativa företag är det här rådet gräsligt dåligt. Möjligen kan din produkt lösa ett problem som många googlar på och då kan du flytta in SEO i startelvan igen!)'
 promise:

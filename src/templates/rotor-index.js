@@ -8,13 +8,14 @@ import RotorButton from "../components/RotorButton"
 export const RotorIndexTemplate = ({text, buttonText, buttonLink}) => {
     return (
   <div>
-    {text}
+    <p dangerouslySetInnerHTML={{ __html: text }}></p>
     <RotorButton buttonText={buttonText} buttonLink={buttonLink} />
     </div>      
     )
 }
 const RotorIndex = ({data}) => {
     const { frontmatter } = data.markdownRemark;
+    
 
     return (
         <Layout>
