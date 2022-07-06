@@ -3,18 +3,20 @@ templateKey: index-page
 
 title: Rotor Digitalbyrå
 hero:
-  headline: Pumpa upp ditt företag i maxfart
-  subtext: "Digital marknadsföring: fler leads, fler kunder, ökad försäljning."
+  headline: Börja räkna i miljoner kronor och inte i klick
+  headlineimg: /img/headline start.png
+  subtext: "Få ett system för digital marknadsföring som skapar leads, bokade möten, och ökad försäljning"
+  subtext2: '(Och sluta jaga räckvidd, klick, trafik eller andra KPI:er som inte gör någon skillnad för ditt bankkonto)' 
   image: "/img/rotor-customer-racing.png"
   imagealt: Digital marknadsföring i racingpaket
   background: "/img/hero-back.svg"
   cta: 
-    text: Hur mycket spenderar de på sin annonsering? Och hur mycket trafik drar de in?
+    text: Vill du kunna mäta exakt vad varje lead, kundmöte och försäljning kostar? Få svar på varför dina annonser på Google och sociala medier inte fungerar? Förstå hur du på egen hand kan bygga upp ett helt automatiserat säljflöde - en supersäljare som jobbar 24/7 alla 365 dagar på året?
     buttonText: Klicka här
     buttonLink: /products/
-    headline: Vad gör dina konkurrenter?
+    headline: Rotors säljsystem – byggt för att öka din försäljning
 challenge:
-  headline: Så får du inte fler kunder
+  headline: Så gör du för att inte öka din försäljning
   text: Du har en fantastisk produkt. En lysande affärsidé. Världens bästa tjänst. <br><br>
         Så sitter du där. <em>En fiskare framför en sjö full med fisk. Men utan metspö, utan drag och utan agn. En jättestor påse att lägga fisk i som gapar tomt.</em>
         Du funderar på var din nästa kund ska komma ifrån...?
@@ -30,21 +32,20 @@ challenge:
         
 
 solution:
-  headline1: Nya kunder, hitåt!
+  headline1: Ökad försäljning, hitåt!
   text1: ...Och det finns ett annat sätt.<br><br>
-        När du sitter där om ett år kommer du att undra varför du inte gjorde så från första början.
-        Råden du fick från höger och vänster kommer att kännas precis lika ogrundade som de var.
-        Och du fick gissa. Det känns ju sådär, troligtvis.<br><br>
-        <em>Istället har du nu fått en nyasfalterad väg som doftar sådär varmt tjärigt, med vägskyltar i oblekta färger. En väg framåt som vilar på en beprövad metod.</em><br><br>
-        Vårt ramverk kombinerar insikter om försäljning, marknadsföring, bolagsbyggande, psykologi och tekniska lösningar.<br><br>
-        Vi kallar det Rotor Uplift. Utifrån denna skapar vi strategier, säljande annonser, e-post-marknadsföring, copy, videos och hela säljflöden. <br><br>
+        Om ett år kommer du att undra varför du inte tagit den här smartare approachen från första början.
+        Tidigare fick du gissa, för du visste helt enkelt inte vad som funkade. Råden kom från höger och vänster. Det var ju helt sjukt, vad höll du på med?<br><br>
+        <em>Istället har du nu fått en tydligt utstakad, nyasfalterad väg som doftar sådär varmt tjärigt, med vägskyltar i oblekta färger.</em><br><br>
+        Rotors säljsystem kombinerar insikter om försäljning, marknadsföring, bolagsbyggande, psykologi och tekniska lösningar.<br><br>
+        Utifrån denna skapar vi strategier, säljande annonser, e-post-marknadsföring, copy, videos och hela säljflöden. <br><br>
         Det som fungerar tar vi med oss. Det som inte fungerar tar vi också med oss.<br><br>
-        Rotor Uplift är i ständig utveckling för att leverera maximalt resultat för dig.<br><br>
+        Säljsystemet är i ständig utveckling för att leverera maximalt resultat för dig.<br><br>
   image1: "/img/creme bottle frilagd.png"
   imagealt1: "kräm för digital marknadsföring"
   image2: "/img/quickfix.png"     
   imagealt2: "quickfix för snabb digital marknadsföring"
-
+  headline2: 'Ute efter en quickfix? Sorry.'
   text2: Vi säljer ingen quickfix. <br><br>
         Det finns inga tyvärr. Det hade varit kul. Men nej.<br><br>
         Ibland går det fort. Ibland tar det lite längre tid. 
@@ -59,7 +60,7 @@ solution:
         <em>Men har du försökt hacka lök med en stekpanna? (Ouch!)</em><br><br>
         Troligen är det en vass kniv du behöver. <br><br>
 
-        Rotor Uplift ger dig en exklusiv japansk santoku-kniv med damaskerat stål när du ska bjuda på sushi omakase-skrytmiddag.<br><br>
+        Rotor är en <h1>digitalbyrå</h1> med ett säljssystem ger dig en exklusiv japansk santoku-kniv med damaskerat stål när du ska bjuda på sushi omakase-skrytmiddag.<br><br>
         Och en hederlig gjutjärnspanna till pannbiffen med lök. Inte tvärtom.<br><br>
         <em>Du får inga hitte-på-lösningar utan saker som funkar på riktigt.</em> <br><br>
         Du får en stolt byrå som bryr sig lika mycket om dig som om sitt eget bolag.
@@ -88,12 +89,15 @@ who:
 
   headline2: "Våra kunder börjar ofta våra samarbeten med att säga:"
   text2:
-          - 'Vi tycker att det är svårt att veta var man ska börja – men vi behöver öka vår försäljning'
-          - 'Vi har redan en strategi, men den har funkat sådär ärligt talat. Kan vi göra det bättre på något sätt?'
-          - 'Vi har en strategi och ett pågående arbete men vi behöver accelerera'
-          - 'Vi ser mossiga ut i jämförelse med våra konkurrenter'
+          - 'Vi tycker att det är svårt att veta var man ska börja – är det annonsering på Google, Facebook eller vi kanske borde testa LinkedIn?'
+          - 'Vi ser ingen ökad försäljning trots att vi kört digital annonsering ett tag nu. Det kanske inte funkar för oss eller vad tror ni?'
+          - 'Vi har testat flera olika sorters byråer men det är nästan ingen som egentligen pratat om vad som gör att vi tjänar pengar.'
+          - 'Vi säljer bara när vi kör annonskampanjer och ingenting däremellan.'
+          - 'Så fort vi drar upp mediebudgeten blir varje ny kund för dyr.'
+          - 'Vi ser mossiga ut i jämförelse med våra konkurrenter.'
           - 'Vi har en ny produkt som vi vill promota – kan ni hjälpa oss?'
           - 'Vi behöver hjälp med en sajt/ landningssida/ film/ grafisk profil/ digital strategi'   
+
 
 model:
   headline: En modell för en säljande digital marknadsföring
@@ -102,7 +106,19 @@ model:
   image: /img/home-jumbotron.jpg
   ctatext: Klicka här
 customers:
-  headline: Varumärken
+  customer1: Freebo
+  headline1: '"ROI:n på vårt samarbete är smått otroliga + X%"'
+  text1: '"Rotor och deras system har ett outröttligt fokus på försäljning. Det ger resultat och vår försäljning från digital annonsering ökar stadigt varje månad – vi pratar mångmiljonbelopp. Vi har aldrig haft så bra koll som idag – jag vet exakt vad varje lead, mötesbokning och försäljing kostar men även om kunden kom in via digital annonsering, SEO eller någon av våra fysiska säljaktiviteter. Vi håller på att utveckla och fördjupa vårt samarbete med Rotor för att accellerera vår försäljning ytterligare."'
+  name1: Piia Ringstad, marknadschef
+  bossimage1: /img/piia ringstad freebo.png
+  image1: "/img/test number.png"
+  customer2: Swedish Stirling
+  headline2: '+X% av nya aktieägare under 2021'
+  text2: '"Tack vare Rotor har vi helt ändrat våra kommunikationsinsatser. Från att ha varit en mer traditionell köpare av banners hos finansiella tidningar lägger vi nu majoriteten av vårt fokus på egna kampanjer i sociala medier. Utväxlingen är enorm. Vi når många många fler och mycket billigare. Men det viktigasate som var måttstocken när vi började samarbeta med Rotor - vi har ökat vår ägarskara med småsparare med X% senaste året."'
+  name2: Sven Ljungberg, marknadschef
+  bossimage2: /img/sven ljungberg swedish stirling.png
+  image2: "/img/test number.png"
+  
 cta:
   headline: Testrubrik
   text: Testtexk

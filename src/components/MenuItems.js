@@ -28,15 +28,15 @@ const MenuItems = () => (
     <div className="navbar-start">
       {/* <pre>{JSON.stringify(data.allMarkdownRemark.edges[0].node.frontmatter.title, null, 4)}</pre> */}
     <Link className="navbar-item navbar-hover-line" to="/about">
-      om oss
+      Om oss
     </Link>
     
     <Link className="navbar-item navbar-hover-line" to="/contact">
-      kontakt
+      Kontakt
     </Link>
    <div className="navbar-item has-dropdown is-hoverable">
     <Link className="navbar-link is-hoverable" to="/contact/examples">
-      verktygslådan
+      Verktygslådan
     </Link>
     <div className="navbar-dropdown is-boxed">
     {data.allMarkdownRemark.edges.map ((tool) => 

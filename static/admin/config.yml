@@ -1,5 +1,5 @@
 backend:
-  name: /rotor-data/gatsby-starter-netlify-cms-bu
+  name: rotor-data/gatsby-starter-netlify-cms-bu
   branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"

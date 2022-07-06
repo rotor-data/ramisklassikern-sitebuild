@@ -1,15 +1,43 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import { StaticImage } from "gatsby-plugin-image"
+
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent, hero }) => {
   const PageContent = contentComponent || Content;
+  const heroImage = getImage(hero.image)
 
   return (
+    <div>
+    <div style={{ display: "grid" }}>
+    <GatsbyImage image={heroImage} alt={hero.imagealt} style={{
+          gridArea: "1/1",
+          // You can set a maximum height for the image, if you wish.
+          // maxHeight: 600,
+        }}/>
+        <div
+        style={{
+          // By using the same grid area for both, they are stacked on top of each other
+          gridArea: "1/1",
+          position: "absolute",
+          left:"50%",
+          bottom:"25%",
+          // This centers the other elements inside the hero component
+          placeItems: "center",
+          display: "grid",
+        }}
+      >
+        {/* Any content here will be centered in the component */}
+        <h2 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile"> Hero text</h2>
+      </div>
+      </div>
     <section className="section section--gradient">
+      
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -23,6 +51,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
@@ -34,6 +63,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -41,6 +71,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        hero={frontmatter.hero}
       />
     </Layout>
   );
@@ -58,6 +89,17 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        hero {
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100, 
+                width: 1600,
+                layout: FULL_WIDTH
+                )
+            }
+          }
+        }
       }
     }
   }

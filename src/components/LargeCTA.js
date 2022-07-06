@@ -48,7 +48,7 @@ const LargeCTA = () => {
                 Därför att rätt verktyg för dig är det som skapar intäkter på kort eller lång sikt, på effektivast möjliga sätt.
                 Oavsett vad verktyget kallas. 
                 <br/><br/>Vi kan verktygen. Men framför allt har vi en plattform för att bygga ditt eget säljande system, med de verktyg du behöver för ökad lönsamhet.
-                Vill du veta vad Rotor Uplift kan vara för dig?
+                Vill du veta vad Rotors säljsystem kan vara för dig?
                 </p>
                 <RotorButton buttonText="Klicka här" buttonLink="/kontakt"/>
                 <div style={{height:'100px'}}>

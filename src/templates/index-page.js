@@ -20,14 +20,21 @@ import LargeCTA from "../components/LargeCTA";
 
 
 
+
 export const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers }) => {
 
   const heroImage = getImage(hero.image)
+  const headlineImage = getImage(hero.headlineimg)
+
   const challengeImage = getImage(challenge.image)
   const solutionImage1 = getImage(solution.image1)
   const solutionImage2 = getImage(solution.image2)
   const solutionImage3 = getImage(solution.image3)
   const whoImage1 = getImage(who.image1)
+  const customerImage1 = getImage(customers.image1)
+  const customerImage2 = getImage(customers.image2)
+  const bossImage1 = getImage(customers.bossimage1)
+  const bossImage2 = getImage(customers.bossimage2)
   const animation = animation1
 
 
@@ -38,13 +45,16 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
       <div style={{
         backgroundImage: `url(${HeroBack})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
       }}>
+       
         <div className="hero-body container pb-6">
           <div className="columns is-desktop is-vcentered my-6">
             <div className="column is-half-desktop is-10-mobile is-offset-1-mobile">
               <div className="has-rainbow-parent">
-                <h1 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4">{hero.headline}</h1>
+              <GatsbyImage image={headlineImage} alt={hero.imagealt} />
+                {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
               </div>
-              <h2 className="has-text-white is-uppercase has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">{hero.subtext}</h2>
+              <h3 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.subtext}</h3>
+              <h3 className="has-text-white has-tight-spacing is-size-4 is-size-5-mobile"><i>{hero.subtext2}</i></h3>
             </div>
             <div className="column is-half-desktop has-text-centered level-right">
               <GatsbyImage image={heroImage} alt={hero.imagealt} />
@@ -118,7 +128,7 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 
           <div className="column is-half-desktop is-half-tablet has-background-info has-text-white my-6 is-relative" style={{zIndex:'1'}}>
             <div className="p-6 has-whirl-right is-10-mobile is-offset-1-mobile">
-              <h2 className="is-size-2 mb-4">{solution.headline1}</h2>
+              <h2 className="is-size-2 mb-4">{solution.headline2}</h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text2 }}></p>
             </div>
 
@@ -180,6 +190,40 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 <div className="py-6 has-background-info">
 <LogoGallery />
 </div>
+
+<div className="has-background-info" style={{height:'200px'}}></div>
+<div className="hero-body container pb-6" style={{transform:'translateY(-150px)'}}>
+          <div className="columns mb-6">
+            <div className="column is-5 has-background-warning p-6 mb-3">
+              <GatsbyImage image={customerImage1} alt={hero.imagealt} />
+              <div className="mt-5 has-text-weight-bold has-background-link is-inline-block p-1">{customers.customer1}</div>
+              <h3 className="is-size-4 mb-4 mt-3">{customers.headline1}</h3>
+              <p dangerouslySetInnerHTML={{ __html: customers.text1 }}></p>
+              <div className="has-text-centered mt-4">
+                <GatsbyImage image={bossImage1} alt={hero.imagealt}/>
+              </div>
+              
+              <p className="mt-4 has-text-centered"><i>{customers.name1}</i></p>
+              
+            </div>
+           
+            <div className="column is-5 is-offset-1 has-background-warning p-6 mb-3">
+              <GatsbyImage image={customerImage2} alt={hero.imagealt} />
+              <div className="mt-5 has-text-weight-bold has-background-link is-inline-block p-1">{customers.customer2}</div>
+              <h3 className="is-size-4 mb-4 mt-3">{customers.headline2}</h3>
+              <p dangerouslySetInnerHTML={{ __html: customers.text2 }}></p>
+              <div className="has-text-centered mt-4">
+                <GatsbyImage image={bossImage2} alt={hero.imagealt}/>
+              </div>
+              
+              <p className="mt-4 has-text-centered"><i>{customers.name2}</i></p>
+            </div>
+          </div>
+      
+
+
+
+        </div>
       
 
       {/*<LottieScroll boxHeight={200} animation={animation1} mode={"scroll"} type = {"seek"} frames ={[0, 95]} visibility={[0.4, 0.9]} />*/}
@@ -218,7 +262,13 @@ query RotorStartTemplate {
       path
       hero {
         headline
+        headlineimg {
+          childImageSharp {
+            gatsbyImageData(quality: 50, width: 600)
+          }
+        }
         subtext
+        subtext2
         imagealt
         image {
           childImageSharp {
@@ -244,6 +294,7 @@ query RotorStartTemplate {
       }
       solution {
         headline1
+        headline2
         text1
         imagealt1
         image1 {
@@ -292,8 +343,40 @@ query RotorStartTemplate {
         ctatext
       }
       customers {
-        headline
+        customer1
+        headline1
+        text1
+        name1
+        bossimage1 {
+          childImageSharp {
+            id
+            gatsbyImageData(quality: 100, width: 100)
+          }
+        }
+        image1 {
+          childImageSharp {
+            id
+            gatsbyImageData(quality: 100, width: 800)
+          }
+        }
+        customer2
+        headline2
+        text2
+        name2
+        bossimage2 {
+          childImageSharp {
+            id
+            gatsbyImageData(quality: 100, width: 100)
+          }
+        }
+        image2 {
+          childImageSharp {
+            id
+            gatsbyImageData(quality: 100, width: 800)
+          }
+        }
       }
+      
     }
   }
 }
