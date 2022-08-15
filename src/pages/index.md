@@ -5,16 +5,16 @@ title: Rotor Digitalbyrå
 hero:
   headline: Börja räkna i miljoner kronor och inte i klick
   headlineimg: /img/headline start.png
-  subtext: "Få ett system för digital marknadsföring som skapar leads, bokade möten, och ökad försäljning"
+  subtext: "Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning"
   subtext2: '(Och sluta jaga räckvidd, klick, trafik eller andra KPI:er som inte gör någon skillnad för ditt bankkonto)' 
-  image: "/img/rotor-customer-racing.png"
+  image: "/img/dough-rain-rotor-paraply.png"
   imagealt: Digital marknadsföring i racingpaket
   background: "/img/hero-back.svg"
   cta: 
-    text: Vill du kunna mäta exakt vad varje lead, kundmöte och försäljning kostar? Få svar på varför dina annonser på Google och sociala medier inte fungerar? Förstå hur du på egen hand kan bygga upp ett helt automatiserat säljflöde - en supersäljare som jobbar 24/7 alla 365 dagar på året?
+    text: Exakt vad en lead, ett kundmöte och en försäljning kostar dig? Varför dina annonser på Google och sociala medier inte fungerar? Hur du bygger upp ett säljflöde som är helt automatiserat?
     buttonText: Klicka här
     buttonLink: /products/
-    headline: Rotors säljsystem – byggt för att öka din försäljning
+    headline: Har du inte koll på...
 challenge:
   headline: Så gör du för att inte öka din försäljning
   text: Du har en fantastisk produkt. En lysande affärsidé. Världens bästa tjänst. <br><br>

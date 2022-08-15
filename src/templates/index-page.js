@@ -42,7 +42,43 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
     <div>
 
       {/*hero section*/}
-      <div style={{
+
+      <div style={{ display: "grid", position: "relative" }}>
+    <GatsbyImage image={heroImage} alt={hero.imagealt} style={{
+          gridArea: "1/1",
+         
+          // You can set a maximum height for the image, if you wish.
+          // maxHeight: 600,
+        }}/>
+        <div
+        style={{
+          // By using the same grid area for both, they are stacked on top of each other
+          gridArea: "1/1",
+          position: "absolute",
+          width: "100%",
+          left:"0%",
+          top:"10%",
+          // This centers the other elements inside the hero component
+          placeItems: "center",
+          display: "grid",
+        }}
+      >
+        {/* Any content here will be centered in the component */}
+        <h2 className="has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
+        <div className="column is-half-desktop is-offset-one-quarter is-10-mobile is-offset-1-mobile">
+              <div>
+              <GatsbyImage image={headlineImage} alt={hero.imagealt} />
+                {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
+              </div>
+              <h3 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.subtext}</h3>
+              <h3 className="has-text-white has-tight-spacing is-size-4 is-size-5-mobile"><i>{hero.subtext2}</i></h3>
+            </div>
+        {hero.text}
+        </h2>
+      </div>
+      </div>
+
+{/*       <div style={{
         backgroundImage: `url(${HeroBack})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
       }}>
        
@@ -51,13 +87,13 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
             <div className="column is-half-desktop is-10-mobile is-offset-1-mobile">
               <div className="has-rainbow-parent">
               <GatsbyImage image={headlineImage} alt={hero.imagealt} />
-                {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
+              
               </div>
               <h3 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.subtext}</h3>
               <h3 className="has-text-white has-tight-spacing is-size-4 is-size-5-mobile"><i>{hero.subtext2}</i></h3>
             </div>
             <div className="column is-half-desktop has-text-centered level-right">
-              <GatsbyImage image={heroImage} alt={hero.imagealt} />
+     
 
             </div>
           </div>
@@ -68,7 +104,9 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 
 
         </div>
-      </div>
+      </div> */}
+
+
       {/*challenge section*/}
       <div className="hero-body has-background-white">
         <div className="columns">
@@ -264,7 +302,7 @@ query RotorStartTemplate {
         headline
         headlineimg {
           childImageSharp {
-            gatsbyImageData(quality: 50, width: 600)
+            gatsbyImageData(quality: 100, width: 600)
           }
         }
         subtext
@@ -272,7 +310,7 @@ query RotorStartTemplate {
         imagealt
         image {
           childImageSharp {
-            gatsbyImageData(quality: 50, width: 450)
+            gatsbyImageData(quality: 100, width: 1920, layout: FULL_WIDTH, transformOptions: { fit: OUTSIDE, cropFocus: NORTH })
           }
         }
         cta {
