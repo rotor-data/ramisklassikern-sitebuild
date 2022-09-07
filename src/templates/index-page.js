@@ -43,7 +43,7 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
 
       {/*hero section*/}
 
-      <div style={{ display: "grid", position: "relative" }}>
+      <div style={{ display: "grid", position: "relative", height:'700px' }}>
     <GatsbyImage image={heroImage} alt={hero.imagealt} style={{
           gridArea: "1/1",
          

@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/rotor-logo-on-dark.svg";
+import logo from "../img/rotor-logo.svg";
 import MenuItems from "./MenuItems";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 
 const Navbar = class extends React.Component {
+
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -44,6 +47,7 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="Rotor logo" style={{ width: "125px" }} />
             </Link>
+           
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -65,6 +69,7 @@ const Navbar = class extends React.Component {
             <MenuItems/>
             
             <div className="navbar-end has-text-centered">
+              
             </div>
           </div>}
         </div>

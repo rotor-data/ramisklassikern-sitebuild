@@ -6,9 +6,10 @@ import RotorCTA from "../components/RotorCTA";
 import StarDivider from "../components/Star-divider";
 import Accordion from "../components/accordion";
 import RotorBox from "../components/RotorBox";
+import Linkify from "../components/LinkifyTools";
 
 
-export const MarketingAutomationTemplate = ({hero, challenge, goal, when, promise, what}) => {
+export const MarketingAutomationTemplate = ({title,hero, challenge, goal, when, promise, what}) => {
 
     const goalImage = getImage(goal.image)
     const heroImage = getImage(hero.image)
@@ -107,10 +108,13 @@ return (
         <h2 className="is-size-2 has-text-centered-mobile mb-3">{when.headline}</h2>
         </div>  
       <div className="column has-background-white">
+        
       {when.texts.map(({text, explanation}) => (
         
        <div> 
-       <Accordion text={text} explanation={explanation}/>
+        {/* Linkify is excluding current page as link object */}
+       <Accordion text={text} explanation={<Linkify linkText={explanation} exclude={title}></Linkify>}/>
+
        </div>
        ))}
       </div>
@@ -160,6 +164,7 @@ const MarketingAutomation = ({ data }) => {
     return (
       <Layout>
         <MarketingAutomationTemplate
+          title={frontmatter.title}
           hero={frontmatter.hero}
           challenge={frontmatter.challenge}
           goal={frontmatter.goal}
@@ -178,6 +183,7 @@ const MarketingAutomation = ({ data }) => {
     markdownRemark(id: { eq: $id } ) {
       frontmatter {
         path
+        title
         hero {
           headline
           subtext

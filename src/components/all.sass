@@ -40,11 +40,21 @@ $body-background-color: $rotor-turq-light
 $body-size: 20px !default
 $family-secondary: $bodytext
 $navbar-background-color: rgb(164, 218, 222,0.8)
+$card-background-color: $rotor-light-pink
+
+$card-radius: 0.25rem !default
+$shadow: -0.25em 0.25em 0em 0em $rotor-dark-pink !default
+
+
 
 /*! purgecss start ignore */
 /* em tags colours (marker pen). Different when on same colour background. */
 .has-background-warning em
   background-color: $link
+
+body 
+  -webkit-overflow-scrolling: touch
+  overflow: hidden
 
 em
   background-color: $warning
@@ -89,6 +99,10 @@ blockquote:after
   right: -54px
   z-index:1
 
+
+
+
+
 /*! purgecss end ignore */
 //pink-blob for headlines
 .has-pink-blob
@@ -107,6 +121,7 @@ blockquote:after
   margin-right: 9px
   line-height: 0.9
   color: $rotor-dark-pink
+
 
 
 //accordion CSS
@@ -227,6 +242,13 @@ h6
     position: absolute
     top: -3%
     right: -85%
+
+.has-star-border 
+  border-image-source: url(/img/star-border.png)!important
+  border: 40px solid transparent
+  border-image-slice: 33%
+  border-image-repeat: round
+
 .has-star-swipe
     background-image: url(/img/star-swipe.svg)
     background-size: cover

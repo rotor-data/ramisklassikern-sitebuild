@@ -33,7 +33,7 @@ when:
   - text: Du (eller din marknadsföringspartner) är riktigt vass på effektiv google-copy. 
     explanation: Testa själv. Googla på något du själv är intresserad av och se vilka annonser som dyker upp. Om alla annonser ser likadana ut kommer ditt val att vara slumpmässigt. En annons som verkar trist klickar du troligen inte heller på. Din annons behöver sticka ut och ta plats. Och helst sitta som en smack i planeten på kundens behov.
   - text: Du vet att du har en eftertraktad produkt eller tjänst i ditt sortiment som folk söker efter online.
-    explanation: Om konkurrensen på sökord är väldigt hög kan annonskostnaderna också bli väldigt dyra. Då kan det vara värt att parallellt börja titta på SEO.
+    explanation: Om konkurrensen på sökord är väldigt hög kan annonskostnaderna också bli väldigt dyra. Då kan det vara värt att parallellt börja titta på SEO.</a>
 promise:
   headline: 'Rotor + Google Ads, vad blir det ?'
   text: 'Vi tycker – och vi tror att du håller med oss – att det är dumt att lägga pengar på saker som inte fungerar. Vet vi direkt vad som fungerar? Nej. Det är därför vi har vårt säljande system Rotor Uplift. Det handlar om att ta reda på vad som säljer och sen, när man upptäckt vad det är, trumma på i hundraåttio. Med affärsförståelse lär vi oss sökmönster och hittar sökorden med maximal effekt för minst pengar. Vi hjälper dig också att hitta annonserna som sticker ut bland de andra, med annonstexterna som folk inte bara ser, utan också klickar på. Och vi stannar inte där. Med högkonverterande landningssidor kan du göra googlesökaren till en betalande kund, antingen direkt eller genom fortsatt bearbetning (tex med Marketing Automation). Värt att påminna sig om är att ett klick på en annons inte är samma sak som ett köp.'

@@ -3,8 +3,10 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 import Triangle from "../img/rounded-triangle.svg"
+import { isObject } from 'lodash';
 
 const Accordion = ({text, explanation}) => {
+
 
 
   const [isActive, setIsActive] = useState(false);
@@ -21,7 +23,10 @@ const Accordion = ({text, explanation}) => {
       <h3>{text}</h3>
       <div className={isActive ? 'active-triangle': 'inactive-triangle'}></div>
     </div> 
-    <div className="accordion-content" aria-expanded={isActive}><br></br><p className="autolink" dangerouslySetInnerHTML={{__html: explanation}}></p></div>
+  { isObject(explanation)
+    ?<div className="accordion-content" aria-expanded={isActive}><br></br><p>{explanation}</p></div>
+    :<div className="accordion-content" aria-expanded={isActive}><br></br><p className="autolink" dangerouslySetInnerHTML={{__html: explanation}}></p></div>
+  }
   </div>
 </div>
     </React.Fragment>

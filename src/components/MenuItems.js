@@ -31,7 +31,7 @@ const MenuItems = () => (
       Om oss
     </Link>
     
-    <Link className="navbar-item navbar-hover-line" to="/contact">
+    <Link className="navbar-item navbar-hover-line" to="/kontakta oss">
       Kontakt
     </Link>
    <div className="navbar-item has-dropdown is-hoverable">

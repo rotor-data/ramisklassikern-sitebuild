@@ -7,7 +7,7 @@ templateKey: tools
 
 hero:
   headline: Annonsering på Facebook/Instagram/LinkedIn
-  subtext: 'Facebookannonsering – visa upp dina produkter på ett lönsamt sätt'
+  subtext: 'Facebook-annonsering – visa upp dina produkter på ett lönsamt sätt'
   image: "/img/facebook drum.png"
   cta:
     option: false
