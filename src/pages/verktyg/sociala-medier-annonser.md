@@ -5,6 +5,9 @@ title: Annonsering på sociala medier
 subtitle: 'Facebook/Instagram/LinkedIn – skapa efterfrågan på din produkt'
 templateKey: tools
 
+meta: 
+  description: "Se till att höras och skapa efterfrågan på din produkt."
+
 hero:
   headline: Annonsering på Facebook/Instagram/LinkedIn
   subtext: 'Facebook-annonsering – visa upp dina produkter på ett lönsamt sätt'

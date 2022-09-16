@@ -7,16 +7,18 @@ import StarDivider from "../components/Star-divider";
 import Accordion from "../components/accordion";
 import RotorBox from "../components/RotorBox";
 import Linkify from "../components/LinkifyTools";
+import SEO from "../components/SEO";
 
 
-export const MarketingAutomationTemplate = ({title,hero, challenge, goal, when, promise, what}) => {
+
+export const MarketingAutomationTemplate = ({path, title,meta, hero, challenge, goal, when, promise, what}) => {
 
     const goalImage = getImage(goal.image)
     const heroImage = getImage(hero.image)
 
 return (
     <div>
-
+<SEO title={title} description={meta.description} slug={path}/>
       {/*hero section*/}
       <div style={{
         background: 'linear-gradient(45deg, rgba(0,126,132,1) 0%, rgba(239,185,215,1) 100%)',
@@ -164,7 +166,9 @@ const MarketingAutomation = ({ data }) => {
     return (
       <Layout>
         <MarketingAutomationTemplate
+          path={frontmatter.path}
           title={frontmatter.title}
+          meta={frontmatter.meta}
           hero={frontmatter.hero}
           challenge={frontmatter.challenge}
           goal={frontmatter.goal}
@@ -184,6 +188,9 @@ const MarketingAutomation = ({ data }) => {
       frontmatter {
         path
         title
+        meta {
+          description
+        }
         hero {
           headline
           subtext

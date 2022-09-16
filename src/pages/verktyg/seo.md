@@ -5,6 +5,9 @@ title: SEO – Search Engine Optimization
 subtitle: 'För ett stadigt inflöde av nya leads utan dyra annonskostnader'
 templateKey: tools
 
+meta: 
+  description: "Ett stadigt inflöde av nya leads utan dyra annonskostnader."
+
 hero:
   headline: SEO – Search Engine Optimization
   subtext: 'Bygg smart innehåll för långsiktigt inflöde av kunder'

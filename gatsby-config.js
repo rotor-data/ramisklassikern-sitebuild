@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title: "Rotor, en digitalbyrå i Stockholm",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "Rotor är en digitalbyrå i Stockholm. Vi skapar ökad försäljning genom digital marknadsföring.",
+    siteUrl: "https://rotormediagroup.se"  
   },
   plugins: [
     "gatsby-plugin-react-helmet",

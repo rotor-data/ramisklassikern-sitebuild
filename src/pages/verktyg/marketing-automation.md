@@ -2,9 +2,12 @@
 
 
 path: "/verktyg/marketing-automation"
-title: marketing automation
+title: Marketing automation
 subtitle: 'Tappa inte bort dina leads'
 templateKey: tools
+
+meta: 
+  description: "Ge inte upp de som är närmast att bli dina kunder."
 
 hero:
   headline: Marketing Automation

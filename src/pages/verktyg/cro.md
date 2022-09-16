@@ -5,6 +5,8 @@ title: CRO – Conversion Rate Optimization
 subtitle: 'Se till att dina kunder konverterar på din webbplats'
 templateKey: tools
 
+meta: 
+  description: "Se till att få bättre konvertering på din webbplats."
 hero:
   headline: CRO – Conversion Rate Optimization
   subtext: 'Se till att dina kunder konverterar på din webbplats'

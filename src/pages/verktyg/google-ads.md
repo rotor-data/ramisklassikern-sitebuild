@@ -4,6 +4,9 @@ title: Google Ads – Adwords
 subtitle: 'Här finns de – alla dina mest köpsugna kunder'
 templateKey: tools
 
+meta: 
+  description: "Få tag på dina köpsugna google-kunder"
+
 hero:
   headline: Google Ads – Adwords
   subtext: 'Här finns de – alla dina mest köpsugna kunder'
