@@ -72,12 +72,6 @@ module.exports = {
               destinationDir: "static",
             },
           },
-          {
-            resolve: 'gatsby-plugin-sitemap',
-            options: {
-              exclude: ['/blog', '/admin'],
-            },
-          },
         ],
       },
     },
