@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import { StaticImage } from "gatsby-plugin-image"
-
-
-import Triangle from "../img/rounded-triangle.svg"
 import { isObject } from 'lodash';
 
 const Accordion = ({text, explanation}) => {
@@ -13,8 +9,8 @@ const Accordion = ({text, explanation}) => {
   return (
     <React.Fragment>
 
-      <div className="accordion columns" onClick={() => setIsActive(!isActive)}>
-  <div onMouseLeave={() => setIsActive(false)} className={isActive ? 'accordion-active accordion-item column p-5 has-background-info has-text-white' : 'accordion-item column p-5' } >
+      <div className="accordion columns" role="presentation" onClick={() => setIsActive(!isActive)}>
+  <div role="presentation" onMouseLeave={() => setIsActive(false)} className={isActive ? 'accordion-active accordion-item column p-5 has-background-info has-text-white' : 'accordion-item column p-5' } >
     <div
       className="accordion-title is-size-5"
       

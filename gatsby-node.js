@@ -4,12 +4,13 @@ const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage, deletePage } = actions
 
   return graphql(`
   {
     allMarkdownRemark(
       limit: 1000
+      filter: {frontmatter: {templateKey: {ne: "blog-post"}}}
     ) {
       edges {
         node {
@@ -54,7 +55,7 @@ exports.createPages = ({ actions, graphql }) => {
 
 
     posts.forEach((edge) => {
-      if (edge.node.frontmatter.templateKey === "tools") {
+      if (edge.node.frontmatter.templateKey === "tools" ) {
       const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
@@ -82,7 +83,7 @@ exports.createPages = ({ actions, graphql }) => {
     tags = _.uniq(tags)
 
     // Make tag pages
-    tags.forEach((tag) => {
+    /* tags.forEach((tag) => {
       const tagPath = `/tags/${_.kebabCase(tag)}/`
 
       createPage({
@@ -92,8 +93,10 @@ exports.createPages = ({ actions, graphql }) => {
           tag,
         },
       })
-    })
+    }) */
+    
   })
+  
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

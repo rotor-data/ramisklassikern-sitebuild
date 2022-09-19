@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Rotor, en digitalbyrå i Stockholm",
     description:
-      "Rotor är en digitalbyrå i Stockholm. Vi skapar ökad försäljning genom digital marknadsföring.",
+      "Rotor är en digitalbyrå i Stockholm. Vi skapar ökad försäljning, inte bara klick, genom digital marknadsföring.",
     siteUrl: "https://rotormediagroup.se"  
   },
   plugins: [
@@ -70,6 +70,12 @@ module.exports = {
             resolve: "gatsby-remark-copy-linked-files",
             options: {
               destinationDir: "static",
+            },
+          },
+          {
+            resolve: 'gatsby-plugin-sitemap',
+            options: {
+              exclude: ['/blog', '/admin'],
             },
           },
         ],

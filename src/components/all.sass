@@ -1,5 +1,43 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import url("https://use.typekit.net/zgo0xyu.css")
+// @import url("https://use.typekit.net/zgo0xyu.css")
+
+@font-face
+  font-family: 'sofia-pro'
+  font-style: bold
+  font-weight: 700
+  font-display: swap
+  src: url(/fonts/sofia-pro-700.woff2) format('woff2')
+@font-face
+  font-family: 'sofia-pro'
+  font-style: regular
+  font-weight: 400
+  font-display: swap
+  src: url(/fonts/sofia-pro-400.woff2) format('woff2')
+@font-face
+  font-family: 'sofia-pro-condensed'
+  font-style: bold
+  font-weight: 700
+  font-display: swap
+  src: url(/fonts/sofia-pro-condensed-700.woff2) format('woff2')
+@font-face
+  font-family: 'sofia-pro-condensed'
+  font-style: regular
+  font-weight: 400
+  font-display: swap
+  src: url(/fonts/sofia-pro-condensed-400.woff2) format('woff2')
+@font-face
+  font-family: 'neuzeit-grotesk'
+  font-style: regular
+  font-weight: 400
+  font-display: swap
+  src: url(/fonts/neuzeit-grotesk-400.woff2) format('woff2')
+@font-face
+  font-family: 'neuzeit-grotesk'
+  font-style: bold
+  font-weight: 700
+  font-display: swap
+  src: url(/fonts/neuzeit-grotesk-400.woff2) format('woff2')
+
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -40,15 +78,17 @@ $body-background-color: $rotor-turq-light
 $body-size: 20px !default
 $family-secondary: $bodytext
 $navbar-background-color: rgb(164, 218, 222,0.8)
+$navbar-item-hover-background-color: rgb(164, 218, 222,0.8)
 $card-background-color: $rotor-light-pink
 
 $card-radius: 0.25rem !default
 $shadow: -0.25em 0.25em 0em 0em $rotor-dark-pink !default
 
 
-
 /*! purgecss start ignore */
 /* em tags colours (marker pen). Different when on same colour background. */
+
+
 .has-background-warning em
   background-color: $link
 
@@ -62,7 +102,7 @@ em
   color: $black
 
 blockquote 
-  font-family: 'novecento-sans'
+  font-family: $headline2
   text-transform: uppercase
   font-weight: 600
   padding: 20px 0 20px 0
@@ -302,6 +342,31 @@ a.navbar-link.is-active
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 
+.navbar-menu
+    &.is-active
+      background-color: $primary-invert
+
+.submenu
+  height:0
+  overflow: hidden
+  transition: 400ms ease
+
+.navbar-item
+  &.is-hoverable
+    .navbar-dropdown
+      transition: 400ms ease
+
+  &.is-hoverable:hover
+    .navbar-dropdown
+      display: block
+      max-height: 100vh
+      transition: 400ms ease 
+
+
+.submenu-active
+  height:100vh
+  transition: 400ms ease
+
 
 .content .taglist
   list-style: none
@@ -456,7 +521,7 @@ footer .menu-list
     display: inline-block
     padding: 20px 40px
     color: black
-    font-family: novecento-sans
+    font-family: $headline2
     text-decoration: none
     font-size: 30px
     transition: all 0.5s
@@ -534,7 +599,7 @@ footer .menu-list
     display: inline-block
     padding: 40px 60px
     color: black
-    font-family: novecento-sans
+    font-family: $bodytext
     text-decoration: none
     transition: all 0.5s
     background-color: #f1faee
@@ -599,6 +664,10 @@ footer .menu-list
       margin-left: -50%
       bottom: 13px
 
+@include desktop
+  .submenu
+    height: revert
+    overflow: revert
 
 .logo-wrapper
   display: flex

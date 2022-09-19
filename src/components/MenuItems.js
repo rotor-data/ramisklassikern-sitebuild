@@ -1,8 +1,22 @@
 import React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
+import { useState} from "react"
 
-const MenuItems = () => (
+
+const MenuItems = ({mobile}) => {
+
+
+  const [subActive, setSubActive] = useState(false);
+  const handleClick = (e) => {
+  e.preventDefault();
+  setSubActive(!subActive);
+
+ 
+  };
+
+  return (
+
   <StaticQuery
     query={graphql`
       {
@@ -26,8 +40,8 @@ const MenuItems = () => (
     render={data =>  
         
     <div className="navbar-start">
-      {/* <pre>{JSON.stringify(data.allMarkdownRemark.edges[0].node.frontmatter.title, null, 4)}</pre> */}
-    <Link className="navbar-item navbar-hover-line" to="/about">
+
+    <Link className="navbar-item navbar-hover-line" to="/om oss">
       Om oss
     </Link>
     
@@ -35,25 +49,38 @@ const MenuItems = () => (
       Kontakt
     </Link>
    <div className="navbar-item has-dropdown is-hoverable">
-    <Link className="navbar-link is-hoverable" to="/contact/examples">
+    <div className="navbar-link is-hoverable"
+    role="menubar"
+    onClick={handleClick}
+    onKeyPress ={handleClick}
+    >
       Verktygslådan
-    </Link>
-    <div className="navbar-dropdown is-boxed">
-    {data.allMarkdownRemark.edges.map ((tool) => 
-
+    </div>
+    <div
+    
+    className={`
+    navbar-dropdown is-boxed
+    ${subActive && mobile === 'is-active'?'submenu-active':''}
+    ${!subActive && mobile === 'is-active'?'submenu':''}
+    `} 
+    >
+    {data.allMarkdownRemark.edges.map ((tool,i) => 
       <Link className="navbar-item is-flex-direction-column is-align-items-start" to={tool.node.frontmatter.path}>
      <h3 className="is-size-5 is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
       <p className="is-family-secondary" >{tool.node.frontmatter.subtitle}</p>
+    
     </Link>
 
     )}
    
   </div>
+  
   </div> 
   </div>
   }
   ></StaticQuery>
-)
+
+)}
 
 export default MenuItems
 

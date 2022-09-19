@@ -38,7 +38,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-fixed-top is-spaced is-size-5 is-size-2-touch"
+        className="navbar is-fixed-top is-spaced is-size-5 is-size-3-touch"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -66,7 +66,7 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <MenuItems/>
+            <MenuItems mobile={`${this.state.navBarActiveClass}`} />
             
             <div className="navbar-end has-text-centered">
               

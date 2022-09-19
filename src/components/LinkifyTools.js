@@ -13,11 +13,11 @@ const Linkify = ({linkText, exclude}) => {
   
   const textLower = linkText.toLowerCase();
   const linking = (el) => {
-    if (el == "google ads") return "../google-ads";
-    if (el == "facebook" | el == "annonsering på sociala medier")  return "../sociala-medier-annonser";
-    if (el == "seo") return "../seo";
-    if (el == "marketing automation") return "../marketing-automation";
-    if (el == "cro") return "../cro"
+    if (el === "google ads") return "../google-ads";
+    if (el === "facebook" | el === "annonsering på sociala medier")  return "../sociala-medier-annonser";
+    if (el === "seo") return "../seo";
+    if (el === "marketing automation") return "../marketing-automation";
+    if (el === "cro") return "../cro"
 
   }
   

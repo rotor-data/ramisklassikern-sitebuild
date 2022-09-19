@@ -1,7 +1,6 @@
 import React from "react";
 import RotorButton from "./RotorButton";
 import CtaBackground from "../svg/large-cta-background.svg"
-import { GatsbyImage } from "gatsby-plugin-image";
 
 
 const LargeCTA = () => {

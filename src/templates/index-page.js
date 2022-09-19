@@ -1,27 +1,17 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout";
-import RotorCTA from "../components/RotorCTA";
 import StarDivider from "../components/Star-divider";
-
-import RotorButton from "../components/RotorButton"
 import RotorBox from "../components/RotorBox"
-import Lottie from "../components/Lottie";
-import animationData from "../animations/rotor_anim_logo.json"
-import animation1 from "../animations/rotor_anim_logo.json";
-import LottieScroll from "../components/LottieScroll";
 import LogoGallery from "../components/LogoGallery";
-import HeroBack from "../img/hero-back.svg"
-
 import UpwindBack from "../img/upwind-back.svg"
-import Accordion from "../components/accordion";
 import LargeCTA from "../components/LargeCTA";
 
 
 
 
-export const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers }) => {
+const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers }) => {
 
   const heroImage = getImage(hero.image)
   const headlineImage = getImage(hero.headlineimg)
@@ -35,7 +25,7 @@ export const IndexPageTemplate = ({ hero, challenge, solution, who, model, custo
   const customerImage2 = getImage(customers.image2)
   const bossImage1 = getImage(customers.bossimage1)
   const bossImage2 = getImage(customers.bossimage2)
-  const animation = animation1
+
 
 
   return (

@@ -1,17 +1,16 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout";
 import RotorCTA from "../components/RotorCTA";
 import StarDivider from "../components/Star-divider";
 import Accordion from "../components/accordion";
-import RotorBox from "../components/RotorBox";
 import Linkify from "../components/LinkifyTools";
 import SEO from "../components/SEO";
 
 
 
-export const MarketingAutomationTemplate = ({path, title,meta, hero, challenge, goal, when, promise, what}) => {
+const MarketingAutomationTemplate = ({path, title,meta, hero, challenge, goal, when, promise, what}) => {
 
     const goalImage = getImage(goal.image)
     const heroImage = getImage(hero.image)
