@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout";
-import { HTMLContent } from "../components/Content";
+import Content, { HTMLContent } from "../components/Content";
 import StarDivider from "../components/Star-divider";
 import TeamBox from "../components/TeamBox";
 
@@ -11,7 +11,7 @@ import TeamBox from "../components/TeamBox";
 
 // eslint-disable-next-line
 export const AboutPageTemplate = ({ title, content, contentComponent, hero, why, us, team }) => {
-
+  const PageContent = contentComponent || Content;
   const heroImage = getImage(hero.image);
   const whyImage = getImage(why.image);
   
@@ -111,7 +111,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, why,
     <div className="columns is-multiline is-centered">
     {team.map(({name, title, image}, i) => (
         <div className="column mx-3" style={{display:'flex',justifyContent:'center'}}>
-          <div style={{transform: `rotate(``${((i%2)?2:-2)}``deg)`}}>
+          <div style={{transform: `rotate(`+`${((i%2)?2:-2)}`+`deg)`}}>
          <TeamBox name={name} title={title} image={image}></TeamBox>
          </div>
  
