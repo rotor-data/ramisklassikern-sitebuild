@@ -179,7 +179,6 @@ blockquote:after
   background-color: $rotor-offwhite
   transition: 500ms ease-out 
 
-
 .accordion-content
   overflow: hidden
   max-height: 1000px
@@ -202,6 +201,41 @@ blockquote:after
     max-height: 0px
     transition: max-height 0.5s cubic-bezier(0, 1, 0, 1)
 
+.accordion-content a
+  color: $warning!important
+  font-family: $headline2
+  font-weight: 700
+
+//accordion show/hide for faq
+
+.faq-wrapper
+  font-family: $headline2
+  display: flex
+  align-items: left
+  flex-direction: column
+  hyphens: auto
+  overflow: hidden
+  position: relative
+  padding-left:20px
+  cursor: pointer
+  &::before
+    content:""
+    position: absolute
+    left:0
+    border: black 5px
+
+
+
+.faq-item-show
+  max-height: 1000px
+  transition: max-height 1s ease-in-out
+  overflow: hidden
+  
+
+.faq-item-hide
+  max-height: 0px
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1)
+
 
 .active-triangle, 
 .inactive-triangle
@@ -214,11 +248,15 @@ blockquote:after
 .active-triangle
   transform: rotate(-90deg)
   transition: 500ms ease-out
-  background: $rotor-offwhite
+  background: $white
 
 .inactive-triangle
   transition: 500ms ease-out 
-  background: $rotor-black
+  background: $black
+  &.triangle-right
+    transform: rotate(-180deg)
+
+
 h1
   display: unset
 h2
@@ -345,6 +383,12 @@ a.navbar-link.is-active
 .navbar-menu
     &.is-active
       background-color: $primary-invert
+
+//size of burger icon
+
+.navbar-burger span
+  height: 3px!important
+  width: 21px!important
 
 .submenu
   height:0

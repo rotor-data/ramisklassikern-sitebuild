@@ -102,10 +102,10 @@ return (
 
       {/* when section */}
       <div className="hero-body has-background-white">
-      <div className="columns hero-body mb-0">
+      <div className="columns is-desktop mb-0">
           <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
               <div className="columns">
-        <div className="column">
+        <div className="column is-5-desktop">
         <h2 className="is-size-2 has-text-centered-mobile mb-3">{when.headline}</h2>
         </div>  
       <div className="column has-background-white">

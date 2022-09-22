@@ -2,6 +2,8 @@
 templateKey: 'about-page'
 path: /about
 title: About our values
+meta: 
+  description: "Därför tycker vi att du ska tjäna pengar på digital marknadsföring. Inte bara bygga luftslott av clickrate och impressions."
 hero:
   text: Trött på byråer som snackar om saker du inte kan ta till banken? Då har du kommit rätt.
   image: "/img/valkommen till rotor.png"

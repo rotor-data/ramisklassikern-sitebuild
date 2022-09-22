@@ -11,6 +11,7 @@ import LargeCTA from "../components/LargeCTA";
 
 
 
+
 const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers }) => {
 
   const heroImage = getImage(hero.image)
@@ -30,6 +31,7 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
 
   return (
     <div>
+
 
       {/*hero section*/}
 
@@ -60,7 +62,7 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
               <GatsbyImage image={headlineImage} alt={hero.imagealt} />
                 {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
               </div>
-              <h3 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.subtext}</h3>
+              <h3 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile my-4">{hero.subtext}</h3>
               <h3 className="has-text-white has-tight-spacing is-size-4 is-size-5-mobile"><i>{hero.subtext2}</i></h3>
             </div>
         {hero.text}

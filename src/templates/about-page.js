@@ -6,11 +6,11 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import StarDivider from "../components/Star-divider";
 import TeamBox from "../components/TeamBox";
-
+import SEO from "../components/SEO";
 
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, content, contentComponent, hero, why, us, team }) => {
+export const AboutPageTemplate = ({ title, meta, content, contentComponent, hero, why, us, team }) => {
   const PageContent = contentComponent || Content;
   const heroImage = getImage(hero.image);
   const whyImage = getImage(why.image);
@@ -19,6 +19,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, why,
 
   return (
     <div>
+      <SEO description={meta.description}/>
       <GatsbyImage image={heroImage} alt={hero.imagealt}/>
     {/* <div style={{ display: "grid", position: "relative" }}>
     <GatsbyImage image={heroImage} alt={hero.imagealt} style={{
@@ -143,6 +144,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        meta={frontmatter.meta}
         content={post.html}
         hero={frontmatter.hero}
         why={frontmatter.why}
@@ -165,6 +167,9 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        meta {
+          description
+        }
         hero {
           text
           image {

@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-sitemap`
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
       options: {
@@ -42,6 +45,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/img`,
         name: "images",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/static/database`,
+        name: "database",
       },
     },
     `gatsby-plugin-image`,

@@ -34,8 +34,7 @@ when:
     explanation: 'Många besökare men få konverteringar är ett tydligt tecken på att flödet på sajten inte fungerar som det ska.'
   - text: 'Om du vet med dig att din webbplats är spretig'  
     explanation: 'Det här är ett vanligt problem med sajter som byggts upp "lite organiskt". Det finns lite gott och blandat men vet vi riktigt vad som händer här?Kanske har syftet med tiden ändrats men gamla strukturer ligger kvar, med den ursprungliga tanken. Det gör lätt att det blir lite rörigt – vilket självklart återspeglas i besökarnas beteende. '
-  - text: Om folk faktiskt googlar på saker som rör det du pysslar med
-    explanation: 'Det är kanske en självklarhet, men om du till exempel har en helt ny sorts produkt eller tjänstevariant som ingen känner till är det troligen ingen som helt plötsligt börjar söka på det. Man vill ju inte låta trist men så är det. SEO är inget för dig – än så länge.  Det kan det absolut bli. Men troligare är att du först måste få människor att börja undra över din produkt, och då passar tex annonsering på sociala medier bättre. (Brasklapp: För vissa innovativa företag är det här rådet gräsligt dåligt. Möjligen kan din produkt lösa ett problem som många googlar på och då kan du flytta in SEO i startelvan igen!)'
+ 
 promise:
   headline: 'Hur får vi bättre CRO om vi jobbar med Rotor?'
   text: 'Det första vi på Rotor gör är att tillsammans med er definiera syftet med respektive webbsida. Sedan tittar vi på faktisk data, heatmaps och annat för att se hur besökarna flödar på sajten. Då ser vi i vilken utsträckning besökarna gör det vi faktiskt vill att de ska göra. En annan viktig sak är att hitta faktiska hinder, som till exempel ett dåligt fungerande mötesbokningsflöde. Utifrån insikterna får ni en tydlig actionbaserad rekommendation för hur sajten bör förändras för att skapa ökad konvertering i form av tex försäljning. Ganska ofta handlar det om att renodla och ta bort saker, lika mycket som att lägga till.'

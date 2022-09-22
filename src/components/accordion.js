@@ -10,7 +10,7 @@ const Accordion = ({text, explanation}) => {
     <React.Fragment>
 
       <div className="accordion columns" role="presentation" onClick={() => setIsActive(!isActive)}>
-  <div role="presentation" onMouseLeave={() => setIsActive(false)} className={isActive ? 'accordion-active accordion-item column p-5 has-background-info has-text-white' : 'accordion-item column p-5' } >
+  <div role="presentation" className={isActive ? 'accordion-active accordion-item column p-5 has-background-info has-text-white' : 'accordion-item column p-5' } >
     <div
       className="accordion-title is-size-5"
       
