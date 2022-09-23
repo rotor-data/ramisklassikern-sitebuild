@@ -3,7 +3,7 @@ module.exports = {
     title: "Rotor, en digitalbyrå i Stockholm",
     description:
       "Rotor är en digitalbyrå i Stockholm. Vi skapar ökad försäljning, inte bara klick, genom digital marknadsföring.",
-    siteUrl: "https://rotormediagroup.se"  
+    siteUrl: "https://sandbox2.rotormediagroup.se"  
   },
   plugins: [
     "gatsby-plugin-react-helmet",
