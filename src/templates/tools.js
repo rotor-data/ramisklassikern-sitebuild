@@ -127,7 +127,7 @@ return (
        
        {/* promise section */}
       <div className="columns hero-body has-background-info">
-      <StarDivider/>
+
           <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet mt-3">
               <div className="columns">
         <div className="column">

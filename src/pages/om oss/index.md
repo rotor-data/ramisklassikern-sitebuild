@@ -17,7 +17,7 @@ us:
   <br><br>Daniel Hultborn är tävlingsmänniska ut i fingerspetsarna oavsett om det handlar om sport eller business (han kommer inte att skona dig i bollsport även om du blir kund, fråga Peter Leander på LIF hur det gick i tennisen.). Examinerad i data och marknadsföring från Uppsala Universitet. Jobbade i många år som affärs- och strategikonsult på byrå, men innan Rotor fanns byggde han upp ett 50 Mkr+ bolag inom Bonnier/TV4.
   Daniel och Daniel träffades där, på TV4.
   <br><br>Daniel Pettersson ger sig aldrig förrän han lärt sig (1000+ timmar nattliga sessioner i musik, programmering, psykologi, 3d-modellering, stickning, teckning, ja listan är rätt lång...). Utbildad på Journalisthögskolan i Stockholm. Har bland annat varit producent för ett av Sveriges mest omtyckta TV-program Nyhetsmorgon och lett TV4:s digitala experimentverkstad TV4Labs.
-  <br><br>Den här fina kombinationen :) har lett fram till Rotor och varför Rotors säljsystem blivit en framgångsrik kombo av struktur, logik, pannben och utanförlådan-kreation. Excel möter Jackson Pollock. Stefan Ingves får barn med Billie Eilish. Ja ni fattar.'
+  <br><br>Den här fina kombinationen :) har lett fram till Rotor och varför Rotors säljsystem blivit en framgångsrik kombo av struktur, logik, pannben och utanförlådan-kreation. Excel möter Jackson Pollock. Stefan Ingves får barn med Billie Eilish. Storvulna jämförelser kanske men vi kan våra grejer. Och ja ni fattar säkert vad vi menar.'
 team:
   - name: Daniel Hultborn
     title: Digital säljstrateg & kundansvarig
