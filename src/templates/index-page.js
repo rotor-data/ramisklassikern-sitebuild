@@ -36,7 +36,7 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
       {/*hero section*/}
 
       <div style={{ display: "grid", position: "relative", height:'700px' }}>
-    <GatsbyImage image={heroImage} alt={hero.imagealt} style={{
+    <GatsbyImage image={heroImage} loading="eager" alt={hero.imagealt} style={{
           gridArea: "1/1",
          
           // You can set a maximum height for the image, if you wish.

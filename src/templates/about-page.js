@@ -20,7 +20,7 @@ export const AboutPageTemplate = ({ title, meta, content, contentComponent, hero
   return (
     <div>
       <SEO description={meta.description}/>
-      <GatsbyImage image={heroImage} alt={hero.imagealt}/>
+      <GatsbyImage image={heroImage} loading="eager" alt={hero.imagealt}/>
     {/* <div style={{ display: "grid", position: "relative" }}>
     <GatsbyImage image={heroImage} alt={hero.imagealt} style={{
           gridArea: "1/1",

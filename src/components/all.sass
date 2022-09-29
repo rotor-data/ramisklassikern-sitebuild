@@ -706,6 +706,7 @@ footer .menu-list
   justify-content: center
   height:240px
   background-color: $warning!important
+  opacity: 0.93
   position: fixed
   bottom: 0px
   width:100%
@@ -714,7 +715,7 @@ footer .menu-list
   p
     margin-bottom:1em
 .cookie-button-wrapper
-  
+  z-index: 1
   
 .cookie-button
   max-width: 500px
@@ -724,7 +725,7 @@ footer .menu-list
   justify-content: center
   background-color: $link
   height: 2em
-  width:100%
+  width:95%
   margin: 0 auto
   border: none
   transition: 400ms ease
@@ -734,9 +735,13 @@ footer .menu-list
   font-family: $headline2
   font-weight: 800
   color: $white
+  
   &:hover
     transform: scale(97%)
     transition: 400ms ease
+
+.cookie-content
+  z-index:1
 
 .cookie-customize
   position: absolute
@@ -752,6 +757,49 @@ button.cookie-customize
  
 .modal
   z-index: 1000
+
+
+.toggle-switch 
+  position: relative
+  display: inline-block
+  width: 50px
+  height: 25px
+
+.toggle-switch input[type="checkbox"] 
+  display: none
+
+.toggle-switch
+  .switch 
+    position: absolute
+    cursor: pointer
+    background-color: $white
+    border-radius: 25px
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    transition: background-color 0.2s ease
+    transform: translateY(35%)
+
+.toggle-switch
+  .switch::before 
+    position: absolute
+    content: ""
+    left: 2px
+    top: 2px
+    width: 21px
+    height: 21px
+    background-color: #aaa
+    border-radius: 50%
+    transition: transform 0.3s ease
+
+.toggle-switch input[type="checkbox"]:checked + .switch::before 
+  transform: translateX(25px)
+  background-color: $link
+
+.toggle-switch input[type="checkbox"]:checked + .switch 
+  background-color: $warning
+
 
 @include desktop
     .navbar-hover-line:hover:before 

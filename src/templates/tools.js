@@ -31,7 +31,7 @@ return (
               <h2 className="has-text-white has-tight-height is-ultralarge is-size-1-mobile has-text-weight-bold is-uppercase ">{hero.subtext}</h2>
             </div>
             <div className="column is-half-tablet has-text-centered is-offset-one-quarter-tablet is-offset-0-desktop level-right">
-              <GatsbyImage image={heroImage} />
+              <GatsbyImage image={heroImage} loading="eager" />
 
             </div>
           </div>
