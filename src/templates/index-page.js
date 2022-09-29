@@ -57,7 +57,7 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
       >
         {/* Any content here will be centered in the component */}
         <h2 className="has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
-        <div className="column is-half-desktop is-offset-one-quarter is-10-mobile is-offset-1-mobile">
+        <div className="column is-full-desktop is-8-tablet is-offset-2-tablet  is-10-mobile is-offset-1-mobile">
               <div>
               <GatsbyImage image={headlineImage} alt={hero.imagealt} />
                 {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}

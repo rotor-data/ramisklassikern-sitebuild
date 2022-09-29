@@ -5,11 +5,18 @@ import Navbar2 from "../components/Navbar2";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import CookieNotice from "./CookieNotice";
+
 
 const TemplateWrapper = ({ children }) => {
+  
   const { title, description } = useSiteMetadata();
+
   return (
     <div>
+
+            
+
       <Helmet>
         <html lang="sv" />
         <title>{title}</title>
@@ -50,8 +57,18 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <Navbar2 />
       <div className="top-spacing"></div>
-      <div className="container.is-max-widescreen">{children}</div>
+      <div className="container.is-max-widescreen">
+        {children}
+
+        
+
+      
+        </div>
+        <CookieNotice/>
       <Footer />
+
+      
+
     </div>
   );
 };
