@@ -78,6 +78,7 @@ const CookieNotice = () => {
 
          
       <CookieConsent
+  debug={true}
   disableStyles={true}
   location="bottom"
   buttonText="Ge mig kakor"
@@ -95,7 +96,7 @@ const CookieNotice = () => {
  
 >
   <p className="is-family-secondary">Vi använder <Link className="has-text-link" to="/kontakta oss">cookies</Link> för att förbättra din upplevelse</p>
-  <a className="cookie-customize" onClick={() => handleClick()}>Anpassa kakor</a>
+  <button className="cookie-customize" onClick={() => handleClick()}>Anpassa kakor</button>
 </CookieConsent>
 
 

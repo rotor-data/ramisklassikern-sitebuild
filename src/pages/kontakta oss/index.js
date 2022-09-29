@@ -121,17 +121,17 @@ export default class Index extends React.Component {
                <div>
                  <h2 className="is-size-3 is-family-secondary mb-3">Hitta till oss</h2>
                </div>
-               <img src='/img/karta rotor st eriksgatan 72.png'></img>
+               <img alt="karta hitta till oss" src='/img/karta rotor st eriksgatan 72.png'></img>
                <p>Rotor</p>
                <p>S:t Eriksgatan 72</p>
                <p>121 30 Stockholm</p>
                <p>Tunnelbana: S:t Eriksplan</p>
         
                <div className="my-3">
-                 <a target="_blank" href="https://www.google.com/maps/place/Sankt+Eriksgatan+72,+113+20+Stockholm/@59.338639,18.0355787,18z/data=!3m1!4b1!4m5!3m4!1s0x465f9d7bc2fe380f:0xf3f8c081de8026a6!8m2!3d59.3386382!4d18.0362399">Här hittar du oss på Google maps</a>
+                 <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Sankt+Eriksgatan+72,+113+20+Stockholm/@59.338639,18.0355787,18z/data=!3m1!4b1!4m5!3m4!1s0x465f9d7bc2fe380f:0xf3f8c081de8026a6!8m2!3d59.3386382!4d18.0362399">Här hittar du oss på Google maps</a>
                </div>
                  <div>
-                   <a target="_blank" href="https://maps.apple.com/?address=Sankt%20Eriksgatan%2072,%20113%2020%20Stockholm,%20Sverige&ll=59.338647,18.036162&q=Sankt%20Eriksgatan%2072&_ext=EiYpFEmqlsWqTUAx61HLtgAHMkA5kh7Q8uurTUBBVWCkJoMLMkBQBA%3D%3D">Här hittar du oss i Apple kartor</a>
+                   <a target="_blank" rel="noreferrer" href="https://maps.apple.com/?address=Sankt%20Eriksgatan%2072,%20113%2020%20Stockholm,%20Sverige&ll=59.338647,18.036162&q=Sankt%20Eriksgatan%2072&_ext=EiYpFEmqlsWqTUAx61HLtgAHMkA5kh7Q8uurTUBBVWCkJoMLMkBQBA%3D%3D">Här hittar du oss i Apple kartor</a>
                  </div>
         
               
