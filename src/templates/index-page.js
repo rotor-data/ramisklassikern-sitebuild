@@ -103,10 +103,10 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
       <div className="hero-body has-background-white">
         <div className="columns">
 
-          <div className="column has-background-primary is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
-            <div className="columns is-flex-direction-column p-3">
+          <div className="column py-5 has-background-primary is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
+            <div className="columns is-flex-direction-column">
               <StarDivider customClass="column is-full mb-3" />
-              <div className="column is-8 is-offset-2 is-10-mobile is-offset-1-mobile">
+              <div className="column is-8-desktop is-offset-2-desktop is-10-mobile is-offset-1-mobile">
                 <h2 className="is-size-2 mb-4">{challenge.headline}</h2>
                 <p className="content" dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
                 <div className="has-text-centered mt-6 is-rotated-right">
@@ -129,7 +129,7 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
         <div className="columns is-vcentered">
 
           <div className="column is-one-third-desktop is-offset-1 is-half-tablet has-background-info has-text-white my-6 is-relative ">
-            <div className="p-6 has-star-right is-10-mobile is-offset-1-mobile">
+            <div className="px-2 py-4 has-star-right is-10-mobile is-offset-1-mobile">
               <h2 className="is-size-2 mb-4">{solution.headline1}</h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text1 }}></p>
             </div>
@@ -157,7 +157,7 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
 
 
           <div className="column is-half-desktop is-half-tablet has-background-info has-text-white my-6 is-relative" style={{zIndex:'1'}}>
-            <div className="p-6 has-whirl-right is-10-mobile is-offset-1-mobile">
+            <div className="column px-2 py-4 has-whirl-right is-8-desktop is-offset-2-desktop">
               <h2 className="is-size-2 mb-4">{solution.headline2}</h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text2 }}></p>
             </div>
