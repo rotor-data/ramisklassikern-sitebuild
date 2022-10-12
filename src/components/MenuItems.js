@@ -68,7 +68,7 @@ const MenuItems = ({mobile}) => {
     {data.allMarkdownRemark.edges.map ((tool,i) => 
       <Link className="navbar-item is-flex-direction-column is-align-items-start" to={tool.node.frontmatter.path}>
      <h3 className="is-size-5-desktop is-size-6-mobile is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
-      <p className="is-family-secondary" >{tool.node.frontmatter.subtitle}</p>
+      <p className="is-family-secondary is-size-7" >{tool.node.frontmatter.subtitle}</p>
     
     </Link>
 

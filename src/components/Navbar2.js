@@ -7,8 +7,12 @@ import { useState } from "react";
 const Navbar2 = () => {
 const [active, setActive] = useState(false);
 
+
 const handleClickBurger = () => {
   setActive(!active)
+
+  
+
 }
 
   return (
