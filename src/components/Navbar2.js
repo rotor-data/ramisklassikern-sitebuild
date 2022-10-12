@@ -14,7 +14,7 @@ const handleClickBurger = () => {
   return (
 
 <nav
-        className="navbar is-fixed-top is-spaced is-size-5 is-size-3-touch"
+        className="navbar is-fixed-top is-spaced is-size-5 is-size-5-mobile"
         role="navigation"
         aria-label="main-navigation"
       >
