@@ -21,18 +21,13 @@ us:
 team:
   - name: Daniel Hultborn
     title: Digital säljstrateg & kundansvarig
-    image: /img/sven ljungberg swedish stirling.png
+    image: '/img/dh-portratt.png'
   - name: Daniel Pettersson
     title: Digital säljstrateg & kreativ chef
-    image: /img/sven ljungberg swedish stirling.png  
+    image: '/img/dp-portratt.png'  
   - name: Emil Franzen
     title: Annonsering Google & sociala medier 	
-    image: /img/sven ljungberg swedish stirling.png
-  - name: Magnus Wallin
-    title: Senior kommunikationsstrateg & copywriter
-    image: /img/sven ljungberg swedish stirling.png
-  - name: Robb Whiteman
-    title: Animatör & grafisk designer
-    image: /img/sven ljungberg swedish stirling.png
+    image: '/img/placeholder photo.png'
+ 
 
 ---

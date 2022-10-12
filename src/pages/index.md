@@ -1,13 +1,15 @@
 ---
 templateKey: index-page
-
+meta: 
+  description:
+  ogimage: "../img/dough-rain-rotor-paraply.png"
 title: Rotor Digitalbyrå
 hero:
   headline: Börja räkna i miljoner kronor och inte i klick
   headlineimg: /img/headline start.png
   subtext: "Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning"
   subtext2: '(Och sluta jaga räckvidd, klick, trafik eller andra KPI:er som inte gör någon skillnad för ditt bankkonto)' 
-  image: "/img/dough-rain-rotor-paraply.png"
+  image: "../img/dough-rain-rotor-paraply.png"
   imagealt: Digital marknadsföring i racingpaket
   background: "/img/hero-back.svg"
   cta: 
@@ -107,17 +109,17 @@ model:
   ctatext: Klicka här
 customers:
   customer1: Freebo
-  headline1: '"ROI:n på vårt samarbete är smått otroliga + X%"'
-  text1: '"Rotor och deras system har ett outröttligt fokus på försäljning. Det ger resultat och vår försäljning från digital annonsering ökar stadigt varje månad – vi pratar mångmiljonbelopp. Vi har aldrig haft så bra koll som idag – jag vet exakt vad varje lead, mötesbokning och försäljing kostar men även om kunden kom in via digital annonsering, SEO eller någon av våra fysiska säljaktiviteter. Vi håller på att utveckla och fördjupa vårt samarbete med Rotor för att accellerera vår försäljning ytterligare."'
+  headline1: '"ROI:n långt över 1000%"'
+  text1: '"Rotor och deras fokus på sälj ger resultat. Vår försäljning från digital annonsering ökar stadigt varje månad – vi pratar mångmiljonbelopp. Under året 2022 har vi ökat försäljningen från digitala kanaler varje månad. ROI:n på vårt samarbete är högt över förväntan –  den är långt över 1000%.<br><br>Bevisligen stämmer det som de sa: Rotors marknadsföring genererar mycket mer pengar än vad den kostar. Rotor har också hjälpt oss att implementera ett nytt CRM och vi har aldrig haft så bra koll som idag. Jag vet exakt vad varje lead, mötesbokning och försäljning kostar. Jag kan också spåra kunden exakt, från digital annonsering, SEO, fysiska säljaktiviteter till faktisk försäljning. <br><br>Vi håller på att utveckla och fördjupa vårt samarbete med Rotor för att accelerera vår försäljning ytterligare."'
   name1: Piia Ringstad, marknadschef
   bossimage1: /img/piia ringstad freebo.png
-  image1: "/img/test number.png"
+  image1: "../img/1000 procent ROI.png"
   customer2: Swedish Stirling
-  headline2: '+X% av nya aktieägare under 2021'
-  text2: '"Tack vare Rotor har vi helt ändrat våra kommunikationsinsatser. Från att ha varit en mer traditionell köpare av banners hos finansiella tidningar lägger vi nu majoriteten av vårt fokus på egna kampanjer i sociala medier. Utväxlingen är enorm. Vi når många många fler och mycket billigare. Men det viktigasate som var måttstocken när vi började samarbeta med Rotor - vi har ökat vår ägarskara med småsparare med X% senaste året."'
+  headline2: '"Utväxlingen är enorm!"'
+  text2: '"Den data och intelligence jag får av Rotor har gjort att vi helt ändrat våra kommunikationsinsatser. Från att ha varit en mer traditionell köpare av print och banners hos finansiella tidningar lägger vi nu majoriteten av vårt fokus på egna kampanjer i sociala medier.<br><br>Utväxlingen är enorm. Vi når rätt målgrupper, många fler och mycket billigare.<br><br>Rotor har hjälpt oss öka intresset kring bolaget, pinpointat rätt målgrupper och fått dem att agera. Målet med samarbetet var primärt att öka kännedomen och ägarspridningen. Vi otroligt nöjda med samarbetet och senaste året har vi ökat antal aktieägare med 70%.”'
   name2: Sven Ljungberg, marknadschef
   bossimage2: /img/sven ljungberg swedish stirling.png
-  image2: "/img/test number.png"
+  image2: "../img/70procent.png"
   
 cta:
   headline: Testrubrik

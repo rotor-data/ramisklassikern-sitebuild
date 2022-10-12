@@ -12,7 +12,7 @@ meta:
 hero:
   headline: Marketing Automation
   subtext: "Slösa inte bort dem som är närmast att bli dina kunder"
-  image: "/img/subject-line-grinder.png"
+  image: "/img/fiskedrag-rotor.png"
   cta:
     option: false
     text: Hur mycket spenderar de på sin annonsering? Och hur mycket trafik drar de in?

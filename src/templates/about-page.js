@@ -169,6 +169,18 @@ export const aboutPageQuery = graphql`
         title
         meta {
           description
+          ogimage {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 67, 
+                layout: FIXED,
+                height: 630,
+                width: 1200,
+                transformOptions: { cropFocus: ENTROPY }
+                
+                )
+            }
+          }
         }
         hero {
           text
@@ -190,7 +202,7 @@ export const aboutPageQuery = graphql`
             childImageSharp {
               gatsbyImageData(
                 quality: 80, 
-                
+
                 height:200,
                 
                 )

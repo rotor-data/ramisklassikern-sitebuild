@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { withPrefix } from "gatsby";
 
 const SEO = ({ title, description, slug }) => {
   const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ const SEO = ({ title, description, slug }) => {
         name='description'
         content={description || data.site.siteMetadata.description}
       />
+    
       <link rel='canonical' href={`${data.site.siteMetadata.siteUrl}${slug}`} />
       
     </Helmet>

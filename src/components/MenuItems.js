@@ -56,6 +56,7 @@ const MenuItems = ({mobile}) => {
     >
       Verktygslådan
     </div>
+    
     <div
     
     className={`
@@ -73,9 +74,11 @@ const MenuItems = ({mobile}) => {
 
     )}
    
+   
   </div>
   
   </div> 
+ 
   </div>
   }
   ></StaticQuery>

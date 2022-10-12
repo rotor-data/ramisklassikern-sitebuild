@@ -35,7 +35,7 @@ const LargeCTA = () => {
                 <h2 className="is-size-2 mb-3">
                 Därför ska du välja en digitalbyrå som kan mer än ett verktyg
                 </h2>
-                <p className="mb-6">
+                <p>
                 Ja, vi kallar dem verktyg – SEO, annonsering på Google, Facebook, Instagram, Linked In, marketing automation etc.
                 För precis som ett verktyg finns de till för att bygga något större.
                 <br/><br/>Och de hänger ihop. Allt handlar om att hitta de verktyg som passar dig just nu.
@@ -47,9 +47,13 @@ const LargeCTA = () => {
                 Därför att rätt verktyg för dig är det som skapar intäkter på kort eller lång sikt, på effektivast möjliga sätt.
                 Oavsett vad verktyget kallas. 
                 <br/><br/>Vi kan verktygen. Men framför allt har vi en plattform för att bygga ditt eget säljande system, med de verktyg du behöver för ökad lönsamhet.
-                Vill du veta vad Rotors säljsystem kan vara för dig?
                 </p>
-                <RotorButton buttonText="Klicka här" buttonLink="/kontakt"/>
+                <p className="mb-6">
+                   <span className="mb-6">Vill du veta vad Rotors säljsystem kan vara för dig?</span> 
+                
+                
+                <RotorButton buttonText="Jag vill veta mer" buttonLink="https://rotor.ger-dig.com"/>
+                </p>
                 <div style={{height:'100px'}}>
                 </div>
                 </div>

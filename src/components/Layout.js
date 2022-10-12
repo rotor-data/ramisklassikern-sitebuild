@@ -56,7 +56,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar2 />
-      <div className="top-spacing"></div>
+      <div></div>
       <div className="container.is-max-widescreen">
         {children}
 

@@ -5,12 +5,25 @@ import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
 import footerBack from "../img/footer-back.svg"
 import FooterMenu from "./FooterMenu";
+import { useStaticQuery, graphql } from "gatsby";
 
 
-const Footer = class extends React.Component {
-  render() {
+const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          company
+        }
+      }
+      favicon: file(name: { eq: "favicon" }) {
+        publicURL
+      }
+    }
+  `);
+  
     return (
-      <footer className="footer has-text-white-ter pb-6" style={{ 
+      <footer className="footer has-text-white-ter" style={{ 
         backgroundImage: `url(${footerBack})`, 
         backgroundRepeat: 'no-repeat', 
         backgroundSize: 'contain',
@@ -100,9 +113,12 @@ const Footer = class extends React.Component {
             </div>
           </div>
         </div>
+        <p className="mb-0 has-text-centered mt-6 is-supersmall has-text-primary is-uppercase is-family-secondary">
+        ©{data.site.siteMetadata.company} {new Date().getFullYear()}
+        </p>
       </footer>
     );
-  }
+  
 };
 
 export default Footer;

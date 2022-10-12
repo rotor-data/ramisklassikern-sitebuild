@@ -79,8 +79,9 @@ $family-primary: $bodytext
 $body-background-color: $rotor-turq-light
 $body-size: 20px !default
 $family-secondary: $headline2
-$navbar-background-color: rgb(164, 218, 222,0.8)
+$navbar-background-color: rgb(164, 218, 222,0.9)
 $navbar-item-hover-background-color: rgb(164, 218, 222,0.8)
+
 $card-background-color: $rotor-light-pink
 
 $card-radius: 0.25rem !default
@@ -286,6 +287,8 @@ h6
 
 .is-ultralarge
   font-size: 4.5rem
+.is-supersmall
+  font-size:0.7rem
 
 .has-rainbow-parent 
     position: relative
@@ -350,15 +353,19 @@ h6
 .is-rotated-left
   transform: rotate(-5deg)  
 .navbar
-  background-color: rgb(164, 218, 222,0.8)
+  background-color: rgb(164, 218, 222,0.9)
 
 
 .navbar .navbar-menu
   box-shadow: none !important
   font-family: $headline2
+  font-weight: 800
+  text-transform: uppercase
+  letter-spacing: 1.3px
 
-  font-weight: 400
-
+a.navbar-item,
+div.navbar-link
+  color: $link
 
 a.navbar-item:focus, 
 a.navbar-item:focus-within, 
@@ -369,7 +376,7 @@ a.navbar-link:focus-within,
 a.navbar-link:hover, 
 a.navbar-link.is-active
   background-color: transparent!important
-  color: $black
+ 
 .navbar-item img
   max-height: 2.25rem!important
 .navbar-item .icon
@@ -386,12 +393,46 @@ a.navbar-link.is-active
     &.is-active
       background-color: $primary-invert
 
+.navbar-cta
+  background-color: $link
+  color: $white
+  padding: 0.5em
+  border-radius: 4px
+  position: relative
+  transition: 400ms ease
+  font-size: 0.8em
+  &:hover
+    cursor: pointer
+    &.navbar-cta.has-star-right:after 
+      filter: drop-shadow(10px 10px 10px white)
+    color: $white
+    transform: scale(0.97)
+    transition: 400ms ease
+
+.navbar-cta.has-star-right:after 
+    height:40px
+    top: -33%
+    
+
 //size of burger icon
 
 .navbar-burger span
   height: 3px!important
   width: 21px!important
 
+.navbar-burger
+  color:$link!important
+
+.navbar-dropdown a.navbar-item
+  h3
+    font-weight: 800
+  p
+    text-transform: initial
+    letter-spacing: 1px
+
+.navbar-dropdown a.navbar-item:hover
+  background-color: $warning!important
+  color: $white !important
 .submenu
   height:0
   overflow: hidden
@@ -402,11 +443,13 @@ a.navbar-link.is-active
     .navbar-dropdown
       transition: 400ms ease
 
+
   &.is-hoverable:hover
     .navbar-dropdown
       display: block
       max-height: 100vh
-      transition: 400ms ease 
+      transition: 400ms ease
+      
 
 
 .submenu-active
@@ -569,7 +612,7 @@ footer .menu-list
     color: black
     font-family: $headline2
     text-decoration: none
-    font-size: 30px
+ 
     transition: all 0.5s
     background-color: #f1faee
     border: none
@@ -577,6 +620,10 @@ footer .menu-list
     left: 50%
     transform: translateX(-50%)
     min-width: fit-content
+    font-weight: 800
+    color: $link
+    text-transform: uppercase
+
 
 .rotor-button:active 
     margin-left: 8px
@@ -620,7 +667,7 @@ footer .menu-list
 
 .rotor-button:hover
   text-decoration: underline
-
+  color: $link
 
 
 .rotor-cta p, .rotor-cta h2 
@@ -644,7 +691,8 @@ footer .menu-list
 .rotor-box,
 .rotor-box-large 
     display: inline-block
-    padding: 20px 40px
+    padding: 40px 25px 40px 25px
+
     color: black
     font-family: $bodytext
     text-decoration: none

@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    company: "Rotor",
     title: "Rotor, en digitalbyrå i Stockholm",
     description:
       "Rotor är en digitalbyrå i Stockholm. Vi skapar ökad försäljning, inte bara klick, genom digital marknadsföring.",
@@ -39,7 +40,7 @@ module.exports = {
         },
         hotjar: {
           hjid: '3178325',
-          hjsv: 'YOUR_HOTJAR_SNIPPET_VERSION',
+          hjsv: '6',
           cookieName: 'gatsby-gdpr-hotjar', // default
         },
         linkedin: {
@@ -94,7 +95,7 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         defaults: {
-          placeholder: "tracedSVG",
+          placeholder: "blurred",
         },
       },
     },

@@ -7,12 +7,13 @@ import RotorBox from "../components/RotorBox"
 import LogoGallery from "../components/LogoGallery";
 import UpwindBack from "../img/upwind-back.svg"
 import LargeCTA from "../components/LargeCTA";
+import SEO from "../components/SEO";
 
 
 
 
 
-const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers }) => {
+const IndexPageTemplate = ({ meta, hero, challenge, solution, who, model, customers }) => {
 
   const heroImage = getImage(hero.image)
   const headlineImage = getImage(hero.headlineimg)
@@ -32,10 +33,10 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
   return (
     <div>
 
-
+<SEO description="hej" />
       {/*hero section*/}
 
-      <div style={{ display: "grid", position: "relative", height:'700px' }}>
+      <div style={{ display: "grid", position: "relative", height:'850px' }}>
     <GatsbyImage image={heroImage} loading="eager" alt={hero.imagealt} style={{
           gridArea: "1/1",
          
@@ -56,14 +57,14 @@ const IndexPageTemplate = ({ hero, challenge, solution, who, model, customers })
         }}
       >
         {/* Any content here will be centered in the component */}
-        <h2 className="has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
+        <h2 className="mt-6 has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
         <div className="column is-10-desktop is-offset-1-desktop is-8-tablet is-offset-2-tablet  is-10-mobile is-offset-1-mobile">
               <div>
               <GatsbyImage image={headlineImage} alt={hero.imagealt} />
                 {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
               </div>
-              <h3 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile my-4">{hero.subtext}</h3>
-              <h3 className="has-text-white has-tight-spacing is-size-4 is-size-5-mobile"><i>{hero.subtext2}</i></h3>
+              <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-text-weight-bold has-tight-spacing is-size-3 is-size-4-mobile my-4">{hero.subtext}</h3>
+              <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-tight-spacing is-size-5 is-size-6-mobile"><i>{hero.subtext2}</i></h3>
             </div>
         {hero.text}
         </h2>
@@ -271,6 +272,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
+        meta={frontmatter.meta}
         hero={frontmatter.hero}
         challenge={frontmatter.challenge}
         solution={frontmatter.solution}
@@ -290,11 +292,14 @@ query RotorStartTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
     frontmatter {
       path
+      meta {
+        description
+      }
       hero {
         headline
         headlineimg {
           childImageSharp {
-            gatsbyImageData(quality: 100, width: 600)
+            gatsbyImageData(quality: 100, width: 730)
           }
         }
         subtext
@@ -302,7 +307,7 @@ query RotorStartTemplate {
         imagealt
         image {
           childImageSharp {
-            gatsbyImageData(quality: 100, width: 1920, layout: FULL_WIDTH, transformOptions: { fit: OUTSIDE, cropFocus: NORTH })
+            gatsbyImageData(quality: 100, width: 1920, layout: FULL_WIDTH, transformOptions: { fit: OUTSIDE, cropFocus: ENTROPY })
           }
         }
         cta {
