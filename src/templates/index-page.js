@@ -14,7 +14,7 @@ import RotorButton from "../components/RotorButton";
 
 
 
-const IndexPageTemplate = ({ meta, hero, challenge, solution, who, model, customers }) => {
+const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model, customers }) => {
 
   const heroImage = getImage(hero.image)
   const headlineImage = getImage(hero.headlineimg)
@@ -34,7 +34,7 @@ const IndexPageTemplate = ({ meta, hero, challenge, solution, who, model, custom
   return (
     <div>
 
-<SEO description="hej" />
+<SEO description="Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning." />
       {/*hero section*/}
 
       <div style={{ display: "grid", position: "relative", height:'850px' }}>
@@ -58,20 +58,25 @@ const IndexPageTemplate = ({ meta, hero, challenge, solution, who, model, custom
         }}
       >
         {/* Any content here will be centered in the component */}
-        <h2 className="mt-6 has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
-        <div className="column is-10-desktop is-offset-1-desktop is-8-tablet is-offset-2-tablet  is-10-mobile is-offset-1-mobile">
+
+        
+       
+        <div className="mt-1 has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
+        <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">{title}</h1>
+     
               <div>
               <GatsbyImage image={headlineImage} alt={hero.imagealt} />
+            
                 {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
               </div>
-              <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-text-weight-bold has-tight-spacing is-size-3 is-size-4-mobile my-4">{hero.subtext}</h3>
+              <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile my-3">{hero.subtext}</h3>
               {/* <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-tight-spacing is-size-5 is-size-6-mobile"><i>{hero.subtext2}</i></h3> */}
               <RotorButton buttonText={hero.cta.buttonText} buttonLink={hero.cta.buttonLink} newWindow={true}/>
             </div>
         {hero.text}
-        </h2>
+        </div>
       </div>
-      </div>
+    
 
 {/*       <div style={{
         backgroundImage: `url(${HeroBack})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
@@ -275,6 +280,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         meta={frontmatter.meta}
+        title={frontmatter.title}
         hero={frontmatter.hero}
         challenge={frontmatter.challenge}
         solution={frontmatter.solution}
@@ -293,6 +299,7 @@ export const IndexPageQuery = graphql`
 query RotorStartTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
     frontmatter {
+      title
       path
       meta {
         description

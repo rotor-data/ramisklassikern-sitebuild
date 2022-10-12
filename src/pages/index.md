@@ -62,7 +62,7 @@ solution:
         <em>Men har du försökt hacka lök med en stekpanna? (Ouch!)</em><br><br>
         Troligen är det en vass kniv du behöver. <br><br>
 
-        Rotor är en <h1>digitalbyrå</h1> med ett säljssystem ger dig en exklusiv japansk santoku-kniv med damaskerat stål när du ska bjuda på sushi omakase-skrytmiddag.<br><br>
+        Rotor är en digitalbyrå med ett säljssystem ger dig en exklusiv japansk santoku-kniv med damaskerat stål när du ska bjuda på sushi omakase-skrytmiddag.<br><br>
         Och en hederlig gjutjärnspanna till pannbiffen med lök. Inte tvärtom.<br><br>
         <em>Du får inga hitte-på-lösningar utan saker som funkar på riktigt.</em> <br><br>
         Du får en stolt byrå som bryr sig lika mycket om dig som om sitt eget bolag.

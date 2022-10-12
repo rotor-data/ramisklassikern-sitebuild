@@ -20,7 +20,9 @@ export const AboutPageTemplate = ({ title, meta, content, contentComponent, hero
   return (
     <div>
       <SEO description={meta.description}/>
-      <GatsbyImage image={heroImage} loading="eager" alt={hero.imagealt}/>
+      
+        <GatsbyImage image={heroImage} loading="eager" alt={hero.imagealt} style={{ minHeight: '350px', maxHeight:'700px', marginTop:"105px" }}/>
+
     {/* <div style={{ display: "grid", position: "relative" }}>
     <GatsbyImage image={heroImage} alt={hero.imagealt} style={{
           gridArea: "1/1",
@@ -58,7 +60,7 @@ export const AboutPageTemplate = ({ title, meta, content, contentComponent, hero
               <div className="column is-8 is-offset-2 is-10-mobile is-offset-1-mobile">
                 <div className="has-text-centered m-3"><GatsbyImage image={whyImage}/></div>
               
-                <h2 className="is-size-2 mb-4">{why.headline}</h2>
+                <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: why.headline }}></h2>
                 <p className="content" dangerouslySetInnerHTML={{ __html: why.text }}></p>
                 
 
@@ -189,7 +191,7 @@ export const aboutPageQuery = graphql`
               gatsbyImageData(
                 quality: 100, 
                 layout: FULL_WIDTH,
-                transformOptions: { fit: OUTSIDE, cropFocus: NORTH }
+                transformOptions: { fit: OUTSIDE, cropFocus: ENTROPY }
                 
                 )
             }
