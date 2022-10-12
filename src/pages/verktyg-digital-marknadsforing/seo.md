@@ -1,6 +1,6 @@
 ---
 
-path: "/verktyg/seo"
+path: "/verktyg-digital-marknadsforing/seo"
 title: SEO – Search Engine Optimization
 subtitle: 'För ett stadigt inflöde av nya leads utan dyra annonskostnader'
 templateKey: tools

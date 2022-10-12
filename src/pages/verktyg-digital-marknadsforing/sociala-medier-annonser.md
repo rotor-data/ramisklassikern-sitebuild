@@ -1,6 +1,6 @@
 ---
 
-path: "/verktyg/sociala-medier-annonser"
+path: "/verktyg-digital-marknadsforing/sociala-medier-annonser"
 title: Annonsering på sociala medier
 subtitle: 'Facebook/Instagram/LinkedIn – skapa efterfrågan på din produkt'
 templateKey: tools

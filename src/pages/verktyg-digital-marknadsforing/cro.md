@@ -1,6 +1,6 @@
 ---
 
-path: "/verktyg/cro"
+path: "/verktyg-digital-marknadsforing/cro"
 title: CRO – Conversion Rate Optimization
 subtitle: 'Se till att dina kunder konverterar på din webbplats'
 templateKey: tools
