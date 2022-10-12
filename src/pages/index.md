@@ -14,8 +14,8 @@ hero:
   background: "/img/hero-back.svg"
   cta: 
     text: Exakt vad en lead, ett kundmöte och en försäljning kostar dig? Varför dina annonser på Google och sociala medier inte fungerar? Hur du bygger upp ett säljflöde som är helt automatiserat?
-    buttonText: Klicka här
-    buttonLink: /products/
+    buttonText: Lär mig hur
+    buttonLink: https://rotor.ger-dig.com/gratis-mote
     headline: Har du inte koll på...
 challenge:
   headline: Så gör du för att inte öka din försäljning

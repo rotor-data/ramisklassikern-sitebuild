@@ -13,7 +13,7 @@ return (
     {internal?
     <Link className="rotor-button is-size-4-tablet is-size-5-mobile is-size-5-desktop" to={buttonLink}>{buttonText} </Link>
     :
-    <a target={!newWindow?"_blank":""} rel={!newWindow?"noreferrer":""} className="rotor-button is-size-4-tablet is-size-5-mobile is-size-5-desktop" href={buttonLink}>{buttonText} </a>
+    <a target={newWindow?"_blank":""} rel={newWindow?"noreferrer":""} className="rotor-button is-size-4-tablet is-size-5-mobile is-size-5-desktop" href={buttonLink}>{buttonText} </a>
  }
     
     </div>

@@ -52,7 +52,7 @@ const LargeCTA = () => {
                    <span className="mb-6">Vill du veta vad Rotors säljsystem kan vara för dig?</span> 
                 
                 
-                <RotorButton buttonText="Jag vill veta mer" buttonLink="https://rotor.ger-dig.com"/>
+                <RotorButton buttonText="Jag vill veta mer" buttonLink="https://rotor.ger-dig.com/gratis-mote"/>
                 </p>
                 <div style={{height:'100px'}}>
                 </div>

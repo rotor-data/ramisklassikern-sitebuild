@@ -8,6 +8,7 @@ import LogoGallery from "../components/LogoGallery";
 import UpwindBack from "../img/upwind-back.svg"
 import LargeCTA from "../components/LargeCTA";
 import SEO from "../components/SEO";
+import RotorButton from "../components/RotorButton";
 
 
 
@@ -64,7 +65,8 @@ const IndexPageTemplate = ({ meta, hero, challenge, solution, who, model, custom
                 {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
               </div>
               <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-text-weight-bold has-tight-spacing is-size-3 is-size-4-mobile my-4">{hero.subtext}</h3>
-              <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-tight-spacing is-size-5 is-size-6-mobile"><i>{hero.subtext2}</i></h3>
+              {/* <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-tight-spacing is-size-5 is-size-6-mobile"><i>{hero.subtext2}</i></h3> */}
+              <RotorButton buttonText={hero.cta.buttonText} buttonLink={hero.cta.buttonLink} newWindow={true}/>
             </div>
         {hero.text}
         </h2>

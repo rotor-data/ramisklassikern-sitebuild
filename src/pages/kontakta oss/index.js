@@ -41,7 +41,7 @@ export default class Index extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="section mt-3">
 
           <div className="container mt-3">
           <div className="has-text-centered">
