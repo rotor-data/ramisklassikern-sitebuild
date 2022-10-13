@@ -481,6 +481,8 @@ a.navbar-link.is-active
     margin-bottom: 1.5rem
     margin-top: 0
 
+
+
 // Helper Classes
 .full-width-image-container
   width: 100vw
@@ -563,14 +565,22 @@ footer .menu-list
 .social
   padding: 2em
 .social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
+  padding: .8em .5em .2em .5em
+  border-radius: 1em
+  background-color: $white
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline
+  transition: 200ms ease
+
+.social a:hover
+  background-color: $link
+.social a:hover img
+  filter: invert(100%) sepia(10%) saturate(519%) hue-rotate(41deg) brightness(96%) contrast(105%)
+  transition: 200ms ease
+
 
 // blog roll
 .blog-list-item.is-featured

@@ -39,8 +39,8 @@ const FooterMenu = () => (
                       </Link>
                     </li>
                     <li>
-                    <Link style={{pointerEvents:"none"}} to="/verktyg" onClick={(e)=> e.preventDefault()}>
-                        verktyg
+                    <Link style={{pointerEvents:"none"}} to="/verktyg-digital-marknadsforing" onClick={(e)=> e.preventDefault()}>
+                        verktygslådan
                       </Link>
                     </li>
                    

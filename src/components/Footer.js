@@ -1,11 +1,15 @@
 import * as React from "react";
+
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
+import youtube from "../img/social/youtube.svg";
+import linkedin from "../img/social/linkedin.svg"
 import footerBack from "../img/footer-back.svg"
 import FooterMenu from "./FooterMenu";
 import { useStaticQuery, graphql } from "gatsby";
+
 
 
 const Footer = () => {
@@ -14,6 +18,15 @@ const Footer = () => {
       site {
         siteMetadata {
           company
+          socialLinks {
+            facebook
+            twitter
+            linkedin
+            instagram
+            vimeo
+            youtube
+            tiktok
+          }
         }
       }
       favicon: file(name: { eq: "favicon" }) {
@@ -21,7 +34,28 @@ const Footer = () => {
       }
     }
   `);
-  
+    const socialMedia = data.site.siteMetadata.socialLinks;
+    const selectImage = (name) => {
+      if (name === "facebook") {
+        return facebook
+      } 
+      if (name === "linkedin") {
+        return linkedin
+      } 
+      if (name === "twitter") {
+        return twitter
+      } 
+      if (name === "instagram") {
+        return instagram
+      } 
+      if (name === "vimeo") {
+        return vimeo
+      } 
+      if (name === "youtube") {
+        return youtube
+      } 
+    }
+   
     return (
       <footer className="footer has-text-white-ter" style={{ 
         backgroundImage: `url(${footerBack})`, 
@@ -29,8 +63,29 @@ const Footer = () => {
         backgroundSize: 'contain',
         backgroundColor: '#f793cb'}}>
         <div className="content has-text-centered">
+       
+
         <div className="column social">
-                <a title="facebook" href="https://facebook.com">
+
+
+        {Object.entries(socialMedia).map(entry => 
+        entry[1]!==""?<a 
+        title= {entry[0]} href={entry[1]}
+        target="_blank"
+        rel="noreferrer">
+       
+        <img
+          src={selectImage(entry[0])}
+          alt={entry[0]}
+          style={{ width: "1.2em", height: "1.2em" }}
+        />
+        
+      </a>:null
+       )
+
+
+        }
+                {/* <a title="facebook" href="https://facebook.com">
                   <img
                     src={facebook}
                     alt="Facebook"
@@ -58,7 +113,7 @@ const Footer = () => {
                     alt="Vimeo"
                     style={{ width: "1em", height: "1em" }}
                   />
-                </a>
+                </a> */}
               </div>
      {/*      <img
             src={logo}

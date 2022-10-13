@@ -4,7 +4,17 @@ module.exports = {
     title: "Rotor, en digitalbyrå i Stockholm",
     description:
       "Rotor är en digitalbyrå i Stockholm. Vi skapar ökad försäljning, inte bara klick, genom digital marknadsföring.",
-    siteUrl: "https://rrrotor.com"  
+    siteUrl: "https://rrrotor.com",
+    socialLinks: {
+      facebook:"",
+      twitter:"",
+      instagram:"",
+      vimeo:"https://vimeo.com/showcase/8790045",
+      youtube:"",
+      linkedin:"https://www.linkedin.com/company/rotor-media-group/",
+      tiktok:""
+
+    }
   },
   plugins: [
     "gatsby-plugin-react-helmet",
