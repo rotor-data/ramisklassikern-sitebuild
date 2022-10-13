@@ -417,7 +417,11 @@ a.navbar-link.is-active
 .navbar-cta.has-star-right:after 
     height:40px
     top: -33%
-    
+
+
+
+
+
 
 //size of burger icon
 
@@ -869,6 +873,11 @@ button.cookie-customize
   .submenu
     height: revert
     overflow: revert
+
+@include until-widescreen
+    .navbar.is-fixed-top .is-active
+      display: flex
+      flex-direction: column-reverse
 
 .logo-wrapper
   display: flex

@@ -10,7 +10,7 @@ import SEO from "../components/SEO";
 
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ title, meta, content, contentComponent, hero, why, us, team }) => {
+export const AboutPageTemplate = ({ title, path, meta, og, content, contentComponent, hero, why, us, team }) => {
 
   const heroImage = getImage(hero.image);
   const whyImage = getImage(why.image);
@@ -19,7 +19,7 @@ export const AboutPageTemplate = ({ title, meta, content, contentComponent, hero
 
   return (
     <div>
-      <SEO description={meta.description}/>
+      <SEO title={title} description={meta.description} slug={path} og={og}/>
       
         <GatsbyImage image={heroImage} loading="eager" alt={hero.imagealt} style={{ minHeight: '350px', maxHeight:'700px', marginTop:"105px" }}/>
 
@@ -145,8 +145,10 @@ const AboutPage = ({ data }) => {
     <Layout>
       <AboutPageTemplate
         contentComponent={HTMLContent}
-        title={post.frontmatter.title}
+        title={frontmatter.title}
+        path={frontmatter.path}
         meta={frontmatter.meta}
+        og={frontmatter.og}
         content={post.html}
         hero={frontmatter.hero}
         why={frontmatter.why}
@@ -169,20 +171,14 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        path
         meta {
           description
-          ogimage {
-            childImageSharp {
-              gatsbyImageData(
-                quality: 67, 
-                layout: FIXED,
-                height: 630,
-                width: 1200,
-                transformOptions: { cropFocus: ENTROPY }
-                
-                )
-            }
-          }
+          
+        }
+        og {
+          image
+          type
         }
         hero {
           text

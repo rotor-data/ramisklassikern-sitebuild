@@ -34,7 +34,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
   return (
     <div>
 
-<SEO description="Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning." />
+<SEO description="Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning." slug="" />
       {/*hero section*/}
 
       <div style={{ display: "grid", position: "relative", height:'850px' }}>

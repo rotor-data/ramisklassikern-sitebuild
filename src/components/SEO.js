@@ -4,7 +4,9 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { withPrefix } from "gatsby";
 
-const SEO = ({ title, description, slug }) => {
+const SEO = ({ title, description, slug, og={} }) => {
+
+
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -20,6 +22,15 @@ const SEO = ({ title, description, slug }) => {
     }
   `);
 
+  //add slash to beginning of slug if it's not there
+  if (slug[0]!=='/') 
+  {slug="/"+slug}
+
+  const ogimage = og.image || "img/og-image-main.png"
+  const ogtype = og.type || "website"
+  const oglocale= og.locale || "sv_SE"
+
+
   return (
     <Helmet
       htmlAttributes={{ lang: `sv` }}
@@ -32,7 +43,21 @@ const SEO = ({ title, description, slug }) => {
       />
     
       <link rel='canonical' href={`${data.site.siteMetadata.siteUrl}${slug}`} />
-      
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={`${data.site.siteMetadata.siteUrl}${withPrefix("/")}${ogimage}`}/>
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
+      <meta property="og:type" content={ogtype}/>
+      <meta property="og:locale" content={oglocale} />
+      <meta property="og:url" content={`${data.site.siteMetadata.siteUrl}${slug}`} />
+
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:url" content={`${data.site.siteMetadata.siteUrl}${slug}`} />
+      <meta name="twitter:image" content={`${data.site.siteMetadata.siteUrl}${withPrefix("/")}${ogimage}`} />
+
+
     </Helmet>
   );
 };

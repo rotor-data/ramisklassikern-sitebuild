@@ -1,6 +1,7 @@
 import * as React from "react";
 import { navigate } from "gatsby-link";
 import Layout from "../../components/Layout";
+import SEO from "../../components/SEO";
 
 
 function encode(data) {
@@ -41,6 +42,7 @@ export default class Index extends React.Component {
 
     return (
       <Layout>
+        <SEO description="Kontakta oss på Rotor" slug="/kontakta oss"/>
         <section className="section mt-3">
 
           <div className="container mt-3">
