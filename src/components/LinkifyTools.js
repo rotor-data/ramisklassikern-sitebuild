@@ -34,7 +34,7 @@ const Linkify = ({linkText, exclude}) => {
     pos = match.index + match[0].length;
     //adderat if-sats så att det inte länkar till nuvarande sida!
     
-    match[0] !== exclude ? output.push(<Link to={linking(match[0])}>{linkText.substring(match.index, pos)}</Link>) : output.push (linkText.substring(match.index, match.index+ match[0].length));
+    match[0] !== exclude.toLowerCase() ? output.push(<Link to={linking(match[0])}>{linkText.substring(match.index, pos)}</Link>) : output.push (linkText.substring(match.index, match.index+ match[0].length));
     console.log(match,exclude)
     
   });
