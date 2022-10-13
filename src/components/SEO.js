@@ -30,12 +30,37 @@ const SEO = ({ title, description, slug, og={} }) => {
   const ogtype = og.type || "website"
   const oglocale= og.locale || "sv_SE"
 
+  const jsonld = 
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Rotor",
+    "image": "",
+    "@id": "",
+    "url": "https://rrrotor.com",
+    "telephone": "+46768472147",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "St Eriksgatan 72",
+      "addressLocality": "Stockholm",
+      "postalCode": "11320",
+      "addressCountry": "SE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 59.33863820000001,
+      "longitude": 18.0362399
+    } ,
+    "sameAs": "https://www.linkedin.com/company/rotor-media-group" 
+  }
+
 
   return (
     <Helmet
       htmlAttributes={{ lang: `sv` }}
       titleTemplate={`%s | ${data.site.siteMetadata.title}`}
     >
+      {jsonld && <script type="application/ld+json">{JSON.stringify(jsonld)}</script>}
       <title>{title}</title>
       <meta
         name='description'
