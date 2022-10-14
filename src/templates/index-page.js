@@ -62,7 +62,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
         
        
         <div className="mt-1 has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
-        <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">"Rotor Digitalbyrå"</h1>
+        <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">Rotor Digitalbyrå</h1>
      
               <div>
               <GatsbyImage image={headlineImage} alt={hero.imagealt} />
