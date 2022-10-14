@@ -34,7 +34,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
   return (
     <div>
 
-<SEO description="Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning." slug="" />
+<SEO title={title} description={meta.description} slug="" />
       {/*hero section*/}
 
       <div style={{ display: "grid", position: "relative", height:'850px' }}>
@@ -62,7 +62,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
         
        
         <div className="mt-1 has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3"> 
-        <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">{title}</h1>
+        <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">"Rotor Digitalbyrå"</h1>
      
               <div>
               <GatsbyImage image={headlineImage} alt={hero.imagealt} />

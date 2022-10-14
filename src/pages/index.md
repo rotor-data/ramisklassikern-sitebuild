@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
 meta: 
-  description:
+  description: "Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning."
   ogimage: "../img/dough-rain-rotor-paraply.png"
-title: Rotor Digitalbyrå
+title: Rotor Digitalbyrå Stockholm
 hero:
   headline: Börja räkna i miljoner kronor och inte i klick
   headlineimg: /img/headline start.png

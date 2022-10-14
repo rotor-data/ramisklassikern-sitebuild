@@ -42,7 +42,7 @@ export default class Index extends React.Component {
 
     return (
       <Layout>
-        <SEO description="Kontakta oss på Rotor" slug="/kontakta oss"/>
+        <SEO title="Kontakta oss" description="Här kan du nå oss på Rotor" slug="/kontakta oss"/>
         <section className="section mt-3">
 
           <div className="container mt-3">

@@ -6,7 +6,7 @@ import { withPrefix } from "gatsby";
 
 const SEO = ({ title, description, slug, og={} }) => {
 
-
+console.log(title)
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -58,7 +58,7 @@ const SEO = ({ title, description, slug, og={} }) => {
   return (
     <Helmet
       htmlAttributes={{ lang: `sv` }}
-      titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+      // titleTemplate={`%s | ${data.site.siteMetadata.title}`}
     >
       {jsonld && <script type="application/ld+json">{JSON.stringify(jsonld)}</script>}
       <title>{title}</title>
@@ -68,6 +68,7 @@ const SEO = ({ title, description, slug, og={} }) => {
       />
     
       <link rel='canonical' href={`${data.site.siteMetadata.siteUrl}${slug}`} />
+      <meta property="title" content={title} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`${data.site.siteMetadata.siteUrl}${withPrefix("/")}${ogimage}`}/>

@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import { useState} from "react"
+import { indexOf } from "lodash"
 
 
 const MenuItems = ({mobile}) => {
@@ -14,6 +15,7 @@ const MenuItems = ({mobile}) => {
 
  
   };
+
 
   return (
 
@@ -65,11 +67,14 @@ const MenuItems = ({mobile}) => {
     ${!subActive && mobile === 'is-active'?'submenu':''}
     `} 
     >
+    
+  
+  
     {data.allMarkdownRemark.edges.map ((tool,i) => 
       <Link className="navbar-item is-flex-direction-column is-align-items-start" to={tool.node.frontmatter.path}>
      <h3 className="is-size-5-desktop is-size-6-mobile is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
       <p className="is-family-secondary is-size-7" >{tool.node.frontmatter.subtitle}</p>
-    
+   
     </Link>
 
     )}
