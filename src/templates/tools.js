@@ -149,7 +149,7 @@ return (
         <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet pb-6">
           <h3 className="is-size-4-tablet is-size-5-mobile is-uppercase has-text-centered has-text-weight-bold has-text-white mt-3">Jag vill sälja mer med hjälp av {title.split('–')[0]}</h3>
            
-          <RotorButton buttonText="Lär mig hur" buttonLink="/ds"/>
+          <RotorButton buttonText="Lär mig hur" buttonLink="https://rotor.ger-dig.com/gratis-mote" newWindow={true}/>
         </div>
       </div>
 
