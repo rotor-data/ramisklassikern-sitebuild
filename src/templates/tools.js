@@ -7,6 +7,7 @@ import StarDivider from "../components/Star-divider";
 import Accordion from "../components/accordion";
 import Linkify from "../components/LinkifyTools";
 import SEO from "../components/SEO";
+import RotorButton from "../components/RotorButton";
 
 
 
@@ -137,8 +138,21 @@ return (
       <p dangerouslySetInnerHTML={{ __html: promise.text }}></p>
       </div>
       </div>
+      <div>
+        
+      </div>
+      
       </div>
        </div>
+
+      <div className="columns hero-body has-background-link mb-6">
+        <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet pb-6">
+          <h3 className="is-size-4-tablet is-size-5-mobile is-uppercase has-text-centered has-text-weight-bold has-text-white mt-3">Jag vill sälja mer med hjälp av {title.split('–')[0]}</h3>
+           
+          <RotorButton buttonText="Lär mig hur" buttonLink="/ds"/>
+        </div>
+      </div>
+
 {/* what section */}
 <div className="columns hero-body has-background-primary mr-1">
   <div className="column is-6-fullhd is-offset-3-fullhd is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet is-full-mobile no-padding-mobile">

@@ -30,7 +30,10 @@ team:
     image: '/img/dp-portratt.png'  
   - name: Emil Franzen
     title: Annonsering Google & sociala medier 	
-    image: '/img/placeholder photo.png'
+    image: '/img/emil frantzen.png'
+  - name: Robb Whiteman
+    title: Grafisk design & motion graphics 	
+    image: '/img/robb whiteman.png'
  
 
 ---

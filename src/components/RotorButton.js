@@ -8,7 +8,7 @@ const RotorButton = ({buttonText, buttonLink, newWindow}) => {
     console.log("buttonlink "+internal)
 
 return ( 
-<div className="mt-6">
+<div className="mt-6 pb-3 has-text-centered">
     <div className="rotor-button-container">
     {internal?
     <Link className="rotor-button is-size-4-tablet is-size-5-mobile is-size-5-desktop" to={buttonLink}>{buttonText} </Link>
