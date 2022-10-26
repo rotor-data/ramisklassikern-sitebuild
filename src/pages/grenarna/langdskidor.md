@@ -13,7 +13,7 @@ hero:
   image: "/img/cro-site-trimmer-rotor.png"
   cta:
     option: false
-    text: Sugen på en rejäl utmaning? Ramisklassikern – en ny multisportutmaning där fyra grenar görs individuellt under 12 månader. 
+    text: Spårknapp behövs för att nyttja längdspåren. Mer om hur du beställer detta <a href="https://www.ramundberget.se/information/liftkort/vinter/" target="_blank" rel="noopener noreferrer">här</a>.
     buttonText: Registrera genomförd gren
     buttonLink: 'hej@ramisklassikern.se'
     headline: ''
