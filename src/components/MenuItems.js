@@ -1,8 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
+import { useState} from "react"
+import { indexOf } from "lodash"
 
-const MenuItems = () => (
+
+const MenuItems = ({mobile}) => {
+
+
+  const [subActive, setSubActive] = useState(false);
+  const handleClick = (e) => {
+  e.preventDefault();
+  setSubActive(!subActive);
+
+ 
+  };
+
+
+  return (
+
   <StaticQuery
     query={graphql`
       {
@@ -26,34 +42,58 @@ const MenuItems = () => (
     render={data =>  
         
     <div className="navbar-start">
-      {/* <pre>{JSON.stringify(data.allMarkdownRemark.edges[0].node.frontmatter.title, null, 4)}</pre> */}
-    <Link className="navbar-item navbar-hover-line" to="/about">
-      Om oss
-    </Link>
     
-    <Link className="navbar-item navbar-hover-line" to="/contact">
-      Kontakt
-    </Link>
-   <div className="navbar-item has-dropdown is-hoverable">
-    <Link className="navbar-link is-hoverable" to="/contact/examples">
-      Verktygslådan
-    </Link>
-    <div className="navbar-dropdown is-boxed">
-    {data.allMarkdownRemark.edges.map ((tool) => 
-
+    <div className="navbar-item has-dropdown is-hoverable">
+    <div className="navbar-link is-hoverable"
+    role="menubar"
+    onClick={handleClick}
+    onKeyPress ={handleClick}
+    >
+      Grenarna
+    </div>
+    
+    <div
+    
+    className={`
+    navbar-dropdown is-boxed has-background-primary
+    ${subActive && mobile === 'is-active'?'submenu-active':''}
+    ${!subActive && mobile === 'is-active'?'submenu':''}
+    `} 
+    >
+    
+  
+  
+    {data.allMarkdownRemark.edges.map ((tool,i) => 
       <Link className="navbar-item is-flex-direction-column is-align-items-start" to={tool.node.frontmatter.path}>
-     <h3 className="is-size-5 is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
-      <p className="is-family-secondary" >{tool.node.frontmatter.subtitle}</p>
+     <h3 className="is-size-6-desktop is-size-6-mobile is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
+      <p className="is-family-secondary is-size-7" >{tool.node.frontmatter.subtitle}</p>
+   
     </Link>
 
     )}
    
+   
   </div>
+  
   </div> 
+
+    <Link className="navbar-item navbar" to="/om oss">
+     Bra att veta
+    </Link>
+    
+    <Link className="navbar-item navbar" to="/kontakta oss">
+      Shop
+    </Link>
+    <Link className="navbar-item navbar" to="/kontakta oss">
+      Anders inspirerar
+    </Link>
+
+ 
   </div>
   }
   ></StaticQuery>
-)
+
+)}
 
 export default MenuItems
 

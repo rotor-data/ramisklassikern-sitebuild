@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { StaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
-const useMountEffect = (fun) => useEffect(fun, [])
 
 function shuffle (arr) {
     var j, x, index;
@@ -21,9 +19,9 @@ const imageArray = (arry) => {
     let count = -1;
     
     for (i === 0; i < arry.length; i++) {
-        if (i === 0 || i === 5 || i === 9 || i == 13) {
+        if (i === 0 || i === 5 || i === 9 || i === 13) {
             count += 1;
-            imageArray[count] = new Array();
+            imageArray[count] = [];
             imageArray[count].push(arry[i]);
 
         } else {

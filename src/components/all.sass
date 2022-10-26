@@ -1,11 +1,51 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import url("https://use.typekit.net/zgo0xyu.css")
+
+
+// @import url("https://use.typekit.net/zgo0xyu.css")
+
+@font-face
+  font-family: 'avenir'
+  font-style: bold
+  font-weight: 900
+  font-display: swap
+  src: url(/fonts/Avenir-Black.otf) format('otf')
+@font-face
+  font-family: 'avenir'
+  font-style: regular
+  font-weight: 400
+  font-display: swap
+  src: url(/fonts/Avenir-Book.otf) format('otf')
+@font-face
+  font-family: 'sofia-pro-condensed'
+  font-style: bold
+  font-weight: 700
+  font-display: swap
+  src: url(/fonts/sofia-pro-condensed-700.woff2) format('woff2')
+@font-face
+  font-family: 'sofia-pro-condensed'
+  font-style: regular
+  font-weight: 400
+  font-display: swap
+  src: url(/fonts/sofia-pro-condensed-400.woff2) format('woff2')
+@font-face
+  font-family: 'neuzeit-grotesk'
+  font-style: regular
+  font-weight: 400
+  font-display: swap
+  src: url(/fonts/neuzeit-grotesk-400.woff2) format('woff2')
+@font-face
+  font-family: 'neuzeit-grotesk'
+  font-style: bold
+  font-weight: 700
+  font-display: swap
+  src: url(/fonts/neuzeit-grotesk-400.woff2) format('woff2')
+
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$headline: sofia-pro-condensed
-$headline2: sofia-pro
-$bodytext: neuzeit-grotesk
+$headline: avenir, sans-serif
+$headline2: avenir, sans-serif
+$bodytext: avenir, sans-serif
 
 $rotor-turq-dark : #007e84
 $rotor-turq-med: #54acb0
@@ -21,30 +61,58 @@ $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 $body-margin: 30px
 
-$primary: $rotor-turq-light
-$primary-invert: $rotor-offwhite
-$body-color: $rotor-black
-$black: $rotor-black
-$white: $rotor-offwhite
-$link: $rotor-dark-pink
-$info: $rotor-turq-med
-$success: $rotor-turq-dark
-$warning: $rotor-light-pink
+$ramis-darkblue:#006F8A
+$ramis-medblue: #579AB6
+$ramis-lightblue: #98CAEA
+$ramis-yellow: #FFE26D
+$ramis-black: #4D4D4F
+$ramis-white: #FFF   
+
+$primary: $ramis-medblue
+$primary-invert: $ramis-white
+$body-color: $ramis-black
+$black: $ramis-black
+$white: $ramis-white
+$link: $ramis-yellow
+$info: $ramis-darkblue
+$success: $ramis-lightblue
+$warning: $ramis-darkblue
 $danger: $rotor-dark-blue
 $dark: $rotor-dark-blue
-$text: $rotor-black
-$background: $rotor-turq-light
-$link: $rotor-dark-pink
+$text: $ramis-black
+$background: $ramis-medblue
+
 $family-primary: $bodytext
-$body-background-color: $rotor-turq-light
+$body-background-color: $ramis-medblue
 $body-size: 20px !default
-$family-secondary: $bodytext
-$navbar-background-color: rgb(164, 218, 222,0.8)
+$family-secondary: $headline2
+$navbar-background-color: $ramis-medblue
+$navbar-item-hover-background-color: $ramis-medblue
+$navbar-padding-vertical: 0.2rem
+$navbar-dropdown-border-top: 5px solid white!important
+$navbar-dropdown-boxed-radius: 0
+$navbar-dropdown-offset: 0px
+$navbar-dropdown-boxed-shadow: none
+$button-text-color: $ramis-black
+
+
+
+$card-background-color: $ramis-darkblue
+
+$card-radius: 0.25rem !default
+$shadow: -0.25em 0.25em 0em 0em $rotor-dark-pink !default
+
 
 /*! purgecss start ignore */
 /* em tags colours (marker pen). Different when on same colour background. */
+
+
 .has-background-warning em
   background-color: $link
+
+body 
+  -webkit-overflow-scrolling: touch
+  overflow: hidden
 
 em
   background-color: $warning
@@ -52,11 +120,11 @@ em
   color: $black
 
 blockquote 
-  font-family: 'novecento-sans'
+  font-family: $headline2
   text-transform: uppercase
   font-weight: 600
   padding: 20px 0 20px 0
-  color: $rotor-dark-pink
+  color: $success
   position: relative
   max-width: 300px
   margin: 0 auto
@@ -89,6 +157,10 @@ blockquote:after
   right: -54px
   z-index:1
 
+
+
+
+
 /*! purgecss end ignore */
 //pink-blob for headlines
 .has-pink-blob
@@ -108,6 +180,16 @@ blockquote:after
   line-height: 0.9
   color: $rotor-dark-pink
 
+.has-circle:after
+  content: ""
+  height: 800px
+  width: 800px
+  background-color: $ramis-lightblue
+  position: absolute
+  top:-200px
+  right: -700px
+  border-radius: 100%
+  z-index:-1
 
 //accordion CSS
   
@@ -123,7 +205,6 @@ blockquote:after
 .accordion-item:hover .inactive-triangle
   background-color: $rotor-offwhite
   transition: 500ms ease-out 
-
 
 .accordion-content
   overflow: hidden
@@ -147,6 +228,41 @@ blockquote:after
     max-height: 0px
     transition: max-height 0.5s cubic-bezier(0, 1, 0, 1)
 
+.accordion-content a
+  color: $warning!important
+  font-family: $headline2
+  font-weight: 700
+
+//accordion show/hide for faq
+
+.faq-wrapper
+  font-family: $headline2
+  display: flex
+  align-items: left
+  flex-direction: column
+  hyphens: auto
+  overflow: hidden
+  position: relative
+  padding-left:20px
+  cursor: pointer
+  &::before
+    content:""
+    position: absolute
+    left:0
+    border: black 5px
+
+
+
+.faq-item-show
+  max-height: 1000px
+  transition: max-height 1s ease-in-out
+  overflow: hidden
+  
+
+.faq-item-hide
+  max-height: 0px
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1)
+
 
 .active-triangle, 
 .inactive-triangle
@@ -159,17 +275,23 @@ blockquote:after
 .active-triangle
   transform: rotate(-90deg)
   transition: 500ms ease-out
-  background: $rotor-offwhite
+  background: $white
 
 .inactive-triangle
   transition: 500ms ease-out 
-  background: $rotor-black
+  background: $black
+  &.triangle-right
+    transform: rotate(-180deg)
+
+
 h1
   display: unset
 h2
   font-family: $headline
   line-height: 1.2
-  letter-spacing: -1px
+  color: $link
+  text-transform: uppercase
+  font-weight: 900!important
 
 h3
   font-family: $headline2
@@ -191,6 +313,10 @@ h6
 
 .is-ultralarge
   font-size: 4.5rem
+.is-supersmall
+  font-size:0.7rem
+.is-size-7
+  font-size: 0.75rem
 
 .has-rainbow-parent 
     position: relative
@@ -227,6 +353,13 @@ h6
     position: absolute
     top: -3%
     right: -85%
+
+.has-star-border 
+  border-image-source: url(/img/star-border.png)!important
+  border: 40px solid transparent
+  border-image-slice: 34% 32%
+  border-image-repeat: repeat
+
 .has-star-swipe
     background-image: url(/img/star-swipe.svg)
     background-size: cover
@@ -248,26 +381,32 @@ h6
 .is-rotated-left
   transform: rotate(-5deg)  
 .navbar
-  background-color: rgb(164, 218, 222,0.8)
+  background-color: $ramis-medblue
 
 
 .navbar .navbar-menu
   box-shadow: none !important
   font-family: $headline2
+  font-weight: 800
+  text-transform: uppercase
+  letter-spacing: 1px
 
-  font-weight: 400
-
+a.navbar-item,
+div.navbar-link
+  color: $link
 
 a.navbar-item:focus, 
 a.navbar-item:focus-within, 
 a.navbar-item.is-active,
-a.navbar-item.navbar-hover-line:hover,
+a.navbar-item:hover,
 a.navbar-link:focus, 
 a.navbar-link:focus-within, 
 a.navbar-link:hover, 
 a.navbar-link.is-active
   background-color: transparent!important
-  color: $black
+  color: $white!important
+
+ 
 .navbar-item img
   max-height: 2.25rem!important
 .navbar-item .icon
@@ -279,6 +418,80 @@ a.navbar-link.is-active
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+
+.navbar-menu
+    &.is-active
+   
+      overflow-x: hidden!important
+      
+      
+
+.navbar-cta
+  background-color: $link
+  color: $white
+  padding: 0.5em
+  border-radius: 4px
+  position: relative
+  transition: 400ms ease
+  font-size: 0.8em
+  &:hover
+    cursor: pointer
+    &.navbar-cta.has-star-right:after 
+      filter: drop-shadow(10px 10px 10px white)
+    color: $white
+    transform: scale(0.97)
+    transition: 400ms ease
+
+.navbar-cta.has-star-right:after 
+    height:40px
+    top: -33%
+
+
+
+
+
+
+//size of burger icon
+
+.navbar-burger span
+  height: 3px!important
+  width: 21px!important
+
+.navbar-burger
+  color:$link!important
+
+.navbar-dropdown a.navbar-item
+  h3
+    font-weight: 800
+  p
+    text-transform: initial
+    letter-spacing: 1px
+
+.navbar-dropdown a.navbar-item:hover
+  background-color: $warning!important
+  color: $white !important
+.submenu
+  height:0
+  overflow: hidden
+  transition: 400ms ease
+
+.navbar-item
+  &.is-hoverable
+    .navbar-dropdown
+      transition: 400ms ease
+
+
+  &.is-hoverable:hover
+    .navbar-dropdown
+      display: block
+      max-height: 100vh
+      transition: 400ms ease
+      
+
+
+.submenu-active
+  height:100%
+  transition: 400ms ease
 
 
 .content .taglist
@@ -295,6 +508,15 @@ a.navbar-link.is-active
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+
+
+//footer extra
+
+.footer
+  background: linear-gradient($ramis-darkblue, $ramis-lightblue) 
+  border-top: 5px solid $ramis-lightblue
+  border-bottom: 5px solid $ramis-darkblue
+
 
 // Helper Classes
 .full-width-image-container
@@ -378,14 +600,22 @@ footer .menu-list
 .social
   padding: 2em
 .social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
+  padding: .8em .5em .2em .5em
+  border-radius: 1em
+  background-color: $white
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline
+  transition: 200ms ease
+
+.social a:hover
+  background-color: $link
+.social a:hover img
+  filter: invert(100%) sepia(10%) saturate(519%) hue-rotate(41deg) brightness(96%) contrast(105%)
+  transition: 200ms ease
+
 
 // blog roll
 .blog-list-item.is-featured
@@ -434,9 +664,9 @@ footer .menu-list
     display: inline-block
     padding: 20px 40px
     color: black
-    font-family: novecento-sans
+    font-family: $headline2
     text-decoration: none
-    font-size: 30px
+ 
     transition: all 0.5s
     background-color: #f1faee
     border: none
@@ -444,6 +674,10 @@ footer .menu-list
     left: 50%
     transform: translateX(-50%)
     min-width: fit-content
+    font-weight: 800
+    color: $link
+    text-transform: uppercase
+
 
 .rotor-button:active 
     margin-left: 8px
@@ -487,6 +721,7 @@ footer .menu-list
 
 .rotor-button:hover
   text-decoration: underline
+  color: $link
 
 
 .rotor-cta p, .rotor-cta h2 
@@ -510,9 +745,10 @@ footer .menu-list
 .rotor-box,
 .rotor-box-large 
     display: inline-block
-    padding: 40px 60px
+    padding: 40px 25px 40px 25px
+
     color: black
-    font-family: novecento-sans
+    font-family: $bodytext
     text-decoration: none
     transition: all 0.5s
     background-color: #f1faee
@@ -565,10 +801,111 @@ footer .menu-list
   transform: skewY(-45deg)
   background-color: #e070be  
 
+// cookie-consent
+.cookie-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height:240px
+  background-color: $warning!important
+  opacity: 0.93
+  position: fixed
+  bottom: 0px
+  width:100%
+  z-index:999
+  text-align: center
+  p
+    margin-bottom:1em
+.cookie-button-wrapper
+  z-index: 1
+  
+.cookie-button
+  max-width: 500px
+  min-width:200px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $link
+  height: 2em
+  width:95%
+  margin: 0 auto
+  border: none
+  transition: 400ms ease
+  cursor: pointer
+  font-size: 1.3em
+  padding:0.5em
+  font-family: $headline2
+  font-weight: 800
+  color: $white
+  
+  &:hover
+    transform: scale(97%)
+    transition: 400ms ease
+
+.cookie-content
+  z-index:1
+
+.cookie-customize
+  position: absolute
+  bottom: 10px
+  right: 10px
+
+button.cookie-customize
+  cursor: pointer
+  border: none
+  background: transparent
+  font-family: $family-secondary
+  color: $link
+ 
+.modal
+  z-index: 1000
+
+
+.toggle-switch 
+  position: relative
+  display: inline-block
+  width: 50px
+  height: 25px
+
+.toggle-switch input[type="checkbox"] 
+  display: none
+
+.toggle-switch
+  .switch 
+    position: absolute
+    cursor: pointer
+    background-color: $white
+    border-radius: 25px
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    transition: background-color 0.2s ease
+    transform: translateY(35%)
+
+.toggle-switch
+  .switch::before 
+    position: absolute
+    content: ""
+    left: 2px
+    top: 2px
+    width: 21px
+    height: 21px
+    background-color: #aaa
+    border-radius: 50%
+    transition: transform 0.3s ease
+
+.toggle-switch input[type="checkbox"]:checked + .switch::before 
+  transform: translateX(25px)
+  background-color: $link
+
+.toggle-switch input[type="checkbox"]:checked + .switch 
+  background-color: $warning
+
 
 @include desktop
     .navbar-hover-line:hover:before 
-      border-bottom: 6px solid $rotor-dark-pink
+      border-bottom: 6px solid $ramis-yellow
       content: ""
       height: 5px
       width: 90%
@@ -576,7 +913,17 @@ footer .menu-list
       left: 55%
       margin-left: -50%
       bottom: 13px
+      color:$white
 
+@include desktop
+  .submenu
+    height: revert
+    overflow: revert
+
+@include until-widescreen
+    .navbar.is-fixed-top .is-active
+      display: flex
+      flex-direction: column-reverse
 
 .logo-wrapper
   display: flex

@@ -1,15 +1,18 @@
 ---
 
 
-path: "/verktyg/marketing-automation"
-title: marketing automation
-subtitle: 'Tappa inte bort dina leads'
+path: "/verktyg-digital-marknadsforing/marketing-automation"
+title: Marketing automation
+subtitle: 
 templateKey: tools
+
+meta: 
+  description: "Ge inte upp de som är närmast att bli dina kunder."
 
 hero:
   headline: Marketing Automation
   subtext: "Slösa inte bort dem som är närmast att bli dina kunder"
-  image: "/img/subject-line-grinder.png"
+  image: "/img/fiskedrag-rotor.png"
   cta:
     option: false
     text: Hur mycket spenderar de på sin annonsering? Och hur mycket trafik drar de in?
@@ -37,7 +40,7 @@ when:
     explanation: Marketing automation handlar om <i>långsiktig</i> bearbetning av kunder som kanske inte är redo just nu. De kommer kanske inte imorgon eller i övermorgon. Men när du jobbat upp flödet blir det en stadig ström.
 promise:
   headline: OK. OK. Men hur jobbar ni på Rotor med Marketing Automation då?
-  text: 'För det första ska vi ärligt säga att man kan bli lite förskräckt över hur många företag som glömmer bort att bearbeta dem som redan är "inne". <em>Man har redan tumme med en hel folkhop som man är beredd att skicka i tunnan utan att lyfta ett finger.</em><br><br>Det är lika dumt som det låter. Visst är det ändå fint att du inte behöver göra samma misstag?<br><br><em>Vår plattform Rotor Uplift är en utarbetad metod även för Marketing Automation.</em> Förutom att du kan få en utvärdering av eventuella befintliga insatser, och potentialen i nya, kan du här se fram emot nya kundflöden (funnels) för att leda kunderna rätt.<br><br>Mailchimp? HubSpot? Vad ska vi använda? Du får hjälp att definiera erbjudanden och serier av värdefulla mejl/sms/meddelenden som leder till ökad kundanskaffning.<br><br>Behöver du dessutom hjälp att skriva, skapa, distribuera och följa upp rent tekniskt får du hjälp av våra mest drillade experter på copywriting, form, front end development, spårning mm.'
+  text: 'För det första ska vi ärligt säga att man kan bli lite förskräckt över hur många företag som glömmer bort att bearbeta dem som redan är "inne". <em>Man har redan tumme med en hel folkhop som man är beredd att skicka i tunnan utan att lyfta ett finger.</em><br><br>Det är lika dumt som det låter. Visst är det ändå fint att du inte behöver göra samma misstag?<br><br><em>Vårt säljsystem är en utarbetad metod även för Marketing Automation.</em> Förutom att du kan få en utvärdering av eventuella befintliga insatser, och potentialen i nya, kan du här se fram emot nya kundflöden (funnels) för att leda kunderna rätt.<br><br>Mailchimp? HubSpot? Vad ska vi använda? Du får hjälp att definiera erbjudanden och serier av värdefulla mejl/sms/meddelenden som leder till ökad kundanskaffning.<br><br>Behöver du dessutom hjälp att skriva, skapa, distribuera och följa upp rent tekniskt får du hjälp av våra mest drillade experter på copywriting, form, front end development, spårning mm.'
 what:
   headline: Hur funkar Marketing Automation? Läs det här.
   text: 'Marcus står i köksfönstret och tittar ut. Syrenerna vid uppfarten har börjat få knoppar. Gräsmattan ser ut som en fotbollsplan i Bulgarien -82 men så är det ju varje år. <br><br>Men termometern har börjat studsa upp över tian allt oftare och Marcus ansikte slappnar av i solen som bränner in igenom fönstret. Snart är det dags att börja påta. Fingrarna längtar efter att få känna jorden, näsan längtar efter doft.<br><br>Redan i höstas började han planera för sin nya Dahlia-oas. Supertrendigt med Dahlior, och så vansinnigt vackert! Ett gäng snygga pallkragar och de där högresta pamparna till blommor i olika storlek och kulör.<br><br>Han plockar upp mobilen för att skriva in shoppinglistan: 4 st pallkragar, 20 säckar av lämplig jordsort, 16 Dahliaknölar, nya trädgårdshandskar. I förbifarten, <em>när mobilen ändå ligger i handen, hoppar han in i mejlboxen, så där som man gör nästan utan att tänka.</em><br><br>Och se där! "Så får du den vackraste Dahliarabatten (kanonerbjudande)" står det i ämnesraden på ett av mejlen. <br><br>Lite creepy! Fan lyssnar de på mig, tänker Marcus men öppnar mejlet snabbare än det går att säga blomster. <blockquote>Lite creepy! Fan lyss­nar de på mig, tänker Marcus men öppnar mejlet snabb­are än det går att säga blomster.</blockquote>Mejlet kommer från en av trädgårdshandlarna i stan. <br><br>Just nu verkar det vara ett erbjudande på både pallkragar och jord. De tipsar också om att förodla knölarna i påsar inomhus, och det kan man göra redan nu.  Perfekt. Det tar två minuter innan Marcus sitter på väg i bilen till trädgårdshandlaren. <br><br><em>Berättelsen om Marcus biltur till trädgårdshandlaren börjar egentligen mycket tidigare än så  här. Men det tänker inte han på.</em><br><br>Redan i höstas fick han sin Dahliaidé genom ett mejl från samma handlare, där det skrevs om det hetaste inom trädgårdsdesign. Sin mejladress hade han lämnat till dem ännu tidigare, när han ville ladda ner en smart rabattmall som man kunde få som en pdf. <br><br>I ett annat av mejlen stod det om hur mångsidiga och användbara pallkragar var, och dessutom fanns en liten jordguide för att hjälpa till att välja rätt jord till rätt växter. <br><br>Allt detta har han troligen glömt bort. Men idén, den är kvar. Så när erbjudandet kommer blir det nästan obehagligt träffsäkert.'

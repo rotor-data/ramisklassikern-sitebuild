@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
-import { StaticImage } from "gatsby-plugin-image"
-
-
-import Triangle from "../img/rounded-triangle.svg"
+import { isObject } from 'lodash';
 
 const Accordion = ({text, explanation}) => {
+
 
 
   const [isActive, setIsActive] = useState(false);
   return (
     <React.Fragment>
 
-      <div className="accordion columns" onClick={() => setIsActive(!isActive)}>
-  <div onMouseLeave={() => setIsActive(false)} className={isActive ? 'accordion-active accordion-item column p-5 has-background-info has-text-white' : 'accordion-item column p-5' } >
+      <div className="accordion columns" role="presentation" onClick={() => setIsActive(!isActive)}>
+  <div role="presentation" className={isActive ? 'accordion-active accordion-item column p-5 has-background-info has-text-white' : 'accordion-item column p-5' } >
     <div
       className="accordion-title is-size-5"
       
@@ -21,7 +19,10 @@ const Accordion = ({text, explanation}) => {
       <h3>{text}</h3>
       <div className={isActive ? 'active-triangle': 'inactive-triangle'}></div>
     </div> 
-    <div className="accordion-content" aria-expanded={isActive}><br></br><p className="autolink" dangerouslySetInnerHTML={{__html: explanation}}></p></div>
+  { isObject(explanation)
+    ?<div className="accordion-content" aria-expanded={isActive}><br></br><p>{explanation}</p></div>
+    :<div className="accordion-content" aria-expanded={isActive}><br></br><p className="autolink" dangerouslySetInnerHTML={{__html: explanation}}></p></div>
+  }
   </div>
 </div>
     </React.Fragment>

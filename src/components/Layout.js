@@ -1,15 +1,22 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar2 from "../components/Navbar2";
 import "./all.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
+import CookieNotice from "./CookieNotice";
+
 
 const TemplateWrapper = ({ children }) => {
+  
   const { title, description } = useSiteMetadata();
+
   return (
     <div>
+
+            
+
       <Helmet>
         <html lang="sv" />
         <title>{title}</title>
@@ -38,7 +45,7 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix("/")}img/safari-pinned-tab.svg`}
           color="#ff4400"
         />
-        <meta name="theme-color" content="#fff" />
+      {/*   <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
@@ -46,12 +53,22 @@ const TemplateWrapper = ({ children }) => {
         <meta
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
-        />
+        /> */}
       </Helmet>
-      <Navbar />
-      <div className="top-spacing"></div>
-      <div className="container.is-max-widescreen">{children}</div>
+      <Navbar2 />
+      <div></div>
+      <div className="container.is-max-widescreen">
+        {children}
+
+        
+
+      
+        </div>
+        <CookieNotice/>
       <Footer />
+
+      
+
     </div>
   );
 };

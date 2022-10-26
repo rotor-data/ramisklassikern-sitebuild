@@ -1,5 +1,4 @@
 import * as React from "react";
-import RotorButton from "../components/RotorButton"
 import { Link } from "gatsby";
 
 
