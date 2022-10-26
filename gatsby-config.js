@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    company: "Rotor",
-    title: "Rotor, en digitalbyrå i Stockholm",
+    company: "Ramisklassikern",
+    title: "Ramisklassikern – testa något nytt och annorlunda",
     description:
-      "Rotor är en digitalbyrå i Stockholm. Vi skapar ökad försäljning, inte bara klick, genom digital marknadsföring.",
+      "Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis.",
     siteUrl: "https://rrrotor.com",
     socialLinks: {
       facebook:"",

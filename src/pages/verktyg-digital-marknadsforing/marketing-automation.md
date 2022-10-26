@@ -3,7 +3,7 @@
 
 path: "/verktyg-digital-marknadsforing/marketing-automation"
 title: Marketing automation
-subtitle: 'Tappa inte bort dina leads'
+subtitle: 
 templateKey: tools
 
 meta: 

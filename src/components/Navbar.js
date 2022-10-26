@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/rotor-logo.svg";
+import logo from "../img/Ramisklassikern_logo.png";
 import MenuItems from "./MenuItems";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 
@@ -45,7 +45,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Rotor logo" style={{ width: "125px" }} />
+              <img src={logo} alt="Ramisklassikern logo" style={{ width: "125px" }} />
             </Link>
            
             {/* Hamburger menu */}

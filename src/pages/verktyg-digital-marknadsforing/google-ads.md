@@ -1,7 +1,7 @@
 ---
 path: "/verktyg-digital-marknadsforing/google-ads"
 title: Google Ads – Adwords
-subtitle: 'Här finns de – alla dina mest köpsugna kunder'
+subtitle: 
 templateKey: tools
 
 meta: 

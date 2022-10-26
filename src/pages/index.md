@@ -1,13 +1,13 @@
 ---
 templateKey: index-page
 meta: 
-  description: "Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning."
+  description: "Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis."
   ogimage: "../img/dough-rain-rotor-paraply.png"
-title: Rotor Digitalbyrå Stockholm
+title: Ramisklassikern – vill du testa något nytt och annorlunda?
 hero:
   headline: Börja räkna i miljoner kronor och inte i klick
   headlineimg: /img/headline start.png
-  subtext: "Få ett säljsystem för digital marknadsföring som skapar leads, bokar möten, och ökar din försäljning"
+  subtext: ""
   subtext2: '(Och sluta jaga räckvidd, klick, trafik eller andra KPI:er som inte gör någon skillnad för ditt bankkonto)' 
   image: "../img/dough-rain-rotor-paraply.png"
   imagealt: Digital marknadsföring i racingpaket
@@ -18,54 +18,24 @@ hero:
     buttonLink: https://rotor.ger-dig.com/gratis-mote
     headline: Har du inte koll på...
 challenge:
-  headline: Så gör du för att inte öka din försäljning
-  text: Du har en fantastisk produkt. En lysande affärsidé. Världens bästa tjänst. <br><br>
-        Så sitter du där. <em>En fiskare framför en sjö full med fisk. Men utan metspö, utan drag och utan agn. En jättestor påse att lägga fisk i som gapar tomt.</em>
-        Du funderar på var din nästa kund ska komma ifrån...?
-        Förslagen på vad du ska göra kommer in. Många.<br><br>
-        Starta blogg! Annonsera på google! Kör facebook! Tiktok? Starta podd! Snapchat?<br><br>
-        Allt låter ju otroligt bra men det är på samma gång <em>ungefär som att köra hjärnan på 90 grader centrifug.</em>
-        I vilken ände ska du börja?<br><br>
-        Med varma, bultande tinningar testar du en sak. Eller kanske flera samtidigt.
-        Och resultatet blir (drumroll)....nästan inga nya kunder!<br><br>
-        <em>Du är här för att du tror att det finns mer att hämta. </em>
+  headline: Sugen på en rejäl utmaning?
+  text: '<p class="is-uppercase">Vill du testa att göra något nytt och annorlunda? </p><br>Testa då Ramisklassikern – en ny multisportutmaning där fyra grenar görs individuellt under 12 månader. <br><br>Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis. Lycka till!' 
+
   image: "/img/super crunchy box fri.png"
   imagealt: flingpaket med tjänster från digitalbyrå
         
 
 solution:
-  headline1: Ökad försäljning, hitåt!
-  text1: ...Och det finns ett annat sätt.<br><br>
-        Om ett år kommer du att undra varför du inte tagit den här smartare approachen från första början.
-        Tidigare fick du gissa, för du visste helt enkelt inte vad som funkade. Råden kom från höger och vänster. Det var ju helt sjukt, vad höll du på med?<br><br>
-        <em>Istället har du nu fått en tydligt utstakad, nyasfalterad väg som doftar sådär varmt tjärigt, med vägskyltar i oblekta färger.</em><br><br>
-        Rotors säljsystem kombinerar insikter om försäljning, marknadsföring, bolagsbyggande, psykologi och tekniska lösningar.<br><br>
-        Utifrån denna skapar vi strategier, säljande annonser, e-post-marknadsföring, copy, videos och hela säljflöden. <br><br>
-        Det som fungerar tar vi med oss. Det som inte fungerar tar vi också med oss.<br><br>
-        Säljsystemet är i ständig utveckling för att leverera maximalt resultat för dig.<br><br>
+  headline1: Varför Ramisklassikern?
+  text1: En del motiveras av att testa nya utmaningar, andra av att slå sina personliga rekord. Här är inte det viktigaste att komma först eller att tävla mot andra, tiden är inte det väsentliga, utan att man tävlar och utmanar sig själv. (Även om det självklart känns ganska härligt att slå kompisgänget eller syrran.) Men oavsett vad man går i gång på är stoltheten att ha genomfört denna prestation enorm.<br><br> Vi hoppas att denna utmaning fungerar som motivation till att komma i gång med vardagsträningen, att testa nya sporter och får dig att tänja på dina gränser. Och som om detta inte vore nog, den ger dig dessutom tillfälle till att få njuta av den fantastiska och storslagna naturen uppe hos oss i Ramundberget.
+
   image1: "/img/creme bottle frilagd.png"
   imagealt1: "kräm för digital marknadsföring"
   image2: "/img/quickfix.png"     
   imagealt2: "quickfix för snabb digital marknadsföring"
-  headline2: 'Ute efter en quickfix? Sorry.'
-  text2: Vi säljer ingen quickfix. <br><br>
-        Det finns inga tyvärr. Det hade varit kul. Men nej.<br><br>
-        Ibland går det fort. Ibland tar det lite längre tid. 
-        Men det går. <em>Det blir en pengamaskin som ger mer pengar för varje krona du stoppar i den.</em> <br><br>
-        För så ska det vara – våra kunder tjänar pengar på att betala oss. <br><br>
+  headline2: 'Så anmäler man sig'
+  text2: Du behöver inte betala någon anmälningsavgift eller förhålla dig till några specifika datum. Här är det till stor del naturen och väder som håller i agendan och schemat. Ja, och din tillgänglighet och lust förstås.Gå in på här för att registrera din medverkan.<br><br>Pst! Vill du ha med hela familjen på denna utmaning kolla då in våra rekommendationer på kortare distanser.
 
-        Magin (det är vetenskap, damnit!)  i allt detta sitter inte i ett speciellt verktyg. <br><br>
-        De har många namn, verktygen. Google Ads, SEO, CRO, Facebookannonsering, Marketing Automation. <br><br>
-        <em>Alldeles för många säljer <i>ett</i> verktyg som ska göra underverk för dig.</em>  (Här kommer de där råden från alla håll och kanter...)<br><br>
-        För oss vore det som att starta en köksbutik och bara sälja stekpannor.<br><br>
-        Grymt för att få till en krispig yta på entrecoten eller att göra halloumin sådär fint gyllene.<br><br>
-        <em>Men har du försökt hacka lök med en stekpanna? (Ouch!)</em><br><br>
-        Troligen är det en vass kniv du behöver. <br><br>
-
-        Rotor är en digitalbyrå med ett säljssystem ger dig en exklusiv japansk santoku-kniv med damaskerat stål när du ska bjuda på sushi omakase-skrytmiddag.<br><br>
-        Och en hederlig gjutjärnspanna till pannbiffen med lök. Inte tvärtom.<br><br>
-        <em>Du får inga hitte-på-lösningar utan saker som funkar på riktigt.</em> <br><br>
-        Du får en stolt byrå som bryr sig lika mycket om dig som om sitt eget bolag.
   image3: "/img/remote fri.png"  
   imagealt3: "fjärrkontroll med digitalbyrå tjänster"
 

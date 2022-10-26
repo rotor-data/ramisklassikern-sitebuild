@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/rotor-logo.svg";
+import logo from "../img/Ramisklassikern_logo.png";
 import MenuItems from "./MenuItems";
 import { useState } from "react";
 
@@ -18,14 +18,14 @@ const handleClickBurger = () => {
   return (
 
 <nav
-        className="navbar is-fixed-top is-spaced is-size-5 is-size-5-mobile"
+        className="navbar is-fixed-top is-spaced is-size-6 is-size-6-mobile"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Rotor logo" style={{ width: "125px" }} />
+              <img src={logo} alt="Ramisklassikern logo" style={{ width: "70px", minHeight:"70px", maxHeight:"70px", marginRight:"2em" }} />
             </Link>
            
             {/* Hamburger menu */}
@@ -49,7 +49,7 @@ const handleClickBurger = () => {
             <MenuItems mobile={`${active?'is-active':''}`} />
             
             <div className="navbar-end has-text-centered">
-            <a className="navbar-cta navbar-end has-star-right" target="blank" rel="noreferrer" href="https://rotor.ger-dig.com/gratis-mote">Gratis möte</a>
+            <a className="navbar-cta navbar-end has-text-black" target="blank" rel="noreferrer" href="https://rotor.ger-dig.com/gratis-mote">Anmälan</a>
             </div>
           </div>}
         </div>

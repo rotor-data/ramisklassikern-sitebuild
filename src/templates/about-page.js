@@ -73,6 +73,11 @@ export const AboutPageTemplate = ({ title, path, meta, og, content, contentCompo
         </div>
       </div>
 
+
+<div>
+
+
+</div>
 {/*us section*/}
 
 <div className="columns hero-body has-background-primary mr-1">

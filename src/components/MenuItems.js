@@ -42,27 +42,20 @@ const MenuItems = ({mobile}) => {
     render={data =>  
         
     <div className="navbar-start">
-
-    <Link className="navbar-item navbar-hover-line" to="/om oss">
-      Om oss
-    </Link>
     
-    <Link className="navbar-item navbar-hover-line" to="/kontakta oss">
-      Kontakt
-    </Link>
-   <div className="navbar-item has-dropdown is-hoverable">
+    <div className="navbar-item has-dropdown is-hoverable">
     <div className="navbar-link is-hoverable"
     role="menubar"
     onClick={handleClick}
     onKeyPress ={handleClick}
     >
-      Verktygslådan
+      Grenarna
     </div>
     
     <div
     
     className={`
-    navbar-dropdown is-boxed
+    navbar-dropdown is-boxed has-background-primary
     ${subActive && mobile === 'is-active'?'submenu-active':''}
     ${!subActive && mobile === 'is-active'?'submenu':''}
     `} 
@@ -72,7 +65,7 @@ const MenuItems = ({mobile}) => {
   
     {data.allMarkdownRemark.edges.map ((tool,i) => 
       <Link className="navbar-item is-flex-direction-column is-align-items-start" to={tool.node.frontmatter.path}>
-     <h3 className="is-size-5-desktop is-size-6-mobile is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
+     <h3 className="is-size-6-desktop is-size-6-mobile is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
       <p className="is-family-secondary is-size-7" >{tool.node.frontmatter.subtitle}</p>
    
     </Link>
@@ -83,6 +76,18 @@ const MenuItems = ({mobile}) => {
   </div>
   
   </div> 
+
+    <Link className="navbar-item navbar" to="/om oss">
+     Bra att veta
+    </Link>
+    
+    <Link className="navbar-item navbar" to="/kontakta oss">
+      Shop
+    </Link>
+    <Link className="navbar-item navbar" to="/kontakta oss">
+      Anders inspirerar
+    </Link>
+
  
   </div>
   }

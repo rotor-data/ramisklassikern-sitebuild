@@ -2,7 +2,7 @@
 
 path: "/verktyg-digital-marknadsforing/seo"
 title: SEO – Search Engine Optimization
-subtitle: 'För ett stadigt inflöde av nya leads utan dyra annonskostnader'
+subtitle: 
 templateKey: tools
 
 meta: 
