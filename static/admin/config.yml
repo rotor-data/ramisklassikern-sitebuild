@@ -1,5 +1,5 @@
 backend:
-  name: rotor-data/gatsby-starter-netlify-cms-bu
+  name: rotor-data/ramisklassikern-sitebuild
   branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
@@ -134,7 +134,6 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/products/index.md"
-      
         label: "Products Page"
         name: "products"
         fields:
@@ -245,37 +244,3 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/start/index.md"
-      
-        label: "Start"
-        name: "start"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "rotor-start",
-            }
-          - { label: Title, name: title, widget: string }
-          - {
-              label: Hero,
-              name: hero,
-              widget: object,
-              fields:
-                [
-                  { label: Headline, name: headline, widget: string },
-                  { label: Subtext, name: subtext, widget: text },
-                  { label: Image, name: image, widget: image }
-                ]
-            }
-          - {
-              label: CTA,
-              name: cta,
-              widget: object,
-              fields:
-                [
-                 { label: Headline, name: headline, widget: text },
-                 { label: Text, name: text, widget: text },
-                 { label: ButtonText, name: buttonText, widget: text }
-                ]
-            }          

@@ -8,7 +8,7 @@ import Accordion from "../components/accordion";
 import Linkify from "../components/LinkifyTools";
 import SEO from "../components/SEO";
 import RotorButton from "../components/RotorButton";
-
+import RamisButton from "../components/RamisButton";
 
 
 const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal, when, promise, what }) => {
@@ -53,121 +53,61 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal,
         </div>
       </div>
 
-      <div className="hero-body has-background-white">
+
         {/* challenge section */}
-
-        <div>
+        <div className="section">
+        <div className="container hero-body">
           <div className="columns">
-
-            <div className="column has-background-primary is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
-              <div className="columns is-flex-direction-column p-3">
-                <StarDivider customClass="column is-full mb-3" />
-                <div className="column is-8 is-offset-2 is-10-mobile is-offset-1-mobile">
-                  <h2 className="is-size-2 mb-4">{challenge.headline}</h2>
-                  <p dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
-
-
-                </div>
-
-                <StarDivider customClass="column is-full mt-3" />
-              </div>
+            <div className="column has-text-centered mt-6">
+              <GatsbyImage image={goalImage} alt={challenge.imagealt} />
             </div>
-
-          </div>
-        </div>
-
-        {/* goal section */}
-        <div className="has-background-white">
-          <div className="columns mt-6">
-
-            <div className="column has-background-warning is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
-              <div className="columns is-flex-direction-column px-3 pt-3 pb-6">
-
-                <div className="column is-8 is-offset-2 is-10-mobile is-offset-1-mobile">
-                  <div className="has-text-centered is-rotated-right">
-                    <GatsbyImage image={goalImage} alt={goal.imagealt} />
-                  </div>
-                  <h2 className="is-size-2 my-4">{goal.headline}</h2>
-                  <p dangerouslySetInnerHTML={{ __html: goal.text }}></p>
-
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-
-      {/* when section */}
-      <div className="hero-body has-background-white">
-        <div className="columns is-desktop mb-0">
-          <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
-            <div className="columns">
-              <div className="column is-5-desktop">
-                <h2 className="is-size-2 has-text-centered-mobile mb-3">{when.headline}</h2>
-              </div>
-              <div className="column has-background-white">
-
-                {when.texts.map(({ text, explanation }) => (
-
-                  <div>
-                    {/* Linkify is excluding current page as link object */}
-                    <Accordion text={text} explanation={<Linkify linkText={explanation} exclude={title}></Linkify>} />
-
-                  </div>
-                ))}
-              </div>
+            <div className="column is-7-desktop is-12-mobile">
+              <h2 className="is-size-2 mb-4">{challenge.headline}</h2>
+              <p dangerouslySetInnerHTML={{ __html: challenge.text1 }}></p>
+              <p class="has-yellow-border has-yellow-star" dangerouslySetInnerHTML={{ __html: challenge.text2 }}></p>
+              <p dangerouslySetInnerHTML={{ __html: challenge.text3 }}></p>
             </div>
           </div>
-
         </div>
-      </div>
+    </div>
+ 
 
-      {/* promise section */}
+        {/* goal section (Ramis maps) */}
+
+        <div className="section has-background-warning">
+        <div className="container hero-body">
+          <div className="columns">
+            <div className="column has-text-centered mb-4">
+            <h2 className="is-size-2 mb-4">{goal.headline}</h2>
+              <GatsbyImage image={goalImage} alt={challenge.imagealt} />
+            </div>
+           
+          </div>
+        </div>
+    </div>
+ 
+
+
+      {/* when section inactive */}
+
+      {/* promise section inactive */}
+
+
+
+
+
+
+ {/* cta section registrera */}
       <div className="columns hero-body has-background-info">
-
-        <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet mt-3">
-          <div className="columns">
-            <div className="column">
-              <h2 className="is-size-2 has-pink-blob has-text-centered-mobile">{promise.headline}</h2>
-            </div>
-            <div className="column">
-              <p dangerouslySetInnerHTML={{ __html: promise.text }}></p>
-            </div>
-          </div>
-          <div>
-
-          </div>
-
+        <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet pb-6 has-text-centered">
+          <h3 className="is-size-5-tablet is-size-5-mobile has-text-white my-3">{hero.cta.text}</h3>
+          {console.log (hero.cta.buttonLink)}
+          <a class="button is-link has-text-weight-bold is-uppercase" href={`mailto:${hero.cta.buttonLink}?subject=Jag har genomfört grenen ${title}&body=Jag bifogar här bildbevis i form av ett foto eller skärmdump av sportklocka eller aktivitetsapp. Jag bifogar också en bild på mig själv efter genomförd gren.`}>{hero.cta.buttonText}</a>
         </div>
       </div>
 
-      <div className="columns hero-body has-background-link mb-6">
-        <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet pb-6">
-          <h3 className="is-size-4-tablet is-size-5-mobile is-uppercase has-text-centered has-text-weight-bold has-text-white mt-3">Jag vill sälja mer med hjälp av {title.split('–')[0]}</h3>
-
-          <RotorButton buttonText="Lär mig hur" buttonLink="https://rotor.ger-dig.com/gratis-mote" newWindow={true} />
-        </div>
-      </div>
-
-      {/* what section */}
-      <div className="columns hero-body has-background-primary mr-1">
-        <div className="column is-6-fullhd is-offset-3-fullhd is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet is-full-mobile no-padding-mobile">
-          <div className="is-relative">
-            <div className="rotor-box-large is-family-primary">
-              <h2 className="is-size-2 mb-3">{what.headline}</h2>
-              <p className="has-dropcap is-hyphenated" dangerouslySetInnerHTML={{ __html: what.text }}></p>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
+      {/* what section inactive */}
+ 
     </div>
   )
 
@@ -216,12 +156,15 @@ export const MarketingAutomationQuery = graphql`
             option
             text
             buttonText
+            buttonLink
             headline
           }
         }
         challenge {
           headline
-          text
+          text1
+          text2
+          text3
         }
         goal {
           headline
