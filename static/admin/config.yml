@@ -1,5 +1,6 @@
 backend:
-  name: rotor-data/ramisklassikern-sitebuild
+  name: github
+  repo: rotor-data/ramisklassikern-sitebuild
   branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"

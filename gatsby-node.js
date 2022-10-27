@@ -10,7 +10,7 @@ exports.createPages = ({ actions, graphql }) => {
   {
     allMarkdownRemark(
       limit: 1000
-      filter: {frontmatter: {templateKey: {regex: "/^(?!faq$)/"}}}
+      filter: {frontmatter: {templateKey: {regex: "/^(?!blog-post$)^(?!faq$)/"}}}
     ) {
       edges {
         node {

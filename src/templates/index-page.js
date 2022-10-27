@@ -131,13 +131,13 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
       {/*solution section1  Varför Ramisklassikern*/}
    
     <div className="section">
-        <div className="container hero-body">
-          <div className="columns">
+        <div className="container">
+          <div className="columns is-variable is-8-desktop">
             <div className="column has-text-centered mt-6">
               <GatsbyImage image={solutionImage1} alt={challenge.imagealt} />
             </div>
-            <div className="column is-7-desktop is-10-mobile">
-              <h2 className="is-size-2 mb-4">{solution.headline1}</h2>
+            <div className="column is-7-desktop">
+              <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: solution.headline1 }}></h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text1 }}></p>
             </div>
           </div>
@@ -146,10 +146,10 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
 
       {/*solution section2*/}
       <div className="section has-background-warning has-text-white">
-        <div className="container hero-body">
-          <div className="columns">
+        <div className="container">
+          <div className="columns is-variable is-8-desktop">
            
-            <div className="column is-7-desktop is-10-mobile">
+            <div className="column is-7-desktop">
               <h2 className="is-size-2 mb-4">{solution.headline2}</h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text2 }}></p>
               <div className="mt-4">
