@@ -56,11 +56,11 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
             <div className="column is-4-desktop is-10-mobile is-offset-1-mobile has-text-white">
               <h1 className="is-size-2 mb-4 has-text-link is-uppercase"dangerouslySetInnerHTML={{ __html: hero.headline }}></h1>
               <p className="has-text-weight-bold" dangerouslySetInnerHTML={{ __html: hero.subtext }}></p>
-              <div className="container is-flex is-flex-direction-column">
-                <button className="button is-link mb-3" onClick={()=>handleClickRef(boendeAnchor)}></button>
-                <button className="button is-link mb-3" onClick={()=>handleClickRef(utrustningAnchor)}></button>
-                <button className="button is-link mb-3" onClick={()=>handleClickRef(faqAnchor)}></button>
-                <button className="button is-link mb-3" onClick={()=>handleClickRef(reglerAnchor)}></button>
+              <div className="container is-flex is-flex-direction-column mt-6">
+                <button className="button is-link mb-3 has-text-black is-uppercase has-text-weight-bold" onClick={()=>handleClickRef(boendeAnchor)}>Boende & Resa hit</button>
+                <button className="button is-link mb-3 has-text-black is-uppercase has-text-weight-bold" onClick={()=>handleClickRef(utrustningAnchor)}>Utrustning</button>
+                <button className="button is-link mb-3 has-text-black is-uppercase has-text-weight-bold" onClick={()=>handleClickRef(faqAnchor)}>Vanliga frågor</button>
+                <button className="button is-link mb-3 has-text-black is-uppercase has-text-weight-bold" onClick={()=>handleClickRef(reglerAnchor)}>Tävlingsregler</button>
               </div>
             </div>
             

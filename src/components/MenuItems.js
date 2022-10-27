@@ -77,7 +77,7 @@ const MenuItems = ({mobile}) => {
   
   </div> 
 
-    <Link className="navbar-item navbar" to="/om oss">
+    <Link className="navbar-item navbar" to="/bra-att-veta">
      Bra att veta
     </Link>
     
