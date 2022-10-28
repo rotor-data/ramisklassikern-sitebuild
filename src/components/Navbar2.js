@@ -48,8 +48,8 @@ const handleClickBurger = () => {
           >
             <MenuItems mobile={`${active?'is-active':''}`} />
             
-            <div className="navbar-end has-text-centered">
-            <a className="navbar-cta navbar-end has-text-black" target="blank" rel="noreferrer" href="https://rotor.ger-dig.com/gratis-mote">Anmälan</a>
+            <div className="button is-link navbar-end mt-3">
+              <Link className="has-text-black" to="/anmalan">Anmälan</Link>
             </div>
           </div>}
         </div>

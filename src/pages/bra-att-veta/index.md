@@ -9,7 +9,7 @@ hero:
   headlineimg: 
   subtext: "Här hittar du allt viktigt inför Ramisklassikern"
   subtext2: '' 
-  image: '/img/chemex.jpg'
+  image: '/img/coffee-gear.png'
   imagealt: Digital marknadsföring i racingpaket
   background: 
   cta: 

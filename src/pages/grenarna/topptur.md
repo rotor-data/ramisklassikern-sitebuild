@@ -10,7 +10,7 @@ meta:
 hero:
   headline: Topptur
   subtext: ''
-  image: "/img/cro-site-trimmer-rotor.png"
+  image: hero-topptur.png
   cta:
     option: false
     text: 'OBS! Delar av Mittåkläppen är i Lavinterräng, så utan rätt kunskap rekommenderas att gå med guide. Glöm inte att njuta på vägen ner.'

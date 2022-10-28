@@ -29,6 +29,11 @@ const FooterMenu = () => (
       {/* <pre>{JSON.stringify(data.allMarkdownRemark.edges[0].node.frontmatter.title, null, 4)}</pre> */}
       <ul className="menu-list">
       <li>
+                      <Link to="/">
+                        Startsidan
+                      </Link>
+                    </li>
+      <li>
                     <Link style={{pointerEvents:"none"}} to="/verktyg-digital-marknadsforing" onClick={(e)=> e.preventDefault()}>
                         grenarna
                       </Link>

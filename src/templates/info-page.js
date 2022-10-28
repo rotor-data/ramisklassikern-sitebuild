@@ -18,7 +18,7 @@ import Faq from "../components/Faq";
 
 
 
-const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solution, rules, who, model, customers }) => {
+const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solution, rules }) => {
 
   const heroImage = getImage(hero.image)
   const headlineImage = getImage(hero.headlineimg)
@@ -27,18 +27,24 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
   const solutionImage1 = getImage(solution.image1)
   const solutionImage2 = getImage(solution.image2)
   const solutionImage3 = getImage(solution.image3)
-  const whoImage1 = getImage(who.image1)
-  const customerImage1 = getImage(customers.image1)
-  const customerImage2 = getImage(customers.image2)
-  const bossImage1 = getImage(customers.bossimage1)
-  const bossImage2 = getImage(customers.bossimage2)
-
+  
   const boendeAnchor = useRef(null);
   const utrustningAnchor = useRef(null);
   const faqAnchor = useRef(null)
   const reglerAnchor = useRef(null)
+
+  const scrollIntoViewWithOffset = (selector, offset) => {
+    window.scrollTo({
+      behavior: 'smooth',
+      top:
+        selector.current?.getBoundingClientRect().top -
+        document.body.getBoundingClientRect().top -
+        offset,
+    })
+  }
+  
   const handleClickRef = (currentAnchor) => {
-  currentAnchor.current?.scrollIntoView({behavior: 'smooth', inline:'nearest'});
+  scrollIntoViewWithOffset(currentAnchor, 95)
   };
 
   return (
@@ -150,10 +156,6 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
      </div>
 
 
-
-      
-
-
       {/*rules section */}
       <div ref={reglerAnchor} ></div>
     <div className="section has-background-warning has-text-white">
@@ -191,9 +193,7 @@ const InfoPage = ({ data }) => {
         vanligafragor={frontmatter.vanligafragor}
         solution={frontmatter.solution}
         rules={frontmatter.rules}
-        model={frontmatter.model}
-        customers={frontmatter.customers}
-        who={frontmatter.who}
+        
 
       />
     </Layout>
@@ -281,64 +281,7 @@ query InfoPageTemplate {
         headline
         text
       }
-      who {
-        headline1
-        subtext1
-        text1
-        headline2
-        text2
-        imagealt1
-        image1 {
-          childImageSharp {
-            gatsbyImageData(quality: 50, width: 650)
-          }
-        }
-      }
-      model {
-        headline
-        subtext
-        image {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 800)
-          }
-        }
-        ctatext
-      }
-      customers {
-        customer1
-        headline1
-        text1
-        name1
-        bossimage1 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 100)
-          }
-        }
-        image1 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 800)
-          }
-        }
-        customer2
-        headline2
-        text2
-        name2
-        bossimage2 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 100)
-          }
-        }
-        image2 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 800)
-          }
-        }
-      }
+     
       
     }
   }

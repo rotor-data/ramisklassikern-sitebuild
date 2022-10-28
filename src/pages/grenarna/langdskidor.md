@@ -10,7 +10,8 @@ meta:
 hero:
   headline: Längdskidor
   subtext: ''
-  image: "/img/cro-site-trimmer-rotor.png"
+  image: hero-langdskidor.png
+
   cta:
     option: false
     text: Spårknapp behövs för att nyttja längdspåren. Mer om hur du beställer detta <a href="https://www.ramundberget.se/information/liftkort/vinter/" target="_blank" rel="noopener noreferrer">här</a>.

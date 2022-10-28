@@ -10,7 +10,8 @@ meta:
 hero:
   headline: Mountainbike
   subtext: ''
-  image: "/img/cro-site-trimmer-rotor.png"
+  image: hero-mountainbike.png
+
   cta:
     option: false
     text: 'Fjällpass cykel behövs för att nyttja cykellederna. Mer om hur du beställer detta <a href="https://www.ramundberget.se/information/liftkort/sommar/" target="_blank" rel="noopener noreferrer">här</a>.' 

@@ -1,22 +1,18 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { useState } from "react";
 import Layout from "../components/Layout";
-import StarDivider from "../components/Star-divider";
-import RotorBox from "../components/RotorBox"
-import LogoGallery from "../components/LogoGallery";
-import UpwindBack from "../img/upwind-back.svg"
-import LargeCTA from "../components/LargeCTA";
 import SEO from "../components/SEO";
-import RotorButton from "../components/RotorButton";
 import RamisSportLinks from "../components/RamisSportLinks";
 import { Link } from "gatsby";
 import RamisButton from "../components/RamisButton";
+import ApsisFormEmbed from "../components/ApsisFormEmbed";
+import SimpleModal from "../components/SimpleModal";
 
 
 
-
-const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model, customers }) => {
+const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
 
   const heroImage = getImage(hero.image)
   const headlineImage = getImage(hero.headlineimg)
@@ -25,13 +21,9 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
   const solutionImage1 = getImage(solution.image1)
   const solutionImage2 = getImage(solution.image2)
   const solutionImage3 = getImage(solution.image3)
-  const whoImage1 = getImage(who.image1)
-  const customerImage1 = getImage(customers.image1)
-  const customerImage2 = getImage(customers.image2)
-  const bossImage1 = getImage(customers.bossimage1)
-  const bossImage2 = getImage(customers.bossimage2)
 
 
+  const [show, setShow] = useState(false);
 
   return (
     <div>
@@ -61,8 +53,6 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
         >
           {/* Any content here will be centered in the component */}
 
-
-
           <div className="mt-1 has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3">
             <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">Rotor Digitalbyrå</h1>
 
@@ -79,43 +69,14 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
         </div>
       </div>
 
-
-      {/*       <div style={{
-        backgroundImage: `url(${HeroBack})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
-      }}>
-       
-        <div className="hero-body container pb-6">
-          <div className="columns is-desktop is-vcentered my-6">
-            <div className="column is-half-desktop is-10-mobile is-offset-1-mobile">
-              <div className="has-rainbow-parent">
-              <GatsbyImage image={headlineImage} alt={hero.imagealt} />
-              
-              </div>
-              <h3 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.subtext}</h3>
-              <h3 className="has-text-white has-tight-spacing is-size-4 is-size-5-mobile"><i>{hero.subtext2}</i></h3>
-            </div>
-            <div className="column is-half-desktop has-text-centered level-right">
-     
-
-            </div>
-          </div>
-          <div className="mb-6">
-          <RotorCTA buttonText={hero.cta.buttonText} buttonLink={hero.cta.buttonLink} headline={hero.cta.headline} text={hero.cta.text} />
-          </div>
-
-
-
-        </div>
-      </div> */}
-
-
       {/*challenge section*/}
-      <div className="container hero-body has-circle">
+      <div className="container is-fluid has-circle my-6">
 
-        <div className="columns">
-          <div className="column is-7-desktop is-12-mobile">
+        <div className="columns is-variable is-8-desktop">
+          <div className="column is-7-desktop is-offset-1-desktop is-11-mobile is-offset-1-mobile">
             <h2 className="is-size-2 mb-4">{challenge.headline}</h2>
             <p className="has-text-white" dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
+           
           </div>
           <div className="column has-text-centered mt-6">
 
@@ -139,6 +100,9 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
             <div className="column is-7-desktop">
               <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: solution.headline1 }}></h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text1 }}></p>
+              <button className="simplebutton is-size-5" type="button" onClick={() => setShow(true)}>
+        Klicka
+      </button>
             </div>
           </div>
         </div>
@@ -173,7 +137,6 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution, who, model,
 }
 
 
-
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
@@ -185,9 +148,6 @@ const IndexPage = ({ data }) => {
         hero={frontmatter.hero}
         challenge={frontmatter.challenge}
         solution={frontmatter.solution}
-        model={frontmatter.model}
-        customers={frontmatter.customers}
-        who={frontmatter.who}
 
       />
     </Layout>
@@ -263,64 +223,7 @@ query RotorStartTemplate {
  
 
       }
-      who {
-        headline1
-        subtext1
-        text1
-        headline2
-        text2
-        imagealt1
-        image1 {
-          childImageSharp {
-            gatsbyImageData(quality: 50, width: 650)
-          }
-        }
-      }
-      model {
-        headline
-        subtext
-        image {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 800)
-          }
-        }
-        ctatext
-      }
-      customers {
-        customer1
-        headline1
-        text1
-        name1
-        bossimage1 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 100)
-          }
-        }
-        image1 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 800)
-          }
-        }
-        customer2
-        headline2
-        text2
-        name2
-        bossimage2 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 100)
-          }
-        }
-        image2 {
-          childImageSharp {
-            id
-            gatsbyImageData(quality: 100, width: 800)
-          }
-        }
-      }
+      
       
     }
   }

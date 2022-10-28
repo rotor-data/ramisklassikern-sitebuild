@@ -2,57 +2,22 @@ import React from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout";
-import RotorCTA from "../components/RotorCTA";
-import StarDivider from "../components/Star-divider";
-import Accordion from "../components/accordion";
-import Linkify from "../components/LinkifyTools";
 import SEO from "../components/SEO";
-import RotorButton from "../components/RotorButton";
 import RamisButton from "../components/RamisButton";
 
 
-const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal, when, promise, what }) => {
+const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal }) => {
 
   const goalImage = getImage(goal.image)
   const heroImage = getImage(hero.image)
 
   return (
-    <div>
+    <div style={{marginTop:"98px"}}>
       <SEO title={title} description={meta.description} slug={path} />
       {/*hero section*/}
-      <div style={{
-        background: 'linear-gradient(45deg, rgba(0,126,132,1) 0%, rgba(239,185,215,1) 100%)',
-      }}>
-        <div className="hero-body container pb-6">
-          <div className="columns is-desktop is-vcentered my-6 is-variable is-8">
-            <div className="column is-half-desktop is-10-mobile is-offset-1-mobile">
-              <div >
-                <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile mb-4">{hero.headline}</h1>
-              </div>
-              <h2 className="has-text-white has-tight-height is-ultralarge is-size-1-mobile has-text-weight-bold is-uppercase ">{hero.subtext}</h2>
-            </div>
-            <div className="column is-half-tablet has-text-centered is-offset-one-quarter-tablet is-offset-0-desktop level-right">
-              <GatsbyImage image={heroImage} loading="eager" />
 
-            </div>
-          </div>
-          {/* optional CTA */}
-          {hero.cta.option === true &&
-            <div className="mb-6">
-              <RotorCTA buttonText={hero.cta.buttonText} buttonLink="/products/" headline={hero.cta.headline} text={hero.cta.text} />
-            </div>
-          }
-
-
-
-
-
-
-
-
-        </div>
-      </div>
-
+      <GatsbyImage style={{minHeight:"400px"}} image={heroImage} loading="eager" />
+      
 
         {/* challenge section */}
         <div className="section">
@@ -125,9 +90,7 @@ const MarketingAutomation = ({ data }) => {
         hero={frontmatter.hero}
         challenge={frontmatter.challenge}
         goal={frontmatter.goal}
-        when={frontmatter.when}
-        promise={frontmatter.promise}
-        what={frontmatter.what}
+
 
       />
     </Layout>
@@ -149,7 +112,7 @@ export const MarketingAutomationQuery = graphql`
           subtext
           image {
             childImageSharp {
-              gatsbyImageData(quality: 90, height:400)
+              gatsbyImageData(quality: 100, width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER,  cropFocus: EAST })
             }
           }
           cta {
@@ -176,21 +139,7 @@ export const MarketingAutomationQuery = graphql`
             }
           }
         }
-        when {
-          texts {
-            explanation
-            text
-          }
-          headline
-        }
-        promise {
-          headline
-          text
-        }
-        what {
-          headline
-          text
-        }
+        
         title
       }
     }
