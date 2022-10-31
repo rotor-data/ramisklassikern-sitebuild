@@ -48,7 +48,7 @@ const handleClickBurger = () => {
           >
             <MenuItems mobile={`${active?'is-active':''}`} />
             
-            <div className="button is-link navbar-end mt-3">
+            <div className="button is-link navbar-end mt-4" style={{height:"fit-content"}}>
               <Link className="has-text-black" to="/anmalan">Anmälan</Link>
             </div>
           </div>}

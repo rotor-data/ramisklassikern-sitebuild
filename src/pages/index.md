@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 meta: 
-  description: "Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis."
+  description: "Ramisklassikern – en ny utmaning inom multisport där fyra grenar görs individuellt under 12 månader."
   ogimage: "../img/dough-rain-rotor-paraply.png"
 title: Ramisklassikern – vill du testa något nytt och annorlunda?
 hero:
@@ -9,7 +9,7 @@ hero:
   headlineimg: /img/headline start.png
   subtext: ""
   subtext2: '(Och sluta jaga räckvidd, klick, trafik eller andra KPI:er som inte gör någon skillnad för ditt bankkonto)' 
-  image: dough-rain-rotor-paraply.png
+  image: /img/hero-bild-ramis.png
   imagealt: Digital marknadsföring i racingpaket
   background: "/img/hero-back.svg"
   cta: 
@@ -29,7 +29,7 @@ solution:
   headline1: Varför Ramisklas&shy;sikern?
   text1: En del motiveras av att testa nya utmaningar, andra av att slå sina personliga rekord. Här är inte det viktigaste att komma först eller att tävla mot andra, tiden är inte det väsentliga, utan att man tävlar och utmanar sig själv. (Även om det självklart känns ganska härligt att slå kompisgänget eller syrran.) Men oavsett vad man går i gång på är stoltheten att ha genomfört denna prestation enorm.<br><br> Vi hoppas att denna utmaning fungerar som motivation till att komma i gång med vardagsträningen, att testa nya sporter och får dig att tänja på dina gränser. Och som om detta inte vore nog, den ger dig dessutom tillfälle till att få njuta av den fantastiska och storslagna naturen uppe hos oss i Ramundberget.
 
-  image1: "/img/creme bottle frilagd.png"
+  image1: "/img/Ramundberget-skidakare.jpg"
   imagealt1: "kräm för digital marknadsföring"
   image2: "/img/quickfix.png"     
   imagealt2: "quickfix för snabb digital marknadsföring"

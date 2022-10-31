@@ -5,40 +5,23 @@
 
 @font-face
   font-family: 'avenir'
-  font-style: bold
+  font-style: normal
   font-weight: 900
   font-display: swap
-  src: url(/fonts/Avenir-Black.otf) format('otf')
+  src: url(/fonts/Avenir-Black.woff2) format('woff2')
 @font-face
   font-family: 'avenir'
-  font-style: regular
+  font-style: normal
   font-weight: 400
   font-display: swap
-  src: url(/fonts/Avenir-Book.otf) format('otf')
+  src: url(/fonts/Avenir-Book.woff2) format('woff2')
 @font-face
-  font-family: 'sofia-pro-condensed'
-  font-style: bold
-  font-weight: 700
+  font-family: 'avenir'
+  font-style: normal
+  font-weight: 800
   font-display: swap
-  src: url(/fonts/sofia-pro-condensed-700.woff2) format('woff2')
-@font-face
-  font-family: 'sofia-pro-condensed'
-  font-style: regular
-  font-weight: 400
-  font-display: swap
-  src: url(/fonts/sofia-pro-condensed-400.woff2) format('woff2')
-@font-face
-  font-family: 'neuzeit-grotesk'
-  font-style: regular
-  font-weight: 400
-  font-display: swap
-  src: url(/fonts/neuzeit-grotesk-400.woff2) format('woff2')
-@font-face
-  font-family: 'neuzeit-grotesk'
-  font-style: bold
-  font-weight: 700
-  font-display: swap
-  src: url(/fonts/neuzeit-grotesk-400.woff2) format('woff2')
+  src: url(/fonts/Avenir-Heavy.woff2) format('woff2')
+
 
 
 // Config vars
@@ -347,6 +330,7 @@ h2
   color: $link
   text-transform: uppercase
   font-weight: 900!important
+  
 
 h3
   font-family: $headline
@@ -1024,3 +1008,8 @@ button.cookie-customize
 @include tablet
   .framedbox
     padding: 5rem!important  
+
+//button wrap fix
+.button
+  white-space: normal
+  height: auto

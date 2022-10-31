@@ -26,49 +26,12 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
   const [show, setShow] = useState(false);
 
   return (
-    <div>
+    <div style={{marginTop:"98px"}}>
 
       <SEO title={title} description={meta.description} slug="" />
       {/*hero section*/}
 
-      <div style={{ display: "grid", position: "relative", height: '550px' }}>
-        <GatsbyImage image={heroImage} loading="eager" alt={hero.imagealt} style={{
-          gridArea: "1/1",
-
-          // You can set a maximum height for the image, if you wish.
-          // maxHeight: 600,
-        }} />
-        <div
-          style={{
-            // By using the same grid area for both, they are stacked on top of each other
-            gridArea: "1/1",
-            position: "absolute",
-            width: "100%",
-            left: "0%",
-            top: "10%",
-            // This centers the other elements inside the hero component
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
-          {/* Any content here will be centered in the component */}
-
-          <div className="mt-1 has-text-white mx-auto has-text-centered has-text-weight-bold has-tight-spacing is-size-3 is-size-5-mobile p-3">
-            <h1 className="has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile">Rotor Digitalbyrå</h1>
-
-            <div>
-              <GatsbyImage image={headlineImage} alt={hero.imagealt} />
-
-              {/*<h2 className="has-rainbow is-ultralarge is-size-1-mobile has-text-weight-bold mb-4 has-tight-height">{hero.headline}</h2>*/}
-            </div>
-            <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-text-weight-bold has-tight-spacing is-size-4 is-size-5-mobile my-3">{hero.subtext}</h3>
-            {/* <h3 className="column is-6-desktop is-offset-3-desktop has-text-white has-tight-spacing is-size-5 is-size-6-mobile"><i>{hero.subtext2}</i></h3> */}
-
-          </div>
-          {hero.text}
-        </div>
-      </div>
-
+      <GatsbyImage style={{minHeight:"400px"}} image={heroImage} loading="eager" />
       {/*challenge section*/}
       <div className="container is-fluid has-circle my-6">
 
@@ -94,15 +57,13 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
     <div className="section">
         <div className="container">
           <div className="columns is-variable is-8-desktop">
-            <div className="column has-text-centered mt-6">
+            <div className="column has-text-centered">
               <GatsbyImage image={solutionImage1} alt={challenge.imagealt} />
             </div>
             <div className="column is-7-desktop">
               <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: solution.headline1 }}></h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text1 }}></p>
-              <button className="simplebutton is-size-5" type="button" onClick={() => setShow(true)}>
-        Klicka
-      </button>
+              
             </div>
           </div>
         </div>
@@ -120,7 +81,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
                 <RamisButton buttonText="Anmäl dig här" buttonLink="/anmalan"/>
               </div>
             </div>
-            <div className="column has-text-centered mt-6">
+            <div className="column has-text-centered">
               <GatsbyImage image={solutionImage1} alt={challenge.imagealt} />
             </div>
           </div>
@@ -204,7 +165,7 @@ query RotorStartTemplate {
         imagealt1
         image1 {
           childImageSharp {
-            gatsbyImageData(quality: 50, width: 200)
+            gatsbyImageData(quality: 50, width: 500)
           }
         }
         imagealt2

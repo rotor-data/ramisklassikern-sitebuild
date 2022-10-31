@@ -55,11 +55,11 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
 
       <div className="has-background-info" style={{marginTop:"115px"}}>
 
-          <div className="columns is-variable is-8">
-            <div className="column is-7 has-text-centered">
+          <div className="is-flex is-flex-wrap-wrap is-justify-content-center">
+            <div className="">
               <GatsbyImage image={heroImage} alt={hero.imagealt} />
             </div>
-            <div className="column is-4-desktop is-10-mobile is-offset-1-mobile has-text-white">
+            <div className="is-offset-1-mobile has-text-white mt-4 mx-5 has-text-centered">
               <h1 className="is-size-2 mb-4 has-text-link is-uppercase"dangerouslySetInnerHTML={{ __html: hero.headline }}></h1>
               <p className="has-text-weight-bold" dangerouslySetInnerHTML={{ __html: hero.subtext }}></p>
               <div className="container is-flex is-flex-direction-column mt-6">
@@ -79,31 +79,40 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
     <div ref={boendeAnchor} ></div>
 
 
-        <div className="container is-fluid mt-6">
-          <div className="columns is-variable is-8">
-            <div className="column">
+    <div className="section has-text-white mt-6">
+        <div className="container">
+          <div className="columns is-variable is-8-desktop">
+            <div className="column has-text-centered">
               <GatsbyImage image={solutionImage1} alt={challenge.imagealt} />
             </div>
             <div className="column is-7-desktop">
-              <h2 className="is-size-2 mb-4">{solution.headline1}</h2>
+              <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: solution.headline1 }}></h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text1 }}></p>
+              
             </div>
           </div>
         </div>
+    </div>
 
-  
-        <div className="container is-fluid my-6">
-          <div className="columns is-variable is-8 is-mobile is-flex-wrap-wrap-reverse">
-            
-            <div className="column is-7-desktop is-12-mobile">
-              <h2 className="is-size-2 mb-4">{solution.headline2}</h2>
+
+
+
+
+    <div className="section has-text-white mb-6">
+        <div className="container">
+          <div className="columns is-variable is-8-desktop">
+           
+            <div className="column is-7-desktop">
+              <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: solution.headline2 }}></h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text2 }}></p>
+             
             </div>
-            <div className="column">
-              <GatsbyImage image={solutionImage1} alt={challenge.imagealt} />
+            <div className="column has-text-centered">
+              <GatsbyImage image={solutionImage2} alt={challenge.imagealt} />
             </div>
           </div>
         </div>
+      </div>
 
 
       
@@ -117,7 +126,7 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
          <div className="columns">
            <div className="column is-8-tablet is-offset-2-tablet is-12-mobile has-text-centered">
            
-             <h2 className="is-size-2 mb-4">{challenge.headline}</h2>
+             <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: challenge.headline }}></h2>
              <GatsbyImage image={challengeImage} alt={challenge.imagealt} />
              <p className="has-text-white p-3" dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
              <Faq/>
@@ -223,7 +232,7 @@ query InfoPageTemplate {
         imagealt
         image {
           childImageSharp {
-            gatsbyImageData(quality: 100, width: 1000, layout: FULL_WIDTH, transformOptions: { fit: OUTSIDE, cropFocus: ENTROPY })
+            gatsbyImageData(quality: 100, height:500, layout: CONSTRAINED, transformOptions: { fit: COVER, cropFocus: ENTROPY })
           }
         }
         cta {
@@ -250,13 +259,13 @@ query InfoPageTemplate {
         imagealt1
         image1 {
           childImageSharp {
-            gatsbyImageData(quality: 50, width:500, aspectRatio:1.3, transformOptions: { fit: COVER,  cropFocus: CENTER })
+            gatsbyImageData(quality: 50, width:500)
           }
         }
         imagealt2
         image2 {
           childImageSharp {
-            gatsbyImageData(quality: 50, width: 200)
+            gatsbyImageData(quality: 50, width: 500)
           }
         }
         text2

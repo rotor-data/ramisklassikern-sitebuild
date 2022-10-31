@@ -26,7 +26,7 @@ console.log(title)
   if (slug[0]!=='/') 
   {slug="/"+slug}
 
-  const ogimage = og.image || "img/og-image-miljoner-rotor.png"
+  const ogimage = og.image || "img/og-image.png"
   const ogtype = og.type || "website"
   const oglocale= og.locale || "sv_SE"
   const faviconGoogle = "img/favicon-96x96.ico"

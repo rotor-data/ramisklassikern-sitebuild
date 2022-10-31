@@ -27,6 +27,19 @@ module.exports = {
       },
     },
     {
+      //change these for set of favicons
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#579AB6`,
+        theme_color: `#579AB6`,
+        display: `standalone`,
+        icon: `src/img/Ramisklassikern_logo.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
