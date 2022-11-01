@@ -6,7 +6,6 @@ import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
 import youtube from "../img/social/youtube.svg";
 import linkedin from "../img/social/linkedin.svg"
-import footerBack from "../img/footer-back.svg"
 import FooterMenu from "./FooterMenu";
 import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";

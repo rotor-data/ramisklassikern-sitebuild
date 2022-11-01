@@ -20,7 +20,7 @@ hero:
     headline: ''
 
 challenge:
-  headline: Längdskidor
+  headline: Längd&shy;skidor
   image: hero-langdskidor.png
   text1: Längdåkningen är djupt rotat i den nordiska själen och historien lång. Det var många människor innan Gustav Vasa som insåg fördelarna med att transportera sig med ett par skidor under fötterna. Men det var först under 1800-talet som skidåkning som sport växte fram. (Kuriosa, världens äldsta bevarade skida anses vara Kalvträskskidan, en cirka 5200 år gammal skida hittad i Kalvträsk.)
   text2: 'Utmaning: Samla ihop 41 km längdskidåkning på ett dygn, välj mellan klassisk stil eller fristil. Start utgår från Ramundberget, kör Klinken runt, följ 4Motion-spåret till Bruksvallarna, fortsätt med 13 km-slingan, för att sedan vända tillbaka till Ramundberget via 4Motion.'

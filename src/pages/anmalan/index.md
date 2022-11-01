@@ -5,9 +5,9 @@ meta:
   ogimage: 
 title: Anmäl dig till Ramisklassikern här!
 hero:
-  headline: Kul att du är sugen på en ny utmaning!
+  headline: Kul att du är sugen på en ny ut&shy;maning!
   headlineimg: 
-  subtext: "Du anmäler dig smidigt och enkelt genom att fylla i FORMULÄRET nedan."
+  subtext: "Du anmäler dig smidigt och enkelt genom att fylla i formuläret."
   subtext2: 'När detta är emottaget tilldelas du ett registreringsnummer.' 
   image: 
   imagealt: ''
@@ -24,13 +24,13 @@ solution:
   text1: 'I Ramundberget finns förmånligt boende för alla deltagare, familjer och anhöriga. Välj bland hotell, lägenheter, stugor och vandrarhem. <br><br>I Ramundbergets bykärna finner du torget omgivet av hotell Fjällgården, restauranger och caféer samt sportbutiken Topsport som hyr ut den utrustning ni kan tänkas behöva. Torget är mötesplatsen och utgångspunkten för många av grenarna och här finns också en stor parkeringsplats. <br><br>Läs mer om Ramundbergets boendealternativ här.' 
 
   image1: 
-  imagealt1: "kräm för digital marknadsföring"
+  imagealt1: ""
   image2: 
-  imagealt2: "quickfix för snabb digital marknadsföring"
+  imagealt2: ""
   headline2: 'Resa hit'
   text2: Ramundberget ligger vackert beläget i västra Härjedalen vid vägs ände, två mil från norska gränsen och 750 meter över havet. 59 mil från Stockholm, 98 mil från Malmö. Till Ramundberget tar du dig med bil, buss, flyg eller tåg med transfer. På plats finns allt du behöver nära och det är gångavstånd från de flesta boenden i området. Läs mer om resalternativen här.
   image3: 
-  imagealt3: "fjärrkontroll med digitalbyrå tjänster"
+  imagealt3: ""
 
 challenge:
   headline: Utrustning
@@ -56,8 +56,8 @@ vanligafragor:
       answer: Generellt sett är leveranstiden 10-20 arbetsdagar som standard.
 
 rules:
-  headline: Tävlings&shy;regler
-  text: 'VÄNLIGEN NOTERA ATT: 
+  headline: Vänlig&shy;en notera att...
+  text: '
   <ul>
 	<li>Det är inte tillåtet att deltaga i våra moment i någon annans namn.</li>
 	<li>Allt deltagande i våra grenar sker på eget ansvar. Se till att du har en olycksfallsförsäkring.</li>

@@ -28,7 +28,7 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
               <GatsbyImage image={challengeImage} alt={challenge.imagealt} />
             </div>
             <div className="column is-7-desktop is-12-mobile">
-              <h2 className="is-size-2 mb-4">{challenge.headline}</h2>
+              <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: challenge.headline }}></h2>
               <p dangerouslySetInnerHTML={{ __html: challenge.text1 }}></p>
               <p class="has-yellow-border has-yellow-star" dangerouslySetInnerHTML={{ __html: challenge.text2 }}></p>
               <p dangerouslySetInnerHTML={{ __html: challenge.text3 }}></p>
@@ -65,8 +65,8 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
 
  {/* cta section registrera */}
       <div className="columns hero-body has-background-info">
-        <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet pb-6 has-text-centered">
-          <p className="is-size-5-tablet is-size-5-mobile has-text-white my-3" dangerouslySetInnerHTML={{__html: hero.cta.text}}></p>
+        <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet has-text-centered">
+          {/* <p className="is-size-5-tablet is-size-5-mobile has-text-white my-3" dangerouslySetInnerHTML={{__html: hero.cta.text}}></p> */}
           {console.log (hero.cta.buttonLink)}
           <a class="button is-link has-text-weight-bold is-uppercase" href={`mailto:${hero.cta.buttonLink}?subject=Jag har genomfört grenen ${title}&body=Jag bifogar här bildbevis i form av ett foto eller skärmdump av sportklocka eller aktivitetsapp. Jag bifogar också en bild på mig själv efter genomförd gren.`}>{hero.cta.buttonText}</a>
         </div>

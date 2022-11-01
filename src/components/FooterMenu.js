@@ -56,7 +56,7 @@ const FooterMenu = () => (
                       </Link>
                     </li>
                     <li>
-                      <Link to="/anders-inspirerar">
+                      <Link to="/anders-inspirerar/hang-med-nar-anders-genomfor-ramisklassikern/">
                         Anders inspirerar
                       </Link>
                     </li>
@@ -66,7 +66,7 @@ const FooterMenu = () => (
                       </Link>
                     </li>
                     <li>
-                      <Link to="/kontakta-oss">
+                      <Link to="/kontakta oss">
                         Kontakta oss
                       </Link>
                     </li>

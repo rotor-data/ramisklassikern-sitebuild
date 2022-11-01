@@ -3,16 +3,7 @@ import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useRef } from "react";
 import Layout from "../components/Layout";
-import StarDivider from "../components/Star-divider";
-import RotorBox from "../components/RotorBox"
-import LogoGallery from "../components/LogoGallery";
-import UpwindBack from "../img/upwind-back.svg"
-import LargeCTA from "../components/LargeCTA";
 import SEO from "../components/SEO";
-import RotorButton from "../components/RotorButton";
-import RamisSportLinks from "../components/RamisSportLinks";
-import { Link } from "gatsby";
-import RamisButton from "../components/RamisButton";
 import Faq from "../components/Faq";
 
 
@@ -21,7 +12,7 @@ import Faq from "../components/Faq";
 const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solution, rules }) => {
 
   const heroImage = getImage(hero.image)
-  const headlineImage = getImage(hero.headlineimg)
+
 
   const challengeImage = getImage(challenge.image)
   const solutionImage1 = getImage(solution.image1)
@@ -222,11 +213,6 @@ query InfoPageTemplate {
       }
       hero {
         headline
-        headlineimg {
-          childImageSharp {
-            gatsbyImageData(quality: 100, width: 730)
-          }
-        }
         subtext
         subtext2
         imagealt
@@ -269,12 +255,7 @@ query InfoPageTemplate {
           }
         }
         text2
-        imagealt3
-        image3 {
-          childImageSharp {
-            gatsbyImageData(quality: 100, width: 400)
-          }
-        }
+        
  
 
       }

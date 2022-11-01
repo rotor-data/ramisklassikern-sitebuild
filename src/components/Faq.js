@@ -36,7 +36,7 @@ const Faq = () => {
   <div className="faq-container has-text-left">
 
 <div>{faqItems.map((item, index) =>
-   <div  className="faq-wrapper my-3 is-flex is-flex-direction-row" onClick={()=>openClose(index)} id={`question-${index}`}>
+   <div  className="faq-wrapper my-3 is-flex is-flex-direction-row" tabIndex="0" role="tablist" onClick={()=>openClose(index)} onKeyDown={()=>openClose(index)} id={`question-${index}`}>
     <div className={`question-${activeId}`===`question-${index}`?"minussign":"plussign triangle-right" } ></div>
    <div className="ml-3 has-text-weight-bold has-text-link is-uppercase pt-4 pb-3"> {item.question} 
    <div className={`question-${activeId}`===`question-${index}`?"faq-item-show mt-3 faq-item":"faq-item-hide" } dangerouslySetInnerHTML={{ __html: item.answer }}></div>

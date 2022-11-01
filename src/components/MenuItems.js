@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import { useState} from "react"
-import { indexOf } from "lodash"
+
 
 
 const MenuItems = ({mobile}) => {
@@ -48,6 +48,7 @@ const MenuItems = ({mobile}) => {
     role="menubar"
     onClick={handleClick}
     onKeyPress ={handleClick}
+    tabIndex="0"
     >
       Grenarna
     </div>
@@ -81,10 +82,10 @@ const MenuItems = ({mobile}) => {
      Bra att veta
     </Link>
     
-    <Link className="navbar-item navbar" to="/kontakta oss">
+    <Link className="navbar-item navbar" to="/shop">
       Shop
     </Link>
-    <Link className="navbar-item navbar" to="/kontakta oss">
+    <Link className="navbar-item navbar" to="/anders-inspirerar/hang-med-nar-anders-genomfor-ramisklassikern/">
       Anders inspirerar
     </Link>
 

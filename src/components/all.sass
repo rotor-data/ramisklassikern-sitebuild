@@ -346,7 +346,7 @@ h6
 
 .faq-container ul, .list-container ul
   list-style-type: disc!important
-  list-style-position: inside  
+  list-style-position: outside 
 .is-hyphenated
   hyphens: auto
 
@@ -644,9 +644,10 @@ $menu-label-color: $white-ter
 .menu-list,
 .content .menu-list,
 .content ul
-  list-style: none !important
+  // list-style: none !important
   text-align: left
-
+.content
+  hyphens: auto
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
@@ -655,6 +656,8 @@ footer .menu-list
   text-transform: uppercase
   list-style-type: none
   transition: 100ms ease
+footer ul
+  list-style: none!important
 
 .menu-list a:hover
     background: $ramis-darkblue!important

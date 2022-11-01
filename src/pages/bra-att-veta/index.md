@@ -1,7 +1,7 @@
 ---
 templateKey: info-page
 meta: 
-  description: "Här."
+  description: "Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis."
   ogimage: 
 title: Information - här hittar du allt viktigt inför Ramisklassikern.
 hero:
@@ -21,20 +21,20 @@ hero:
   
 solution:
   headline1: Boende
-  text1: 'I Ramundberget finns förmånligt boende för alla deltagare, familjer och anhöriga. Välj bland hotell, lägenheter, stugor och vandrarhem. <br><br>I Ramundbergets bykärna finner du torget omgivet av hotell Fjällgården, restauranger och caféer samt sportbutiken Topsport som hyr ut den utrustning ni kan tänkas behöva. Torget är mötesplatsen och utgångspunkten för många av grenarna och här finns också en stor parkeringsplats. <br><br>Läs mer om Ramundbergets boendealternativ här.' 
+  text1: 'I Ramundberget finns förmånligt boende för alla deltagare, familjer och anhöriga. Välj bland hotell, lägenheter, stugor och vandrarhem. <br><br>I Ramundbergets bykärna finner du torget omgivet av hotell Fjällgården, restauranger och caféer samt sportbutiken Topsport som hyr ut den utrustning ni kan tänkas behöva. Torget är mötesplatsen och utgångspunkten för många av grenarna och här finns också en stor parkeringsplats. <br><br>Läs mer om <a href="https://www.ramundberget.se/boende/" target="_blank" ref="noreferrer"> Ramundbergets boendealternativ här.</a>' 
 
   image1: /img/Ramundberget-stugor.jpg
   imagealt1: "kräm för digital marknadsföring"
   image2: /img/Ramundberget-skidsystemet.jpg
   imagealt2: "quickfix för snabb digital marknadsföring"
   headline2: 'Resa hit'
-  text2: Ramundberget ligger vackert beläget i västra Härjedalen vid vägs ände, två mil från norska gränsen och 750 meter över havet. 59 mil från Stockholm, 98 mil från Malmö. Till Ramundberget tar du dig med bil, buss, flyg eller tåg med transfer. På plats finns allt du behöver nära och det är gångavstånd från de flesta boenden i området. Läs mer om resalternativen här.
+  text2: Ramundberget ligger vackert beläget i västra Härjedalen vid vägs ände, två mil från norska gränsen och 750 meter över havet. 59 mil från Stockholm, 98 mil från Malmö. Till Ramundberget tar du dig med bil, buss, flyg eller tåg med transfer. På plats finns allt du behöver nära och det är gångavstånd från de flesta boenden i området. Läs mer om <a href="https://ramundberget.se/information/hitta-till-Ramundberget/" target="_blank" ref="noreferrer">resalternativen här.</a>
   image3: 
   imagealt3: "fjärrkontroll med digitalbyrå tjänster"
 
 challenge:
   headline: Utrust&shy;ning
-  text: 'Önskar du hyra utrustning till Ramisklassikerns olika moment hittar du allt du behöver på <a href="https://www.ramundberget.se/sportbutik/" target="_blank" ref="noreferrer">Topsport, sportbutik och uthyrning. Vi rekommenderar följande utrustning till de olika grenarna:' 
+  text: 'Önskar du hyra utrustning till Ramisklassikerns olika moment hittar du allt du behöver på <a href="https://www.ramundberget.se/sportbutik/" target="_blank" ref="noreferrer">Topsport, sportbutik och uthyrning.</a> Vi rekommenderar följande utrustning till de olika grenarna:' 
 
   image: Illustration_langdskidor_gul.png
   imagealt: Illustration åka längdskidor
@@ -45,7 +45,7 @@ vanligafragor:
     - question: 'Finns det åldersgräns för medverkan?'
       answer: 'Vi rekommenderar att man har fyllt 18 för att medverka. Är man yngre görs momenten i målmans sällskap. För de som just startat sin träningskarriär och är yngre finns rekommendationer på kortare distanser.'
     - question: Hur anmäler jag mig?
-      answer: Anmäl via detta formulär.
+      answer: Anmäl via <a href="/anmalan">detta formulär.</a>
     - question: Finns det olika klasser?
       answer: Nej, alla medverkar under samma förutsättningar. 
     - question: Jag är nybörjare på vissa av momenten, kan jag medverka?
