@@ -24,7 +24,7 @@ challenge:
   headline: Mountain&shy;bike
   image: cykling-mountainbike.jpg
   text1: 'Den liftburna cykling som Ramundberget och dess omnejd erbjuder passar alla. Välj mellan fartfylld liftburen cykling i flowtrails, vindlande fjällcykling i cross-countrystil och slingrande lands- eller grusvägscykling. I denna delutmaning är liften ej tillåten utan här ska det även cyklas uppför.' 
-  text2: 'Utmaning: Cykla Klinken-rundan och uppför Ramundberget till toppen av Fjällgårdsbanan och tillbaka ner. Start och målgång sker vid från bytorget. Om du väljer att först ta Klinken eller ta dig upp för Ramundberget är upp dig. Sträckan är ca 15 km och ca 400 hm.'
+  text2: 'Utmaning: Cykla Klinken-rundan och uppför Ramundberget till toppen av Fjällgårdsbanan och tillbaka ner. <br><br>Start och målgång sker vid från bytorget. Om du väljer att först ta Klinken eller ta dig upp för Ramundberget är upp dig. Sträckan är ca 15 km och ca 400 hm.'
   text3:
 
 goal:

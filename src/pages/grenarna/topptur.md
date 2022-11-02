@@ -23,7 +23,7 @@ challenge:
   headline: Topp&shy;tur
   image: topptur.jpg
   text1: 'Att gå på topptur är inte bara ett härligt sätt att nå åkningen bortanför pisterna där naturupplevelsen och skidåkningen står i fokus. Det är även en utmaning som utöver lavin-kit, skidutrustning med gå-möjlighet och stighudar kräver en hel del pannben. Men belöningen är oslagbar.' 
-  text2: 'Utmaning: Bestig Mittåkläppen (500 hm). Klistra på hudarna, spänn pjäxorna lagom hårt och packa med lavinutrustningen. Starta nedanför Fjällgården vid bron över Ljusnan och ta dig hela vägen till Mittåkläppens topp. Här finns ingen utstakad väg, så karta och kompass är en självklarhet i ryggsäcken.'
+  text2: 'Utmaning: Bestig Mittåkläppen (500 hm).<br><br>Klistra på hudarna, spänn pjäxorna lagom hårt och packa med lavinutrustningen. Starta nedanför Fjällgården vid bron över Ljusnan och ta dig hela vägen till Mittåkläppens topp. Här finns ingen utstakad väg, så karta och kompass är en självklarhet i ryggsäcken.'
   text3:
 
 goal:

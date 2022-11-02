@@ -30,7 +30,7 @@ const ContactPageTemplate = ({ meta, title, hero}) => {
     
          <div className="columns is-variable is-8-desktop">
            <div className="column section is-4-desktop is-offset-1-desktop is-10-mobile is-offset-1-mobile is-offset-1-tablet">
-             <h1 className="is-size-2 mb-4">{hero.headline}</h1>
+             <h1 className="is-size-3 mb-4" dangerouslySetInnerHTML={{ __html: hero.headline }}></h1>
              <p className="has-text-white is-uppercase mb-4" dangerouslySetInnerHTML={{ __html: hero.subtext }}></p>
              <p className="has-text-white mb-4" dangerouslySetInnerHTML={{ __html: hero.subtext2 }}></p>
      

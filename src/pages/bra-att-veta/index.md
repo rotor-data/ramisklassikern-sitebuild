@@ -34,7 +34,7 @@ solution:
 
 challenge:
   headline: Utrust&shy;ning
-  text: 'Önskar du hyra utrustning till Ramisklassikerns olika moment hittar du allt du behöver på <a href="https://www.ramundberget.se/sportbutik/" target="_blank" ref="noreferrer">Topsport, sportbutik och uthyrning.</a> Vi rekommenderar följande utrustning till de olika grenarna:' 
+  text: 'Önskar du hyra utrustning till Ramisklassikerns olika grenar hittar du allt du behöver på <a href="https://www.ramundberget.se/sportbutik/" target="_blank" ref="noreferrer">Topsport, sportbutik och uthyrning.</a><br><br>Vi rekommenderar följande utrustning till de olika grenarna:' 
 
   image: Illustration_langdskidor_gul.png
   imagealt: Illustration åka längdskidor

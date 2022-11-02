@@ -8,7 +8,7 @@ hero:
   headline: Kul att du är sugen på en ny ut&shy;maning!
   headlineimg: 
   subtext: "Du anmäler dig smidigt och enkelt genom att fylla i formuläret."
-  subtext2: 'När detta är emottaget tilldelas du ett registreringsnummer.' 
+  subtext2: 'När detta är mottaget tilldelas du ett registreringsnummer.' 
   image: 
   imagealt: ''
   background: 
@@ -63,7 +63,7 @@ rules:
 	<li>Allt deltagande i våra grenar sker på eget ansvar. Se till att du har en olycksfallsförsäkring.</li>
 	<li>Vi ersätter inte förlust eller skada på egendom.</li>
 	<li>Din medverkan kommer att registreras i enlighet med GDPR. Mer om <a href="/gdpr"> GDPR-Dataskyddsförordningen här.</a></li>
-</ul>
+</ul><br>
 
 Mer om <a href="/bra-att-veta">regler och rekommendationer för medverkan här.</a>'
   

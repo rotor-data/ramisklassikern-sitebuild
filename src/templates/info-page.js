@@ -53,7 +53,7 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
             <div className="is-offset-1-mobile has-text-white mt-4 mx-5 has-text-centered">
               <h1 className="is-size-2 mb-4 has-text-link is-uppercase"dangerouslySetInnerHTML={{ __html: hero.headline }}></h1>
               <p className="has-text-weight-bold" dangerouslySetInnerHTML={{ __html: hero.subtext }}></p>
-              <div className="container is-flex is-flex-direction-column mt-6">
+              <div className="container is-flex is-flex-direction-column mt-4">
                 <button className="button is-link mb-3 has-text-black is-uppercase has-text-weight-bold" onClick={()=>handleClickRef(boendeAnchor)}>Boende & Resa hit</button>
                 <button className="button is-link mb-3 has-text-black is-uppercase has-text-weight-bold" onClick={()=>handleClickRef(utrustningAnchor)}>Utrustning</button>
                 <button className="button is-link mb-3 has-text-black is-uppercase has-text-weight-bold" onClick={()=>handleClickRef(faqAnchor)}>Vanliga frågor</button>
