@@ -9,20 +9,21 @@ hero:
   subtext: ""
   subtext2: '(Och sluta jaga räckvidd, klick, trafik eller andra KPI:er som inte gör någon skillnad för ditt bankkonto)' 
   image: /img/hero-bild-ramis.png
+  image-small: 
   imagealt: Ramisklassikern bild på alla grenar
   background: "/img/hero-back.svg"
   cta: 
-    text: Exakt vad en lead, ett kundmöte och en försäljning kostar dig? Varför dina annonser på Google och sociala medier inte fungerar? Hur du bygger upp ett säljflöde som är helt automatiserat?
-    buttonText: Lär mig hur
-    buttonLink: https://rotor.ger-dig.com/gratis-mote
-    headline: Har du inte koll på...
+    text: 
+    buttonText: 
+    buttonLink: 
+    headline: 
 challenge:
   headline: Sugen på en rejäl utmaning?
   subtext: Vill du testa att göra något nytt och annorlunda?
   text: 'Testa då Ramisklassikern – en ny multisportutmaning där fyra grenar görs individuellt under 12 månader. <br><br>Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis. Lycka till!' 
 
-  image: "/img/super crunchy box fri.png"
-  imagealt: flingpaket med tjänster från digitalbyrå
+  image:
+  imagealt: 
         
 
 solution:
@@ -31,13 +32,13 @@ solution:
 
   image1: "/img/Ramundberget-skidakare.jpg"
   imagealt1: "Ramundberget skidåkare"
-  image2: "/img/Ramundberget-skidakare.jpg"     
-  imagealt2: "Ramundberget skidåkare"
+  image2: "/img/Illustration_langdskidor_gul.png"    
+  imagealt2: "Skidåkare illustration"
   headline2: 'Så anmäler man sig'
-  text2: Du behöver inte betala någon anmälningsavgift eller förhålla dig till några specifika datum. Här är det till stor del naturen och väder som håller i agendan och schemat. Ja, och din tillgänglighet och lust förstås. Tryck på knappen för att registrera din medverkan..
+  text2: Du behöver inte betala någon anmälningsavgift eller förhålla dig till några specifika datum. Här är det till stor del naturen och väder som håller i agendan och schemat. Ja, och din tillgänglighet och lust förstås. Tryck på knappen för att registrera din medverkan.
 
-  image3: "/img/Ramundberget-skidakare.jpg"
-  imagealt3: "Ramundberget skidåkare"
+  image3: "/img/Illustration_langdskidor_gul.png"
+  imagealt3: "Skidåkare illustration"
 
 
 cta:
