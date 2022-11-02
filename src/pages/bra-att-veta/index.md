@@ -1,7 +1,7 @@
 ---
 templateKey: info-page
 meta: 
-  description: "Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis."
+  description: "Allt du behöver veta inför Ramisklassikern såsom boende, resa hit och utrustning."
   ogimage: 
 title: Information - här hittar du allt viktigt inför Ramisklassikern.
 hero:

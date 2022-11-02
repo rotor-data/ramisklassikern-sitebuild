@@ -1,7 +1,7 @@
 ---
 templateKey: anmalan-page
 meta: 
-  description: "Anmäl dig till Ramisklassikern här."
+  description: "Här anmäler du dig till Ramisklassikern."
   ogimage: 
 title: Anmäl dig till Ramisklassikern här!
 hero:
@@ -62,10 +62,10 @@ rules:
 	<li>Det är inte tillåtet att deltaga i våra moment i någon annans namn.</li>
 	<li>Allt deltagande i våra grenar sker på eget ansvar. Se till att du har en olycksfallsförsäkring.</li>
 	<li>Vi ersätter inte förlust eller skada på egendom.</li>
-	<li>Din medverkan kommer att registreras i enlighet med GDPR. Mer om GDPR-Dataskyddsförordningen här.</li>
+	<li>Din medverkan kommer att registreras i enlighet med GDPR. Mer om <a href="/gdpr"> GDPR-Dataskyddsförordningen här.</a></li>
 </ul>
 
-Mer om regler och rekommendationer för medverkan här.'
+Mer om <a href="/bra-att-veta">regler och rekommendationer för medverkan här.</a>'
   
 
 cta:

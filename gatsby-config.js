@@ -4,14 +4,14 @@ module.exports = {
     title: "Ramisklassikern – testa något nytt och annorlunda",
     description:
       "Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis.",
-    siteUrl: "https://rrrotor.com",
+    siteUrl: "https://ramisklassikern.se",
     socialLinks: {
       facebook:"",
       twitter:"",
       instagram:"",
-      vimeo:"https://vimeo.com/showcase/8790045",
+      vimeo:"",
       youtube:"",
-      linkedin:"https://www.linkedin.com/company/rotor-media-group/",
+      linkedin:"",
       tiktok:""
 
     }
@@ -43,7 +43,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'G-J9YHY8V1QF', // leave empty if you want to disable the tracker
+          trackingId: '', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-analytics', // default
           anonymize: true, // default
           allowAdFeatures: false // default
@@ -62,8 +62,8 @@ module.exports = {
           cookieName: 'gatsby-gdpr-tiktok-pixel', // default
         },
         hotjar: {
-          hjid: '3178325',
-          hjsv: '6',
+          hjid: '',
+          hjsv: '',
           cookieName: 'gatsby-gdpr-hotjar', // default
         },
         linkedin: {

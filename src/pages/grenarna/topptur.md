@@ -6,7 +6,7 @@ subtitle: ''
 templateKey: tools
 
 meta: 
-  description: 'Topptur meta description'
+  description: 'Utmaning topptur, en av Ramisklassikerns fyra grenar. Bestig Mittåkläppen och samla ihop 500 höjdmeter.'
 hero:
   headline: Topptur
   subtext: ''

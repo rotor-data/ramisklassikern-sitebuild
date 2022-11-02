@@ -6,7 +6,7 @@ subtitle:
 templateKey: tools
 
 meta: 
-  description: 'Mountainbike meta description'
+  description: 'Utmaning på mountainbike, en av Ramisklassikerns fyra grenar. Cykla Klinken-rundan och uppför Ramundberget till toppen av Fjällgårdsbanan och tillbaka ner. Sträckan är ca 15 km.'
 hero:
   headline: Mountainbike
   subtext: ''

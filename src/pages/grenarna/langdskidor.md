@@ -6,7 +6,7 @@ subtitle:
 templateKey: tools
 
 meta: 
-  description: 'Längskidor meta description'
+  description: 'Utmaning på längdskidor, en av Ramisklassikerns fyra grenar. Samla ihop 41 km längdskidåkning på ett dygn, välj mellan klassisk stil eller fristil.'
 hero:
   headline: Längdskidor
   subtext: ''

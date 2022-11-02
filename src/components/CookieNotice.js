@@ -64,7 +64,7 @@ const CookieNotice = () => {
     };
    const [bannerVisible, setBannerVisible] = useState("byCookieValue");
 
-    const cookieImage = '../img/macaron box.png'
+    const cookieImage = ''
 
     return (
         <div>
