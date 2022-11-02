@@ -11,6 +11,7 @@ hero:
   headline: Trailrunning
   subtext: ''
   image: hero-trailrunning.png
+  imagesmall: trailrun-hero-small.png
   cta:
     option: false
     text: Sugen på en rejäl utmaning? Ramisklassikern – en ny multisportutmaning där fyra grenar görs individuellt under 12 månader. 

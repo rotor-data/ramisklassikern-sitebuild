@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import RamisButton from "../components/RamisButton";
@@ -10,7 +10,14 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
 
   const goalImage = getImage(goal.image)
   const challengeImage = getImage(challenge.image)
-  const heroImage = getImage(hero.image)
+  // const heroImage = getImage(hero.image)
+
+  const heroImage = withArtDirection(getImage(hero.image), [
+    {
+      media: "(max-width: 1024px)",
+      image: getImage(hero.imagesmall)
+    }
+  ])
 
   return (
     <div style={{marginTop:"98px"}}>
@@ -116,6 +123,12 @@ export const MarketingAutomationQuery = graphql`
               gatsbyImageData(quality: 100, width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER,  cropFocus: EAST })
             }
           }
+          imagesmall {
+            childImageSharp {
+              gatsbyImageData(quality: 100, width: 1920, layout: CONSTRAINED, transformOptions: { fit: COVER,  cropFocus: EAST })
+            }
+          }
+          
           cta {
             option
             text

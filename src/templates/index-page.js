@@ -68,7 +68,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
         </div>
     </div>
 
-      {/*solution section2*/}
+      {/*solution section2 så anmäler man sig*/}
       <div className="section has-background-warning has-text-white">
         <div className="container">
           <div className="columns is-variable is-8-desktop">

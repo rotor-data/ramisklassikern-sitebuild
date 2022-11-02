@@ -100,7 +100,7 @@ const Footer = () => {
               </section>
             </div>
             <div className="column is-4">
-           <StaticImage src="../img/Cykel_gul.png" height={400}/>
+           <StaticImage src="../img/Illustration_topptur_gul.png" height={400}/>
             </div>
 
           </div>
