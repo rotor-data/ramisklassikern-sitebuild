@@ -28,24 +28,26 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
 
       <GatsbyImage style={{minHeight:"400px"}} image={heroImage} loading="eager" />
       {/*challenge section*/}
-      <div className="container has-circle my-6">
-
-        <div className="columns is-variable is-8-desktop">
-          <div className="column is-7-desktop is-offset-1-desktop is-11-tablet is-offset-1-tablet is-11-mobile is-offset-1-mobile">
-            <h1 className="is-size-2 mb-4">{challenge.headline}</h1>
-            <p className="has-text-white is-uppercase has-text-weight-bold mb-4" dangerouslySetInnerHTML={{ __html: challenge.subtext }}></p>
-            <p className="has-text-white" dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
-            <div className="mt-6">
-                <RamisButton buttonText="Anmäl dig här" buttonLink="/anmalan"/>
-              </div>
-           
-          </div>
-          <div className="column has-text-centered mt-6">
-
-          </div>
-
-        </div>
-      </div>
+ <div className="section">
+       <div className="container has-circle my-6">
+  
+         <div className="columns is-variable is-8-desktop">
+           <div className="column is-7-desktop">
+             <h1 className="is-size-2 mb-4">{challenge.headline}</h1>
+             <p className="has-text-white is-uppercase has-text-weight-bold mb-4" dangerouslySetInnerHTML={{ __html: challenge.subtext }}></p>
+             <p className="has-text-white" dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
+             <div className="mt-6">
+                 <RamisButton buttonText="Anmäl dig här" buttonLink="/anmalan"/>
+               </div>
+            
+           </div>
+           <div className="column has-text-centered mt-6">
+  
+           </div>
+  
+         </div>
+       </div>
+ </div>
 
       {/*Internal links till grensidor*/}
       <div className="section has-background-warning">
@@ -70,7 +72,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
 
       {/*solution section2 så anmäler man sig*/}
       <div className="section has-background-warning has-text-white">
-        <div className="container">
+        <div className="container has-circle">
           <div className="columns is-variable is-8-desktop">
            
             <div className="column is-7-desktop">
@@ -81,7 +83,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
               </div>
             </div>
             <div className="column has-text-centered">
-              <GatsbyImage image={solutionImage2} alt={solution.imagealt2} />
+              {/* <GatsbyImage image={solutionImage2} alt={solution.imagealt2} /> */}
             </div>
           </div>
         </div>
