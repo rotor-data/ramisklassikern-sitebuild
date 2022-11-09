@@ -16,7 +16,19 @@ const MenuItems = ({mobile}) => {
  
   };
 
+const sortMenuItemsByOrder = (array) => {
+array.sort((a, b) => a.node.frontmatter.order - b.node.frontmatter.order)
+let newArray = array.map (tool => 
+  <Link className="navbar-item is-flex-direction-column is-align-items-start" to={tool.node.frontmatter.path}>
+     <h3 className="is-size-6-desktop is-size-6-mobile is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
+     
+      <p className="is-family-secondary is-size-7" >{tool.node.frontmatter.subtitle}</p>
+     
+    </Link>
+  )
 
+return newArray
+}
   return (
 
   <StaticQuery
@@ -63,16 +75,9 @@ const MenuItems = ({mobile}) => {
     `} 
     >
   
+  {sortMenuItemsByOrder(data.allMarkdownRemark.edges)}
   
   
-    {data.allMarkdownRemark.edges.map ((tool,i) => 
-      <Link className="navbar-item is-flex-direction-column is-align-items-start" to={tool.node.frontmatter.path}>
-     <h3 className="is-size-6-desktop is-size-6-mobile is-uppercase mb-1">{tool.node.frontmatter.title} </h3>
-      <p className="is-family-secondary is-size-7" >{tool.node.frontmatter.subtitle}</p>
-   
-    </Link>
-
-    )}
    
    
   </div>

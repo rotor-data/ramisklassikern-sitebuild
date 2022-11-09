@@ -19,7 +19,7 @@ const ContactPageTemplate = ({ meta, title, hero}) => {
 
 
   return (
-    <div className="mb-6" style={{marginTop:"98px"}}>
+    <div className="mt-6" style={{marginTop:"98px"}}>
 
       <SEO title={title} description={meta.description} slug="" />
       
@@ -42,7 +42,7 @@ const ContactPageTemplate = ({ meta, title, hero}) => {
        
     
          </div>
-         <GatsbyImage image={heroImage} alt={hero.imagealt} />
+         {/* <GatsbyImage image={heroImage} alt={hero.imagealt} /> */}
        </div>
        
    </div>

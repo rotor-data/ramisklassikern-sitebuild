@@ -18,9 +18,9 @@ hero:
     buttonLink: 
     headline: 
 challenge:
-  headline: Vill du testa att göra något nytt och annorlunda?
-  subtext: ''
-  text: 'Testa då Ramisklassikern – en ny multisportutmaning där fyra grenar görs individuellt under 12 månader. <br><br>Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis. Lycka till!' 
+  headline: Sugen på en rejäl utmaning?
+  subtext: 'Testa då Ramisklassikern – en ny multisportutmaning där fyra grenar görs individuellt under 12 månader.'
+  text: 'Denna utmaning passar alla, elit såväl som motionärer. Alla grenar genomförs i Ramundbergets närområde, när du vill. Börja med det moment du önskar och du har sedan ett år på dig att genomföra de tre kvarvarande. Alla får plats och det är dessutom gratis. Lycka till!' 
 
   image:
   imagealt: 

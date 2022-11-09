@@ -58,6 +58,8 @@ vanligafragor:
 rules:
   headline: Tävlings&shy;regler
   text: '<ul>
+  <li>Du registrerar varje gren genom att skicka ett mejl. Skicka då med ett foto på dig själv på plats vid aktiviteten + en bild på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon som tex RunKeeper eller Strava och ta en skärmdump på genomförd aktivitet där. Du hittar registreringsknappen på respektive grensida.
+  </li>
 	<li>Samtliga moment skall slutföras under ett år från att första moment genomfördes.</li>
 
 	<li> Det är inte tillåtet att deltaga i våra moment i någon annans namn.</li>
@@ -72,9 +74,9 @@ rules:
 
 	<li> Hjälm ska bäras under all cykling.</li>
 
-	<li> Vid allvarlig olycka ring nöd nummer 112 i Sverige </li>
+	<li> Vid allvarlig olycka ring nöd nummer 112 i Sverige. </li>
 
-	<li> Elcyklar är ej tillåtet</li>
+	<li> Elcyklar är ej tillåtet.</li>
 
 	<li> Det är inte tillåtet att använda sig av liftarna även om dessa skulle gå och kunna ge en fördel.</li>
 

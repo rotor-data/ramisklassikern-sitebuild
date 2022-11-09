@@ -141,7 +141,7 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
              
               <div>
                 <h3 className="has-text-white mb-2">{q.question}</h3>
-                <p className="has-text-white mb-4" dangerouslySetInnerHTML={{ __html: q.answer }}></p>
+                <div className="has-text-white mb-4" dangerouslySetInnerHTML={{ __html: q.answer }}></div>
               </div>
             
               

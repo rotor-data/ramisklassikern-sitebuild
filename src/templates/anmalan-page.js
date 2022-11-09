@@ -26,7 +26,7 @@ const AnmalanPageTemplate = ({ meta, title, hero, rules }) => {
       
 
       {/*form and text section*/}
-   <div className="has-background-warning has-circle">
+   <div className="has-background-warning">
        <div className="container py-6">
     
          <div className="columns is-variable is-8-desktop">
@@ -53,7 +53,7 @@ const AnmalanPageTemplate = ({ meta, title, hero, rules }) => {
                 
                   <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: rules.headline }}></h2>
       
-                <p className="list-container" dangerouslySetInnerHTML={{ __html: rules.text }}></p>
+                <div className="list-container" dangerouslySetInnerHTML={{ __html: rules.text }}></div>
               </div>
              
             </div>
