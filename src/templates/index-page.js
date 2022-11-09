@@ -29,7 +29,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
       <GatsbyImage style={{minHeight:"400px"}} image={heroImage} loading="eager" />
       {/*challenge section*/}
  <div className="section">
-       <div className="container has-circle my-6">
+       <div className="container has-circle">
   
          <div className="columns is-variable is-8-desktop">
            <div className="column is-7-desktop is-offset-1-tablet">
@@ -41,9 +41,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
                </div>
             
            </div>
-           <div className="column has-text-centered mt-6">
-  
-           </div>
+           
   
          </div>
        </div>
@@ -82,9 +80,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
                 <RamisButton buttonText="Anmäl dig här" buttonLink="/anmalan"/>
               </div>
             </div>
-            <div className="column has-text-centered">
-              {/* <GatsbyImage image={solutionImage2} alt={solution.imagealt2} /> */}
-            </div>
+         
           </div>
         </div>
       </div>
