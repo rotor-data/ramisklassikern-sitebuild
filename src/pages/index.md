@@ -8,7 +8,7 @@ hero:
   headline: 
   subtext: ""
   subtext2: '(Och sluta jaga räckvidd, klick, trafik eller andra KPI:er som inte gör någon skillnad för ditt bankkonto)' 
-  image: /img/hero-bild-ramis.png
+  image: /img/hero-ramisklassikern.png
   image-small: 
   imagealt: Ramisklassikern bild på alla grenar
   background: "/img/hero-back.svg"
@@ -27,7 +27,7 @@ challenge:
         
 
 solution:
-  headline1: Varför Ramisklas&shy;sikern?
+  headline1: Varför Ramis&shy;klassikern?
   text1: En del motiveras av att testa nya utmaningar, andra av att slå sina personliga rekord. Här är inte det viktigaste att komma först eller att tävla mot andra, tiden är inte det väsentliga, utan att man tävlar och utmanar sig själv. (Även om det självklart känns ganska härligt att slå kompisgänget eller syrran.) Men oavsett vad man går i gång på är stoltheten att ha genomfört denna prestation enorm.<br><br> Vi hoppas att denna utmaning fungerar som motivation till att komma i gång med vardagsträningen, att testa nya sporter och får dig att tänja på dina gränser. Och som om detta inte vore nog, den ger dig dessutom tillfälle till att få njuta av den fantastiska och storslagna naturen uppe hos oss i Ramundberget.
 
   image1: "/img/Ramundberget-skidakare.jpg"

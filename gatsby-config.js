@@ -8,7 +8,7 @@ module.exports = {
     socialLinks: {
       facebook:"",
       twitter:"",
-      instagram:"",
+      instagram:"https://instagram.com/ramisklassikern?igshid=YmMyMTA2M2Y=",
       vimeo:"",
       youtube:"",
       linkedin:"",

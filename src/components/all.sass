@@ -174,8 +174,14 @@ blockquote:after
   top:-200px
   right: -700px
   border-radius: 100%
-  z-index:-1
 
+// fixes for circle addon for surrounding containers
+.has-background-warning:has(.has-circle) .columns 
+  z-index: 2
+  position: relative
+
+.section:has(.has-circle) 
+  overflow: hidden
 //accordion CSS
   
 .accordion-item
@@ -671,7 +677,7 @@ footer ul
   padding: 2em
 .social a
   padding: .8em .5em .2em .5em
-  border-radius: 1em
+  border-radius: 100%
   background-color: $white
   margin: .5em
   width: 1em

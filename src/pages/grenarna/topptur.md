@@ -12,11 +12,11 @@ hero:
   headline: Topptur
   subtext: ''
   image: hero-topptur.png
-  imagesmall: topptur-hero-small.png
+  imagesmall: topptur-hero-small-2.png
   cta:
     option: false
     text: 'OBS! Delar av Mittåkläppen är i lavinterräng, så utan rätt kunskap rekommenderas att gå med guide. Glöm inte att njuta på vägen ner.'
-    text2: 'Du registrerar grenen genom att skicka ett mejl (tryck på knappen nedan så öppnas ett nytt mejl). Skicka då med ett foto på dig själv på plats vid aktiviteten + en bild på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon som tex RunKeeper eller Strava och ta en skärmdump på genomförd aktivitet där.' 
+    text2: 'Du registrerar grenen genom att skicka ett mejl (tryck på knappen nedan så öppnas ett nytt mejl). Bifoga en bild på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon, som tex RunKeeper eller Strava, och ta en skärmdump på genomförd aktivitet.' 
     buttonText: Registrera genomförd gren
     buttonLink: 'ramisklassikern@ramundberget.se'
     headline: ''

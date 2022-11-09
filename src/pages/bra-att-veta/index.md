@@ -58,7 +58,7 @@ vanligafragor:
 rules:
   headline: Tävlings&shy;regler
   text: '<ul>
-  <li>Du registrerar varje gren genom att skicka ett mejl. Skicka då med ett foto på dig själv på plats vid aktiviteten + en bild på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon som tex RunKeeper eller Strava och ta en skärmdump på genomförd aktivitet där. Du hittar registreringsknappen på respektive grensida.
+  <li>Du registrerar varje gren genom att skicka ett mejl. Skicka då med en bild eller skärmdump på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon som tex RunKeeper eller Strava och ta en skärmdump på genomförd aktivitet där. Du hittar registreringsknappen på respektive grensida.
   </li>
 	<li>Samtliga moment skall slutföras under ett år från att första moment genomfördes.</li>
 
