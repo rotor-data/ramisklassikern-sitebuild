@@ -12,8 +12,8 @@ Mejla namn, adress, registreringsnummer och vad du önskar att köpa till <a hre
 Det tar i genomsnitt ca 20 arbetsdagar innan din produkt är färdig.
 ' 
   subtext2: '' 
-  image: diplom.png
-  imagealt: ''
+  image: Ramisklassikern-diplom.png
+  imagealt: 'diplom Ramisklassikern'
   background: 
   
 solution:

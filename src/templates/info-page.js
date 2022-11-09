@@ -166,7 +166,7 @@ const InfoPageTemplate = ({ meta, title, hero, challenge, vanligafragor, solutio
                 
                   <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: rules.headline }}></h2>
       
-                <p className="list-container" dangerouslySetInnerHTML={{ __html: rules.text }}></p>
+                <div className="list-container" dangerouslySetInnerHTML={{ __html: rules.text }}></div>
               </div>
              
             </div>

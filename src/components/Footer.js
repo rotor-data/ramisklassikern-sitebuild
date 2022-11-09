@@ -108,6 +108,9 @@ const Footer = () => {
       </div>
       <p className="mb-0 has-text-centered mt-6 is-supersmall has-text-white is-family-secondary">
         © {data.site.siteMetadata.company} {new Date().getFullYear()}
+        <div>
+        Byrå: <a href="https://rrrotor.com" target="_blank" rel="noreferrer">Rotor Digitalbyrå</a> 
+        </div>
       </p>
     </footer>
   );

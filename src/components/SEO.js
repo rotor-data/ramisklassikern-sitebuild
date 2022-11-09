@@ -33,7 +33,16 @@ console.log(title)
 
   const jsonld = 
   {
-   
+  "@context": 'https://schema.org',
+  "@type": "SportsOrganization",
+  "name": "Ramisklassikern",
+  "url": 'https://www.ramisklassikern.se',
+  "logo": "",
+  "sameAs": [
+    'https://www.facebook.com/Ramisklassikern-110367071883253',
+    'https://www.instagram.com/ramisklassikern/',
+    'https://www.ramisklassikern.se'
+  ]
   }
 
 

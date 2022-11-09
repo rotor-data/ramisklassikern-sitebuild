@@ -5,7 +5,7 @@ meta:
   ogimage: 
 title: Anmäl dig till Ramisklassikern här!
 hero:
-  headline: Kul att du är sugen på en ny ut&shy;maning!
+  headline: Kul att du är sugen på en ny utmaning!
   headlineimg: 
   subtext: "Du anmäler dig smidigt och enkelt genom att fylla i formuläret."
   subtext2: 'När detta är mottaget tilldelas du ett registreringsnummer.' 

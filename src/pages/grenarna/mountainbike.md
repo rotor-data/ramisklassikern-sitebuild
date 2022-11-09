@@ -2,6 +2,7 @@
 
 path: "/grenarna/mountainbike"
 title: Mountainbike
+order: 2
 subtitle: 
 templateKey: tools
 

@@ -28,22 +28,35 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
       
 
         {/* challenge section */}
-        <div className="section has-text-white">
-        <div className="container">
-          <div className="columns is-variable is-8-desktop">
-            <div className="column has-text-centered mt-6">
-              <GatsbyImage image={challengeImage} alt={challenge.imagealt} />
-            </div>
-            <div className="column is-7-desktop is-12-mobile">
-              <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: challenge.headline }}></h2>
-              <p dangerouslySetInnerHTML={{ __html: challenge.text1 }}></p>
-              <p class="has-yellow-border has-yellow-star" dangerouslySetInnerHTML={{ __html: challenge.text2 }}></p>
-              <p dangerouslySetInnerHTML={{ __html: challenge.text3 }}></p>
-            </div>
-          </div>
-        </div>
-    </div>
- 
+  
+
+    <div className="section has-background-primary has-text-white">
+       <div className="container">
+      
+         <div className="columns">
+           <div className="column is-8-tablet is-offset-2-tablet is-12-mobile">
+           
+             <h2 className="is-size-2 mb-4" dangerouslySetInnerHTML={{ __html: challenge.headline }}></h2>
+           
+             
+              <div>
+          
+                <p className="has-text-white mb-4" dangerouslySetInnerHTML={{ __html: challenge.text1 }}></p>
+                <p class="has-yellow-border has-yellow-star" dangerouslySetInnerHTML={{ __html: challenge.text2 }}></p>
+                <p dangerouslySetInnerHTML={{ __html: challenge.text3 }}></p>
+              </div>
+            
+            
+
+
+           </div>
+           
+         </div>
+         
+       </div>
+     </div>
+
+     
 
         {/* goal section (Ramis maps) */}
 

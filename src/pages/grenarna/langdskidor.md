@@ -2,6 +2,7 @@
 
 path: "/grenarna/langdskidor"
 title: Längdskidor
+order: 0
 subtitle: 
 templateKey: tools
 

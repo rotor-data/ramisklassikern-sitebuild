@@ -31,6 +31,7 @@ const MenuItems = ({mobile}) => {
               frontmatter {
                 path
                 title
+                order
                 subtitle
               }
             }
@@ -61,7 +62,7 @@ const MenuItems = ({mobile}) => {
     ${!subActive && mobile === 'is-active'?'submenu':''}
     `} 
     >
-    
+  
   
   
     {data.allMarkdownRemark.edges.map ((tool,i) => 

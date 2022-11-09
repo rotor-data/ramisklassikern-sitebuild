@@ -99,7 +99,7 @@ query RotorStartTemplate {
         subtext2
         image {
           childImageSharp {
-            gatsbyImageData(quality: 100, width: 1920, layout: FULL_WIDTH, transformOptions: { fit: OUTSIDE, cropFocus: ENTROPY })
+            gatsbyImageData(quality: 100, width: 500, layout: CONSTRAINED, transformOptions: { fit: OUTSIDE, cropFocus: ENTROPY })
           }
         }
         imagealt

@@ -2,6 +2,7 @@
 
 path: "/grenarna/topptur"
 title: Topptur
+order: 1
 subtitle: ''
 templateKey: tools
 
@@ -14,7 +15,7 @@ hero:
   imagesmall: topptur-hero-small.png
   cta:
     option: false
-    text: 'OBS! Delar av Mittåkläppen är i Lavinterräng, så utan rätt kunskap rekommenderas att gå med guide. Glöm inte att njuta på vägen ner.'
+    text: 'OBS! Delar av Mittåkläppen är i lavinterräng, så utan rätt kunskap rekommenderas att gå med guide. Glöm inte att njuta på vägen ner.'
     buttonText: Registrera genomförd gren
     buttonLink: 'hej@ramisklassikern.se'
     headline: ''

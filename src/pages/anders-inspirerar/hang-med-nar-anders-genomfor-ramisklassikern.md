@@ -11,8 +11,8 @@ tags:
 ---
 ![Porträtt på Anders Södergren](anders-sodergren-portratt.jpg)
 
-Tillsammans med sin familj har Anders en stuga i Ramundberget och känner väl till dess omgivningar. Här kommer du att få följa Anders och ta del av lite tips inför de olika momenten.
-Tre tips på områden: 
-* Dfdjfbdlsadbfdjlfdlsf
-* Djfldjfhldf
-* dfjfgklaghdahgls
+Tillsammans med sin familj har Anders en stuga i Ramundberget och känner väl till dess omgivningar. 
+
+Här kommer du att få följa Anders och ta del av lite tips inför de olika momenten.
+
+

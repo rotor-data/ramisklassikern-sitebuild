@@ -49,12 +49,12 @@ module.exports = {
           allowAdFeatures: false // default
         },
         googleTagManager: {
-          trackingId: '', // leave empty if you want to disable the tracker
+          trackingId: 'GTM-NFF6QSG', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-google-tagmanager', // default
           dataLayerName: 'dataLayer', // default
         },
         facebookPixel: {
-          pixelId: '', // leave empty if you want to disable the tracker
+          pixelId: '1315947605866450', // leave empty if you want to disable the tracker
           cookieName: 'gatsby-gdpr-facebook-pixel', // default
         },
         tikTokPixel: {
@@ -62,8 +62,8 @@ module.exports = {
           cookieName: 'gatsby-gdpr-tiktok-pixel', // default
         },
         hotjar: {
-          hjid: '',
-          hjsv: '',
+          hjid: '3235383',
+          hjsv: '6',
           cookieName: 'gatsby-gdpr-hotjar', // default
         },
         linkedin: {
