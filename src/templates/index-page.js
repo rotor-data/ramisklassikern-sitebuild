@@ -32,7 +32,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
        <div className="container has-circle my-6">
   
          <div className="columns is-variable is-8-desktop">
-           <div className="column is-7-desktop">
+           <div className="column is-7-desktop is-offset-1-tablet">
              <h1 className="is-size-2 mb-4">{challenge.headline}</h1>
              <p className="has-text-white is-uppercase has-text-weight-bold mb-4" dangerouslySetInnerHTML={{ __html: challenge.subtext }}></p>
              <p className="has-text-white" dangerouslySetInnerHTML={{ __html: challenge.text }}></p>
@@ -75,7 +75,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
         <div className="container has-circle">
           <div className="columns is-variable is-8-desktop">
            
-            <div className="column is-7-desktop">
+            <div className="column is-7-desktop is-offset-1-tablet">
               <h2 className="is-size-2 mb-4">{solution.headline2}</h2>
               <p dangerouslySetInnerHTML={{ __html: solution.text2 }}></p>
               <div className="mt-6">
