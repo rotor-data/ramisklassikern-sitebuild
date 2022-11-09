@@ -20,7 +20,7 @@ hero:
     text2: 'Du registrerar grenen genom att skicka ett mejl (tryck på knappen nedan så öppnas ett nytt mejl). Skicka då med ett foto på dig själv på plats vid aktiviteten + en bild på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon som tex RunKeeper eller Strava och ta en skärmdump på genomförd aktivitet där.' 
     
     buttonText: Registrera genomförd gren
-    buttonLink: 'hej@ramisklassikern.se'
+    buttonLink: 'ramisklassikern@ramundberget.se'
     headline: ''
 
 challenge:
