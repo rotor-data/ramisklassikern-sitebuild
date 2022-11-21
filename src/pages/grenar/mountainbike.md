@@ -1,6 +1,6 @@
 ---
 
-path: "/grenarna/mountainbike"
+path: "/grenar/mountainbike"
 title: Mountainbike
 order: 2
 subtitle: 
@@ -16,8 +16,8 @@ hero:
 
   cta:
     option: false
-    text: 'Fjällpass cykel behövs för att nyttja cykellederna. Mer om hur du beställer detta <a href="https://www.ramundberget.se/information/liftkort/sommar/" target="_blank" rel="noopener noreferrer">här</a>.' 
-    text2: 'Du registrerar grenen genom att skicka ett mejl (tryck på knappen nedan så öppnas ett nytt mejl). Bifoga en bild på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon, som tex RunKeeper eller Strava, och ta en skärmdump på genomförd aktivitet.' 
+    text: 'Fjällpass cykel behövs för att nyttja cykellederna. Mer om hur du köper det <a href="https://www.ramundberget.se/information/liftkort/sommar/" target="_blank" rel="noopener noreferrer">här</a>.' 
+    text2: 'Du registrerar aktiviteten genom att skicka ett mejl med en bild på din sportklocka som visar att du genomfört grenen. Tryck på knappen ovan så öppnas mejlprogram med korrekt adress. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon, som tex RunKeeper eller Strava, och ta en skärmdump på genomförd aktivitet.' 
     buttonText: Registrera genomförd gren
     buttonLink: 'ramisklassikern@ramundberget.se'
     headline: ''
@@ -25,7 +25,7 @@ hero:
 challenge:
   headline: Mountain&shy;bike
   image: cykling-mountainbike.jpg
-  text1: 'Den liftburna cykling som Ramundberget och dess omnejd erbjuder passar alla. Välj mellan fartfylld liftburen cykling i flowtrails, vindlande fjällcykling i cross-countrystil och slingrande lands- eller grusvägscykling. I denna delutmaning är liften ej tillåten utan här ska det även cyklas uppför.' 
+  text1: 'Den liftburna cykling som Ramundberget och dess omnejd erbjuder passar alla. Välj mellan fartfylld liftburen cykling i flowtrails, vindlande fjällcykling i cross-countrystil och slingrande lands- eller grusvägscykling. I denna delutmaning är liften ej tillåten, här ska det även cyklas uppför.' 
   text2: 'Utmaning: Cykla Klinken-rundan och uppför Ramundberget till toppen av Fjällgårdsbanan och tillbaka ner. <br><br>Start och målgång sker vid bytorget. Om du väljer att först ta Klinken eller ta dig upp för Ramundberget är upp dig. Sträckan är ca 15 km och ca 400 hm.'
   text3:
 

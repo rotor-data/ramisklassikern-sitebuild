@@ -130,7 +130,7 @@ const CookieNotice = () => {
                 disableStyles={true}
                 visible={bannerVisible}
                 location="bottom"
-                buttonText="Ge mig kakor"
+                buttonText="Acceptera alla cookies"
                 cookieName="gatsby-gdpr-google-analytics"
                 expires={150}
                 onAccept={() => {

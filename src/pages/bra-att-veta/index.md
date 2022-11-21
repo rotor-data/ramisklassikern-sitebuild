@@ -43,7 +43,7 @@ vanligafragor:
   headline: 'Vanliga frågor'
   questions: 
     - question: 'Finns det åldersgräns för medverkan?'
-      answer: 'Vi rekommenderar att man har fyllt 18 för att medverka. Är man yngre görs momenten i målmans sällskap. För de som just startat sin träningskarriär och är yngre finns rekommendationer på kortare distanser.'
+      answer: 'Nej, men vi rekommenderar att är man under 18 år görs momenten i målmans sällskap.'
     - question: Hur anmäler jag mig?
       answer: Anmäl via <a href="/anmalan">detta formulär.</a>
     - question: Finns det olika klasser?
@@ -53,14 +53,14 @@ vanligafragor:
     - question: Behöver man ha egen utrustning med sig?
       answer: Nej, utrustning finns att hyra på Topsport. Dubbelkolla dock alltid och förboka under högsäsong.
     - question: Hur lång tid tar det att få sitt diplom och medalj?
-      answer: Generellt sett är leveranstiden 10-20 arbetsdagar som standard.
+      answer: Generellt sett är leveranstiden 10-20 arbetsdagar.
 
 rules:
   headline: Tävlings&shy;regler
   text: '<ul>
   <li>Du registrerar varje gren genom att skicka ett mejl. Skicka då med en bild eller skärmdump på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon som tex RunKeeper eller Strava och ta en skärmdump på genomförd aktivitet där. Du hittar registreringsknappen på respektive grensida.
   </li>
-	<li>Samtliga moment skall slutföras under ett år från att första moment genomfördes.</li>
+	<li>Samtliga moment skall slutföras inom ett år från att första moment genomfördes.</li>
 
 	<li> Det är inte tillåtet att deltaga i våra moment i någon annans namn.</li>
 
@@ -74,15 +74,15 @@ rules:
 
 	<li> Hjälm ska bäras under all cykling.</li>
 
-	<li> Vid allvarlig olycka ring nöd nummer 112 i Sverige. </li>
+	<li> Vid allvarlig olycka ring nödnummer 112 i Sverige. </li>
 
 	<li> Elcyklar är ej tillåtet.</li>
 
-	<li> Det är inte tillåtet att använda sig av liftarna även om dessa skulle gå och kunna ge en fördel.</li>
+	<li> Det är inte tillåtet att använda sig av liftar.</li>
 
 	<li> Förbjudet att skräpa ner.</li>
 	
-	<li> Respektera privat mark, ta inte genvägar över privata områden</li>
+	<li> Respektera privat mark, ta inte genvägar över privata områden.</li>
 
 	<li> Beträda odlad mark är förbjudet. Åkrar som inte har skördats är odlad mark.</li>
 
@@ -90,7 +90,7 @@ rules:
 
 	<li> Visa betande djur respekt genom att stiga av cykeln och gå förbi dem. </li>
 
-	<li> Trailrunning momentet går genom renbetesmarker, för att genomföra det bör man kontrollera i Funäsfjällens app Spår och leder att sträckan är öppen. Under kalvningsperioden på försommaren avråder vi från att genomföra detta moment.</li>
+	<li> Trailrunningsträckan går genom renbetesmarker, för att genomföra det bör man kontrollera i Funäsfjällens app Spår och leder att sträckan är öppen. Under kalvningsperioden på försommaren avråder vi från att genomföra detta moment.</li>
 </ul>'
   
 who:

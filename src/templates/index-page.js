@@ -17,7 +17,7 @@ const IndexPageTemplate = ({ meta, title, hero, challenge, solution }) => {
   const challengeImage = getImage(challenge.image)
   const solutionImage1 = getImage(solution.image1)
   const solutionImage2 = getImage(solution.image2)
-  const solutionImage3 = getImage(solution.image3)
+
 
 
   return (
@@ -168,12 +168,7 @@ query RotorStartTemplate {
           }
         }
         text2
-        imagealt3
-        image3 {
-          childImageSharp {
-            gatsbyImageData(quality: 100, width: 400)
-          }
-        }
+      
  
 
       }

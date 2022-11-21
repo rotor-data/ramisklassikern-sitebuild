@@ -3,7 +3,7 @@ templateKey: index-page
 meta: 
   description: "Ramisklassikern – en ny utmaning inom multisport där fyra grenar görs individuellt under 12 månader."
   ogimage: "../img/dough-rain-rotor-paraply.png"
-title: Ramisklassikern – vill du testa något nytt och annorlunda?
+title: Ramisklassikern - sugen på en rejäl multisportutmaning?
 hero:
   headline: 
   subtext: ""

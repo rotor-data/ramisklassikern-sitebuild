@@ -1,6 +1,6 @@
 ---
 
-path: "/grenarna/trailrunning"
+path: "/grenar/trailrunning"
 title: Trailrunning
 order: 3
 subtitle: 
@@ -16,7 +16,7 @@ hero:
   cta:
     option: false
     text:
-    text2: 'Du registrerar grenen genom att skicka ett mejl (tryck på knappen nedan så öppnas ett nytt mejl). Bifoga en bild på din sportklocka som visar att du genomfört aktiviteten. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon, som tex RunKeeper eller Strava, och ta en skärmdump på genomförd aktivitet.' 
+    text2: 'Du registrerar aktiviteten genom att skicka ett mejl med en bild på din sportklocka som visar att du genomfört grenen. Tryck på knappen ovan så öppnas mejlprogram med korrekt adress. Har du inte en sportklocka kan du ladda ner en sportapp till din telefon, som tex RunKeeper eller Strava, och ta en skärmdump på genomförd aktivitet.' 
     buttonText: Registrera genomförd gren
     buttonLink: 'ramisklassikern@ramundberget.se'
     headline: ''

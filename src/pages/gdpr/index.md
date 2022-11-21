@@ -46,7 +46,9 @@ Registret sparas av oss under den tid som du är deltagare hos oss och för den 
 Den registrerade har ingått ett avtal.
 Vilka får ta del av mina personuppgifter?Ramisklassikern är personuppgiftsansvarig för dina personuppgifter vilket betyder att vi tecknar personuppgiftsbiträdesavtal med eventuella underleverantörer. I avtalet specificeras hur de får behandla dina personuppgifter. De har inte rätt att sprida uppgifterna och ska radera dem när de inte längre behövs för uppdraget.
 
-Hur länge sparas mina personuppgifter och vad har jag för rättigheter?Dina personuppgifter sparas av oss under den tid som du är deltagare hos oss och för den tid därefter som är nödvändig för att uppfylla våra tjänster till dig. Se ovan för mer information om lagringstid.
+**Hur länge sparas mina personuppgifter och vad har jag för rättigheter?** 
+
+Dina personuppgifter sparas av oss under den tid som du är deltagare hos oss och för den tid därefter som är nödvändig för att uppfylla våra tjänster till dig. Se ovan för mer information om lagringstid.
 Du har rätt att när som helst begära ett registerutdrag av dina personuppgifter som behandlas av oss. Detta genom att maila begäran till ramisklassikern@ramundberget.se. Vi återkommer med svar till dig per mail inom 30 dagar från begäran. Du har rätt att närsomhelst få dina uppgifter rättade. Detta kan du göra via ramisklassikern@ramundberget.se
 
 För dataportabilitet och begränsning av personuppgifter enligt artikel 13.2 i den nya dataskyddsförordningen (GDPR) läs mer på Datainspektionen.
@@ -61,4 +63,6 @@ Inom EU/EES.
 
 Vid frågor kontakta oss direkt på ramisklassikern@ramundberget.se
 
-För klagomål på Ramisklassikerns hantering av personuppgifterHar du klagomål på hur dina uppgifter hanteras kan du kontakta Datainspektionen.
+**För klagomål på Ramisklassikerns hantering av personuppgifter**
+
+Har du klagomål på hur dina uppgifter hanteras kan du kontakta Datainspektionen.

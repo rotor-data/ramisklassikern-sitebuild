@@ -63,7 +63,7 @@ return newArray
     onKeyPress ={handleClick}
     tabIndex="0"
     >
-      Grenarna
+      Grenar
     </div>
     
     <div

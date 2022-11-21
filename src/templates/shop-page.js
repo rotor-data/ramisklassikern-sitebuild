@@ -70,12 +70,7 @@ const ShopPage = ({ data }) => {
         meta={frontmatter.meta}
         title={frontmatter.title}
         hero={frontmatter.hero}
-        rules={frontmatter.rules}
-        challenge={frontmatter.challenge}
-        solution={frontmatter.solution}
-        model={frontmatter.model}
-        customers={frontmatter.customers}
-        who={frontmatter.who}
+   
 
       />
     </Layout>

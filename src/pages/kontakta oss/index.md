@@ -7,7 +7,7 @@ title: Anmäl dig till Ramisklassikern här!
 hero:
   headline: Frågor eller funder&shy;ingar? Tveka inte att höra av dig till oss.
   headlineimg: 
-  subtext: ""
+  subtext: ''
   subtext2: '' 
   image: Ramundberget-stugor.jpg
   imagealt: ''

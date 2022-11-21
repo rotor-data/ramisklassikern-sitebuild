@@ -330,23 +330,29 @@ blockquote:after
  
 
 h1,
-h2
+.content h1,
+h2,
+.content h2
   font-family: $headline
   line-height: 1.2
-  color: $link
+  color: $link!important
   text-transform: uppercase
   font-weight: 900!important
   
 
-h3
+h3,
+.content h3
   font-family: $headline
   line-height: 1.2
-  color: $link
+  color: $link!important
   font-weight: 900!important
 
 h4,
+.content h4,
 h5,
-h6
+.content h5,
+h6,
+.content h6
   font-family: $bodytext
 
 
@@ -665,6 +671,7 @@ footer .menu-list
   text-transform: uppercase
   list-style-type: none
   transition: 100ms ease
+  line-height: 0.75
 footer ul
   list-style: none!important
 

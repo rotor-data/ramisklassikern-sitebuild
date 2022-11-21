@@ -26,7 +26,7 @@ const ContactPageTemplate = ({ meta, title, hero}) => {
 
       {/*form and text section*/}
    <div className="has-background-warning">
-       <div className="container has-circle py-6">
+       <div className="container py-6">
     
          <div className="columns is-variable is-8-desktop">
            <div className="column section is-4-desktop is-offset-1-desktop is-10-mobile is-offset-1-mobile is-offset-1-tablet">
@@ -37,7 +37,7 @@ const ContactPageTemplate = ({ meta, title, hero}) => {
            </div>
           
            <div className="column is-8-desktop">
-        <ApsisFormEmbed url="https://form.apsis.one/qgJh68vvTwH9A" />
+        <ApsisFormEmbed url="https://form.apsis.one/0JWPNrjklt" />
        </div>
        
     
@@ -70,12 +70,7 @@ const ContactPage = ({ data }) => {
         meta={frontmatter.meta}
         title={frontmatter.title}
         hero={frontmatter.hero}
-        rules={frontmatter.rules}
-        challenge={frontmatter.challenge}
-        solution={frontmatter.solution}
-        model={frontmatter.model}
-        customers={frontmatter.customers}
-        who={frontmatter.who}
+       
 
       />
     </Layout>

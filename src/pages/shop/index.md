@@ -8,9 +8,8 @@ hero:
   headline: Shop
   headlineimg: 
   subtext: 'Grattis, du gjorde det! Det borde alla få se. Efter att du genomfört och registrerat samtliga grenar kan du beställa ditt diplom, pin eller medalj här.<br><br>
-Mejla namn, adress, registreringsnummer och vad du önskar att köpa till <a href="mailto:ramisklassikern@ramundberget.se?subject=Jag vill beställa från Ramisklassikern">ramisklassikern@ramundberget.se.</a><br><br>
-Det tar i genomsnitt ca 20 arbetsdagar innan din produkt är färdig.
-' 
+  Mejla namn, adress, registreringsnummer och vad du önskar att köpa till <a href="mailto:ramisklassikern@ramundberget.se?subject=Jag vill beställa från Ramisklassikern">ramisklassikern@ramundberget.se.</a><br><br>
+  Det tar i genomsnitt ca 20 arbetsdagar innan din produkt är färdig.' 
   subtext2: '' 
   image: Ramisklassikern-diplom.png
   imagealt: 'diplom Ramisklassikern'
