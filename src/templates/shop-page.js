@@ -21,7 +21,7 @@ const ShopPageTemplate = ({ meta, title, hero}) => {
   return (
     <div className="has-background-warning" style={{marginTop:"98px"}}>
 
-      <SEO title={title} description={meta.description} slug="" />
+      <SEO title={`${title} | Ramisklassikern`} description={meta.description} slug="" />
       
 
       {/*form and text section*/}

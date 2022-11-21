@@ -21,7 +21,7 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
 
   return (
     <div style={{marginTop:"98px"}}>
-      <SEO title={title} description={meta.description} slug={path} />
+      <SEO title={`${title} | Ramisklassikern`} description={meta.description} slug={path} />
       {/*hero section*/}
 
       <GatsbyImage style={{minHeight:"400px"}} image={heroImage} loading="eager" />
@@ -64,7 +64,7 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
         <div className="container">
           <div className="columns">
             <div className="column has-text-centered mb-4">
-            <h2 className="is-size-2 mb-4">{goal.headline}</h2>
+            <h1 className="is-size-2 mb-4">{goal.headline}</h1>
               <GatsbyImage image={goalImage} alt={challenge.imagealt} />
             </div>
            

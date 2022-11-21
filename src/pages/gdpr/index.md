@@ -4,7 +4,7 @@ title: GDPR - Dataskyddsförordningen
 date: 2016-12-17T15:04:10.000Z
 featuredpost: false
 featuredimage: 
-description: 
+description: Ramisklassikern - GDPR
 tags:
 ---
 

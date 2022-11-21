@@ -18,7 +18,7 @@ return (
             width={imageWidth}
             style={boxShadow}/>
      </div>
-        <Link to="/grenarna/langdskidor">Längdskidor</Link>
+        <Link to="/grenar/langdskidor">Längdskidor</Link>
     </div>
     <div className="column columns is-flex-direction-column">
         <div className="column">
@@ -26,7 +26,7 @@ return (
             width={imageWidth}
             style={boxShadow}/>
         </div>
-        <Link to="/grenarna/topptur">Topptur</Link>
+        <Link to="/grenar/topptur">Topptur</Link>
     </div>
     <div className="column columns is-flex-direction-column">
         <div className="column">
@@ -34,7 +34,7 @@ return (
             width={imageWidth}
             style={boxShadow}/>
         </div>
-        <Link to="/grenarna/mountainbike">Mountainbike</Link>
+        <Link to="/grenar/mountainbike">Mountainbike</Link>
     </div>
     <div className="column columns is-flex-direction-column mb-3 has-text-bold">
         <div className="column">
@@ -42,7 +42,7 @@ return (
             width={imageWidth}
             style={boxShadow}/>
         </div>
-        <Link to="/grenarna/trailrunning">Trailrunning</Link>
+        <Link to="/grenar/trailrunning">Trailrunning</Link>
     </div>
 </div>
 

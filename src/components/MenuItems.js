@@ -88,9 +88,9 @@ return newArray
      Bra att veta
     </Link>
     
-    <Link className="navbar-item navbar" to="/shop">
+   {/*  <Link className="navbar-item navbar" to="/shop">
       Shop
-    </Link>
+    </Link> */}
     <Link className="navbar-item navbar" to="/anders-inspirerar/hang-med-nar-anders-genomfor-ramisklassikern/">
       Anders inspirerar
     </Link>

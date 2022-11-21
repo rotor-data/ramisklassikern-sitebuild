@@ -146,7 +146,7 @@ const CookieNotice = () => {
 
             >   
                 <p className="is-family-secondary has-text-weight-bold mb-4">Vi använder <Link className="has-text-link" to="/kontakta oss">cookies</Link> för att förbättra din upplevelse</p>
-                <button className="cookie-customize is-size-6" onClick={() => handleClick()}>Anpassa kakor</button>
+                <button className="cookie-customize is-size-6" onClick={() => handleClick()}>Anpassa cookies</button>
                 <StaticImage src={cookieImage} style={{width:"150px", position:"absolute", left:"10%", top:"-19%", zIndex:"-1"}}/>
             </CookieConsent>
 

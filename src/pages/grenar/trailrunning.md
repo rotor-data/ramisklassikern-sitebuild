@@ -9,7 +9,7 @@ templateKey: tools
 meta: 
   description: 'Utmaning trailrunning, en av Ramisklassikerns fyra grenar. Spring eller vandra Gruvturen (guldtur 154) upp på kalfjällen, ta vid och följ sen Sveån (guldtur 153) ner genom vacker skog tillbaka till Ramundberget. Distans 11 km.'
 hero:
-  headline: Trailrunning
+  headline: Ramisklassikern – Trailrunning
   subtext: ''
   image: hero-trailrunning.png
   imagesmall: trailrun-hero-small.png
