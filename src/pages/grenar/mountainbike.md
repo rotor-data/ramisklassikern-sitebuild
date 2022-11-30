@@ -32,8 +32,9 @@ challenge:
 goal:
   headline: Karta över rutten
   text: '' 
-  image: Karta-trailrunning.jpg
+  image: Ramisklassikern-karta-cykel.png
   imagealt: Karta
+  warningmap:
 
 when:
   headline: ''

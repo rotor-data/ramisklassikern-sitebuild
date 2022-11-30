@@ -25,19 +25,19 @@ const ContactPageTemplate = ({ meta, title, hero}) => {
       
 
       {/*form and text section*/}
-   <div className="has-background-warning">
-       <div className="container py-6">
+   <div className="section has-background-warning">
+       <div className="container has-circle py-6">
     
          <div className="columns is-variable is-8-desktop py-3">
            <div className="column is-4-desktop is-offset-1-desktop is-10-mobile is-offset-1-mobile is-offset-1-tablet">
              <h1 className="is-size-3 mb-4" dangerouslySetInnerHTML={{ __html: hero.headline }}></h1>
              <p className="has-text-white is-uppercase mb-4" dangerouslySetInnerHTML={{ __html: hero.subtext }}></p>
              <p className="has-text-white mb-4" dangerouslySetInnerHTML={{ __html: hero.subtext2 }}></p>
-     
+             <a class="button is-link has-text-weight-bold is-uppercase" href='mailto:ramisklassikern@ramundberget.se'>Kontakta oss</a>
            </div>
           
            <div className="column is-8-desktop">
-        <ApsisFormEmbed url="https://form.apsis.one/0JWPNrjklt" />
+          
        </div>
        
     

@@ -9,8 +9,17 @@ import RamisButton from "../components/RamisButton";
 const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal }) => {
 
   const goalImage = getImage(goal.image)
+  const warningMap = getImage(goal.warningmap)
   const challengeImage = getImage(challenge.image)
   // const heroImage = getImage(hero.image)
+  const warningSection = 
+    <div className="columns">
+      <div className="column has-text-centered mb-4">
+        <h3 className="is-size-4 mb-4">OBS! Lavinvarning!</h3>
+        <GatsbyImage image={warningMap} alt="varningskarta" />
+      </div>
+    </div>
+
 
   const heroImage = withArtDirection(getImage(hero.image), [
     {
@@ -64,13 +73,18 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
         <div className="container">
           <div className="columns">
             <div className="column has-text-centered mb-4">
-            <h1 className="is-size-2 mb-4">{goal.headline}</h1>
-              <GatsbyImage image={goalImage} alt={challenge.imagealt} />
+            <h2 className="is-size-2 mb-4">{goal.headline}</h2>
+              <GatsbyImage image={goalImage} alt={goal.imagealt} />
             </div>
-           
+            
+          </div> 
+  {warningMap && warningSection}
+
+            
           </div>
         </div>
-    </div>
+        
+   
  
 
 
@@ -168,6 +182,11 @@ export const MarketingAutomationQuery = graphql`
           text
           imagealt
           image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, width: 500)
+            }
+          }
+          warningmap {
             childImageSharp {
               gatsbyImageData(quality: 100, width: 500)
             }

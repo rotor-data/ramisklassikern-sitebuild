@@ -18,7 +18,7 @@ const CookieNotice = () => {
         },
         {
             title: "Statistik",
-            cookies: ['gatsby-gdpr-google-analytics', 'gatsby-gdpr-hotjar'],
+            cookies: ['gatsby-gdpr-google-analytics', 'gatsby-gdpr-hotjar', 'gatsby-gdpr-google-tagmanager', 'gatsby-gdpr-facebook-pixel','gatsby-gdpr-tiktok-pixel', 'gatsby-gdpr-linked-in'],
             description: "Statistik-cookies hjälper oss att förstå hur besökare interagerar med webbplatser. De samlar in och rapporterar in helt anonymt."
         },
         {
