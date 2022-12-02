@@ -11,7 +11,7 @@ meta:
 hero:
   headline: Topptur
   subtext: ''
-  image: hero-topptur.png
+  image: topptur-hero.png
   imagesmall: topptur-hero-small-2.png
   cta:
     option: false
@@ -25,7 +25,7 @@ challenge:
   headline: Topp&shy;tur
   image: topptur.jpg
   text1: 'Att gå på topptur är inte bara ett härligt sätt att nå åkningen bortanför pisterna där naturupplevelsen och skidåkningen står i fokus. Det är även en utmaning som utöver lavin-kit, skidutrustning med gå-möjlighet och stighudar kräver en hel del pannben. Men belöningen är oslagbar.' 
-  text2: 'Utmaning: Bestig Mittåkläppen (500 hm).<br><br>Klistra på hudarna, spänn pjäxorna lagom hårt och packa med lavinutrustningen. Starta nedanför Fjällgården vid bron över Ljusnan och ta dig hela vägen till Mittåkläppens topp. Här finns ingen utstakad väg, så karta och kompass är en självklarhet i ryggsäcken.'
+  text2: 'Utmaning: Bestig minst 400 höjdmeter på en dag.<br><br> Rekommenderad tur: Topptur till Ösjökläppen. Starta vid Fjällgårdsbanans topp, gå mot Lilla Ramundberget och styr sedan mot Ösjökläppen. Vid åkning ner från Ösjökläppen, åk förslagsvis i S/SO riktning för lämpligast väg. Sträckan är totalt ca 8 km och ca 400 hm.<br><br>Klistra på hudarna, spänn pjäxorna lagom hårt och packa med lavinutrustningen. Här finns ingen utstakad väg, så karta och kompass är en självklarhet i ryggsäcken.<br><br>Obs: Detta är en sträcka som går genom ett lavinkänsligt område därför rekommenderar vi alltid att gå in på <a href="https://lavinprognoser.se" target="_blank" noreferrer="true" >Lavinprognoser</a> för att se status när du ger dig ut. Ösjökläppens Ö/NO sida består av lavinterräng.  '
   text3:
 
 goal:
