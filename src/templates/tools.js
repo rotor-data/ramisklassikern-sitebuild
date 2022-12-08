@@ -100,7 +100,9 @@ const MarketingAutomationTemplate = ({ path, title, meta, hero, challenge, goal 
  {/* cta section registrera */}
       <div className="columns hero-body has-background-info">
         <div className="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet has-text-centered">
+          {hero.cta.text?
           <p className="is-size-5-tablet is-size-5-mobile has-text-white my-3" dangerouslySetInnerHTML={{__html: hero.cta.text}}></p>
+          :null}
           <a class="button is-link has-text-weight-bold is-uppercase" href={`mailto:${hero.cta.buttonLink}?subject=Jag har genomfört grenen ${title}&body=Hej! Jag bifogar här bildbevis i form av ett foto eller skärmdump på min sportklocka eller aktivitetsapp. Min tid för grenen var: (fyll i om du vill, helt valfritt)`}>{hero.cta.buttonText}</a>
           <p className="is-size-6-tablet is-size-6-mobile has-text-white my-3 is-italic mb-4" dangerouslySetInnerHTML={{__html: hero.cta.text2}}></p>
           
