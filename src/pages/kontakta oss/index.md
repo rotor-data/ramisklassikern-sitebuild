@@ -1,9 +1,9 @@
 ---
 templateKey: contact-page
 meta: 
-  description: "Anmäl dig till Ramisklassikern här."
+  description: "Frågor eller funderingar? Hör av dig till oss."
   ogimage: 
-title: Anmäl dig till Ramisklassikern här!
+title: Kontakta oss på Ramisklassikern här!
 hero:
   headline: Frågor eller funder&shy;ingar? Tveka inte att höra av dig till oss.
   headlineimg: 
